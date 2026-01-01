@@ -1,0 +1,3110 @@
+[
+  {
+    "id": 1,
+    "tipo": "pregunta_simple",
+    "subtipo": "what",
+    "leccion": "wh_questions",
+    "frase": "What is this?",
+    "traduccion": "¿Qué es esto?",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "What",
+        "significado": "¿Qué?"
+      },
+      {
+        "palabra": "is",
+        "significado": "es"
+      },
+      {
+        "palabra": "this",
+        "significado": "esto"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 2,
+    "tipo": "pregunta_simple",
+    "subtipo": "what",
+    "leccion": "wh_questions",
+    "frase": "What is your name?",
+    "traduccion": "¿Cuál es tu nombre?",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "What",
+        "significado": "¿Cuál?"
+      },
+      {
+        "palabra": "is",
+        "significado": "es"
+      },
+      {
+        "palabra": "your",
+        "significado": "tu"
+      },
+      {
+        "palabra": "name",
+        "significado": "nombre"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 3,
+    "tipo": "pregunta_simple",
+    "subtipo": "what",
+    "leccion": "wh_questions",
+    "frase": "What color is it?",
+    "traduccion": "¿De qué color es?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "What",
+        "significado": "¿Qué?"
+      },
+      {
+        "palabra": "color",
+        "significado": "color"
+      },
+      {
+        "palabra": "is",
+        "significado": "es"
+      },
+      {
+        "palabra": "it",
+        "significado": "ello"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 4,
+    "tipo": "pregunta_simple",
+    "subtipo": "where",
+    "leccion": "wh_questions",
+    "frase": "Where is the book?",
+    "traduccion": "¿Dónde está el libro?",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "Where",
+        "significado": "¿Dónde?"
+      },
+      {
+        "palabra": "is",
+        "significado": "está"
+      },
+      {
+        "palabra": "the",
+        "significado": "el"
+      },
+      {
+        "palabra": "book",
+        "significado": "libro"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 5,
+    "tipo": "pregunta_simple",
+    "subtipo": "where",
+    "leccion": "wh_questions",
+    "frase": "Where are you?",
+    "traduccion": "¿Dónde estás?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Where",
+        "significado": "¿Dónde?"
+      },
+      {
+        "palabra": "are",
+        "significado": "estás"
+      },
+      {
+        "palabra": "you",
+        "significado": "tú"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 6,
+    "tipo": "pregunta_simple",
+    "subtipo": "where",
+    "leccion": "wh_questions",
+    "frase": "Where is my pencil?",
+    "traduccion": "¿Dónde está mi lápiz?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Where",
+        "significado": "¿Dónde?"
+      },
+      {
+        "palabra": "is",
+        "significado": "está"
+      },
+      {
+        "palabra": "my",
+        "significado": "mi"
+      },
+      {
+        "palabra": "pencil",
+        "significado": "lápiz"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 7,
+    "tipo": "pregunta_simple",
+    "subtipo": "who",
+    "leccion": "wh_questions",
+    "frase": "Who is she?",
+    "traduccion": "¿Quién es ella?",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "Who",
+        "significado": "¿Quién?"
+      },
+      {
+        "palabra": "is",
+        "significado": "es"
+      },
+      {
+        "palabra": "she",
+        "significado": "ella"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 8,
+    "tipo": "pregunta_simple",
+    "subtipo": "who",
+    "leccion": "wh_questions",
+    "frase": "Who is your teacher?",
+    "traduccion": "¿Quién es tu profesor/a?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Who",
+        "significado": "¿Quién?"
+      },
+      {
+        "palabra": "is",
+        "significado": "es"
+      },
+      {
+        "palabra": "your",
+        "significado": "tu"
+      },
+      {
+        "palabra": "teacher",
+        "significado": "profesor/a"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 9,
+    "tipo": "pregunta_simple",
+    "subtipo": "how",
+    "leccion": "wh_questions",
+    "frase": "How are you?",
+    "traduccion": "¿Cómo estás?",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "How",
+        "significado": "¿Cómo?"
+      },
+      {
+        "palabra": "are",
+        "significado": "estás"
+      },
+      {
+        "palabra": "you",
+        "significado": "tú"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 10,
+    "tipo": "pregunta_simple",
+    "subtipo": "how",
+    "leccion": "wh_questions",
+    "frase": "How old are you?",
+    "traduccion": "¿Cuántos años tienes?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "How",
+        "significado": "¿Cuánto?"
+      },
+      {
+        "palabra": "old",
+        "significado": "viejo/años"
+      },
+      {
+        "palabra": "are",
+        "significado": "tienes"
+      },
+      {
+        "palabra": "you",
+        "significado": "tú"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 11,
+    "tipo": "afirmacion_simple",
+    "subtipo": "verbo_to_be",
+    "leccion": "pronouns_to_be",
+    "frase": "I am happy.",
+    "traduccion": "Yo estoy feliz.",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "I",
+        "significado": "Yo"
+      },
+      {
+        "palabra": "am",
+        "significado": "estoy"
+      },
+      {
+        "palabra": "happy",
+        "significado": "feliz"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 12,
+    "tipo": "afirmacion_simple",
+    "subtipo": "verbo_to_be",
+    "leccion": "pronouns_to_be",
+    "frase": "She is a student.",
+    "traduccion": "Ella es una estudiante.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "She",
+        "significado": "Ella"
+      },
+      {
+        "palabra": "is",
+        "significado": "es"
+      },
+      {
+        "palabra": "a",
+        "significado": "una"
+      },
+      {
+        "palabra": "student",
+        "significado": "estudiante"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 13,
+    "tipo": "afirmacion_simple",
+    "subtipo": "verbo_to_be",
+    "leccion": "pronouns_to_be",
+    "frase": "They are friends.",
+    "traduccion": "Ellos son amigos.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "They",
+        "significado": "Ellos"
+      },
+      {
+        "palabra": "are",
+        "significado": "son"
+      },
+      {
+        "palabra": "friends",
+        "significado": "amigos"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 14,
+    "tipo": "afirmacion_simple",
+    "subtipo": "verbo_to_be",
+    "leccion": "pronouns_to_be",
+    "frase": "We are at school.",
+    "traduccion": "Nosotros estamos en la escuela.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "We",
+        "significado": "Nosotros"
+      },
+      {
+        "palabra": "are",
+        "significado": "estamos"
+      },
+      {
+        "palabra": "at",
+        "significado": "en"
+      },
+      {
+        "palabra": "school",
+        "significado": "escuela"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 15,
+    "tipo": "afirmacion_simple",
+    "subtipo": "verbo_to_be",
+    "leccion": "pronouns_to_be",
+    "frase": "The cat is black.",
+    "traduccion": "El gato es negro.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "The",
+        "significado": "El"
+      },
+      {
+        "palabra": "cat",
+        "significado": "gato"
+      },
+      {
+        "palabra": "is",
+        "significado": "es"
+      },
+      {
+        "palabra": "black",
+        "significado": "negro"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 16,
+    "tipo": "afirmacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "verb_to_do",
+    "frase": "I like apples.",
+    "traduccion": "Me gustan las manzanas.",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "I",
+        "significado": "Me"
+      },
+      {
+        "palabra": "like",
+        "significado": "gustan"
+      },
+      {
+        "palabra": "apples",
+        "significado": "manzanas"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 17,
+    "tipo": "afirmacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "verb_to_do",
+    "frase": "She plays soccer.",
+    "traduccion": "Ella juega al fútbol.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "She",
+        "significado": "Ella"
+      },
+      {
+        "palabra": "plays",
+        "significado": "juega"
+      },
+      {
+        "palabra": "soccer",
+        "significado": "fútbol"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 18,
+    "tipo": "afirmacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "verb_to_do",
+    "frase": "He eats breakfast.",
+    "traduccion": "Él desayuna.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "He",
+        "significado": "Él"
+      },
+      {
+        "palabra": "eats",
+        "significado": "come"
+      },
+      {
+        "palabra": "breakfast",
+        "significado": "desayuno"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 19,
+    "tipo": "afirmacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "verb_to_do",
+    "frase": "We read books.",
+    "traduccion": "Nosotros leemos libros.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "We",
+        "significado": "Nosotros"
+      },
+      {
+        "palabra": "read",
+        "significado": "leemos"
+      },
+      {
+        "palabra": "books",
+        "significado": "libros"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 20,
+    "tipo": "afirmacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "verb_to_do",
+    "frase": "They go to school.",
+    "traduccion": "Ellos van a la escuela.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "They",
+        "significado": "Ellos"
+      },
+      {
+        "palabra": "go",
+        "significado": "van"
+      },
+      {
+        "palabra": "to",
+        "significado": "a"
+      },
+      {
+        "palabra": "school",
+        "significado": "escuela"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 21,
+    "tipo": "negacion_simple",
+    "subtipo": "verbo_to_be",
+    "leccion": "pronouns_to_be",
+    "frase": "I am not tired.",
+    "traduccion": "Yo no estoy cansado.",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "I",
+        "significado": "Yo"
+      },
+      {
+        "palabra": "am",
+        "significado": "estoy"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "tired",
+        "significado": "cansado"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 22,
+    "tipo": "negacion_simple",
+    "subtipo": "verbo_to_be",
+    "leccion": "pronouns_to_be",
+    "frase": "She is not sad.",
+    "traduccion": "Ella no está triste.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "She",
+        "significado": "Ella"
+      },
+      {
+        "palabra": "is",
+        "significado": "está"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "sad",
+        "significado": "triste"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 23,
+    "tipo": "negacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "negations_simple",
+    "frase": "I do not like pizza.",
+    "traduccion": "No me gusta la pizza.",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "I",
+        "significado": "No me"
+      },
+      {
+        "palabra": "do",
+        "significado": "(auxiliar)"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "like",
+        "significado": "gusta"
+      },
+      {
+        "palabra": "pizza",
+        "significado": "pizza"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 24,
+    "tipo": "negacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "negations_simple",
+    "frase": "He does not play tennis.",
+    "traduccion": "Él no juega al tenis.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "He",
+        "significado": "Él"
+      },
+      {
+        "palabra": "does",
+        "significado": "(auxiliar)"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "play",
+        "significado": "juega"
+      },
+      {
+        "palabra": "tennis",
+        "significado": "tenis"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 25,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "verbo_to_be",
+    "leccion": "yes_no_questions",
+    "frase": "Is this your pen?",
+    "traduccion": "¿Es este tu bolígrafo?",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "Is",
+        "significado": "¿Es?"
+      },
+      {
+        "palabra": "this",
+        "significado": "este"
+      },
+      {
+        "palabra": "your",
+        "significado": "tu"
+      },
+      {
+        "palabra": "pen",
+        "significado": "bolígrafo"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 26,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "verbo_to_be",
+    "leccion": "yes_no_questions",
+    "frase": "Are you hungry?",
+    "traduccion": "¿Tienes hambre?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Are",
+        "significado": "¿Tienes?"
+      },
+      {
+        "palabra": "you",
+        "significado": "tú"
+      },
+      {
+        "palabra": "hungry",
+        "significado": "hambre"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 27,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "presente_simple",
+    "leccion": "yes_no_questions",
+    "frase": "Do you like ice cream?",
+    "traduccion": "¿Te gusta el helado?",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "Do",
+        "significado": "¿(auxiliar)?"
+      },
+      {
+        "palabra": "you",
+        "significado": "te"
+      },
+      {
+        "palabra": "like",
+        "significado": "gusta"
+      },
+      {
+        "palabra": "ice cream",
+        "significado": "helado"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 28,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "presente_simple",
+    "leccion": "yes_no_questions",
+    "frase": "Does she speak English?",
+    "traduccion": "¿Ella habla inglés?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Does",
+        "significado": "¿(auxiliar)?"
+      },
+      {
+        "palabra": "she",
+        "significado": "ella"
+      },
+      {
+        "palabra": "speak",
+        "significado": "habla"
+      },
+      {
+        "palabra": "English",
+        "significado": "inglés"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 29,
+    "tipo": "imperativo",
+    "subtipo": "ordenes_simples",
+    "leccion": "verb_to_do",
+    "frase": "Open the door.",
+    "traduccion": "Abre la puerta.",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "Open",
+        "significado": "Abre"
+      },
+      {
+        "palabra": "the",
+        "significado": "la"
+      },
+      {
+        "palabra": "door",
+        "significado": "puerta"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 30,
+    "tipo": "imperativo",
+    "subtipo": "ordenes_simples",
+    "leccion": "verb_to_do",
+    "frase": "Close your book.",
+    "traduccion": "Cierra tu libro.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Close",
+        "significado": "Cierra"
+      },
+      {
+        "palabra": "your",
+        "significado": "tu"
+      },
+      {
+        "palabra": "book",
+        "significado": "libro"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 31,
+    "tipo": "pregunta_simple",
+    "subtipo": "when",
+    "leccion": "wh_questions",
+    "frase": "When is your birthday?",
+    "traduccion": "¿Cuándo es tu cumpleaños?",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "When",
+        "significado": "¿Cuándo?"
+      },
+      {
+        "palabra": "is",
+        "significado": "es"
+      },
+      {
+        "palabra": "your",
+        "significado": "tu"
+      },
+      {
+        "palabra": "birthday",
+        "significado": "cumpleaños"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 32,
+    "tipo": "pregunta_simple",
+    "subtipo": "when",
+    "leccion": "wh_questions",
+    "frase": "When do you go to bed?",
+    "traduccion": "¿Cuándo te vas a la cama?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "When",
+        "significado": "¿Cuándo?"
+      },
+      {
+        "palabra": "do",
+        "significado": "(auxiliar)"
+      },
+      {
+        "palabra": "you",
+        "significado": "tú"
+      },
+      {
+        "palabra": "go",
+        "significado": "vas"
+      },
+      {
+        "palabra": "to",
+        "significado": "a"
+      },
+      {
+        "palabra": "bed",
+        "significado": "la cama"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 33,
+    "tipo": "pregunta_simple",
+    "subtipo": "when",
+    "leccion": "wh_questions",
+    "frase": "When does school start?",
+    "traduccion": "¿Cuándo empieza el colegio?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "When",
+        "significado": "¿Cuándo?"
+      },
+      {
+        "palabra": "does",
+        "significado": "(auxiliar)"
+      },
+      {
+        "palabra": "school",
+        "significado": "colegio"
+      },
+      {
+        "palabra": "start",
+        "significado": "empieza"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 34,
+    "tipo": "afirmacion_simple",
+    "subtipo": "have_got",
+    "leccion": "pronouns_have_got",
+    "frase": "I have got a dog.",
+    "traduccion": "Yo tengo un perro.",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "I",
+        "significado": "Yo"
+      },
+      {
+        "palabra": "have",
+        "significado": "tengo"
+      },
+      {
+        "palabra": "got",
+        "significado": "(enfatiza tener)"
+      },
+      {
+        "palabra": "a",
+        "significado": "un"
+      },
+      {
+        "palabra": "dog",
+        "significado": "perro"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 35,
+    "tipo": "afirmacion_simple",
+    "subtipo": "have_got",
+    "leccion": "pronouns_have_got",
+    "frase": "She has got a new bike.",
+    "traduccion": "Ella tiene una bicicleta nueva.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "She",
+        "significado": "Ella"
+      },
+      {
+        "palabra": "has",
+        "significado": "tiene"
+      },
+      {
+        "palabra": "got",
+        "significado": "(enfatiza tener)"
+      },
+      {
+        "palabra": "a",
+        "significado": "una"
+      },
+      {
+        "palabra": "new",
+        "significado": "nueva"
+      },
+      {
+        "palabra": "bike",
+        "significado": "bicicleta"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 36,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "have_got",
+    "leccion": "pronouns_have_got",
+    "frase": "Have you got a pencil?",
+    "traduccion": "¿Tienes un lápiz?",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "Have",
+        "significado": "¿Tienes"
+      },
+      {
+        "palabra": "you",
+        "significado": "tú"
+      },
+      {
+        "palabra": "got",
+        "significado": "?"
+      },
+      {
+        "palabra": "a",
+        "significado": "un"
+      },
+      {
+        "palabra": "pencil",
+        "significado": "lápiz"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 37,
+    "tipo": "negacion_simple",
+    "subtipo": "have_got",
+    "leccion": "pronouns_have_got",
+    "frase": "They have not got any pets.",
+    "traduccion": "Ellos no tienen mascotas.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "They",
+        "significado": "Ellos"
+      },
+      {
+        "palabra": "have",
+        "significado": "han"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "got",
+        "significado": "tenido / tienen"
+      },
+      {
+        "palabra": "any",
+        "significado": "ninguna(s)"
+      },
+      {
+        "palabra": "pets",
+        "significado": "mascotas"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 38,
+    "tipo": "negacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "negations_simple",
+    "frase": "I don't like carrots.",
+    "traduccion": "No me gustan las zanahorias.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "I",
+        "significado": "Yo"
+      },
+      {
+        "palabra": "do",
+        "significado": "(auxiliar)"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "like",
+        "significado": "me gustan"
+      },
+      {
+        "palabra": "carrots",
+        "significado": "zanahorias"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 39,
+    "tipo": "negacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "negations_simple",
+    "frase": "He doesn't watch TV.",
+    "traduccion": "Él no ve la tele.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "He",
+        "significado": "Él"
+      },
+      {
+        "palabra": "does",
+        "significado": "(auxiliar)"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "watch",
+        "significado": "ve"
+      },
+      {
+        "palabra": "TV",
+        "significado": "la tele"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 40,
+    "tipo": "negacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "negations_simple",
+    "frase": "We don't play football on Monday.",
+    "traduccion": "No jugamos al fútbol los lunes.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "We",
+        "significado": "Nosotros"
+      },
+      {
+        "palabra": "do",
+        "significado": "(auxiliar)"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "play",
+        "significado": "jugamos"
+      },
+      {
+        "palabra": "football",
+        "significado": "fútbol"
+      },
+      {
+        "palabra": "on",
+        "significado": "los"
+      },
+      {
+        "palabra": "Monday",
+        "significado": "lunes"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 41,
+    "tipo": "afirmacion_simple",
+    "subtipo": "verbo_to_be",
+    "leccion": "pronouns_to_be",
+    "frase": "You are my best friend.",
+    "traduccion": "Tú eres mi mejor amigo.",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "You",
+        "significado": "Tú"
+      },
+      {
+        "palabra": "are",
+        "significado": "eres"
+      },
+      {
+        "palabra": "my",
+        "significado": "mi"
+      },
+      {
+        "palabra": "best",
+        "significado": "mejor"
+      },
+      {
+        "palabra": "friend",
+        "significado": "amigo"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 42,
+    "tipo": "afirmacion_simple",
+    "subtipo": "verbo_to_be",
+    "leccion": "pronouns_to_be",
+    "frase": "He is my brother.",
+    "traduccion": "Él es mi hermano.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "He",
+        "significado": "Él"
+      },
+      {
+        "palabra": "is",
+        "significado": "es"
+      },
+      {
+        "palabra": "my",
+        "significado": "mi"
+      },
+      {
+        "palabra": "brother",
+        "significado": "hermano"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 43,
+    "tipo": "afirmacion_simple",
+    "subtipo": "verbo_to_be",
+    "leccion": "pronouns_to_be",
+    "frase": "She is very funny.",
+    "traduccion": "Ella es muy divertida.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "She",
+        "significado": "Ella"
+      },
+      {
+        "palabra": "is",
+        "significado": "es"
+      },
+      {
+        "palabra": "very",
+        "significado": "muy"
+      },
+      {
+        "palabra": "funny",
+        "significado": "divertida"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 44,
+    "tipo": "afirmacion_simple",
+    "subtipo": "verbo_to_be",
+    "leccion": "pronouns_to_be",
+    "frase": "We are in the classroom.",
+    "traduccion": "Nosotros estamos en la clase.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "We",
+        "significado": "Nosotros"
+      },
+      {
+        "palabra": "are",
+        "significado": "estamos"
+      },
+      {
+        "palabra": "in",
+        "significado": "en"
+      },
+      {
+        "palabra": "the",
+        "significado": "la"
+      },
+      {
+        "palabra": "classroom",
+        "significado": "clase"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 45,
+    "tipo": "afirmacion_simple",
+    "subtipo": "verbo_to_be",
+    "leccion": "pronouns_to_be",
+    "frase": "They are at the park.",
+    "traduccion": "Ellos están en el parque.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "They",
+        "significado": "Ellos"
+      },
+      {
+        "palabra": "are",
+        "significado": "están"
+      },
+      {
+        "palabra": "at",
+        "significado": "en"
+      },
+      {
+        "palabra": "the",
+        "significado": "el"
+      },
+      {
+        "palabra": "park",
+        "significado": "parque"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 46,
+    "tipo": "negacion_simple",
+    "subtipo": "verbo_to_be",
+    "leccion": "pronouns_to_be",
+    "frase": "I am not angry.",
+    "traduccion": "Yo no estoy enfadado.",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "I",
+        "significado": "Yo"
+      },
+      {
+        "palabra": "am",
+        "significado": "estoy",
+         "esHueco":  true
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "angry",
+        "significado": "enfadado"
+      }
+    ],
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco", "campoHueco": "verbo" }
+     
+    ]
+  },
+  {
+    "id": 47,
+    "tipo": "negacion_simple",
+    "subtipo": "verbo_to_be",
+    "leccion": "pronouns_to_be",
+    "frase": "She is not at home.",
+    "traduccion": "Ella no está en casa.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "She",
+        "significado": "Ella"
+      },
+      {
+        "palabra": "is",
+        "significado": "está"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "at",
+        "significado": "en"
+      },
+      {
+        "palabra": "home",
+        "significado": "casa"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 48,
+    "tipo": "negacion_simple",
+    "subtipo": "verbo_to_be",
+    "leccion": "pronouns_to_be",
+    "frase": "They are not tired.",
+    "traduccion": "Ellos no están cansados.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "They",
+        "significado": "Ellos"
+      },
+      {
+        "palabra": "are",
+        "significado": "están"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "tired",
+        "significado": "cansados"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 49,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "verbo_to_be",
+    "leccion": "pronouns_to_be",
+    "frase": "Are you ready?",
+    "traduccion": "¿Estás listo?",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "Are",
+        "significado": "¿Estás"
+      },
+      {
+        "palabra": "you",
+        "significado": "tú"
+      },
+      {
+        "palabra": "ready",
+        "significado": "listo?"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 50,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "verbo_to_be",
+    "leccion": "pronouns_to_be",
+    "frase": "Is he your teacher?",
+    "traduccion": "¿Es él tu profesor?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Is",
+        "significado": "¿Es"
+      },
+      {
+        "palabra": "he",
+        "significado": "él"
+      },
+      {
+        "palabra": "your",
+        "significado": "tu"
+      },
+      {
+        "palabra": "teacher",
+        "significado": "profesor?"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 51,
+    "tipo": "afirmacion_simple",
+    "subtipo": "have_got",
+    "leccion": "pronouns_have_got",
+    "frase": "You have got a red ball.",
+    "traduccion": "Tú tienes una pelota roja.",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "You",
+        "significado": "Tú"
+      },
+      {
+        "palabra": "have",
+        "significado": "tienes"
+      },
+      {
+        "palabra": "got",
+        "significado": "(enfatiza tener)"
+      },
+      {
+        "palabra": "a",
+        "significado": "una"
+      },
+      {
+        "palabra": "red",
+        "significado": "roja"
+      },
+      {
+        "palabra": "ball",
+        "significado": "pelota"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 52,
+    "tipo": "afirmacion_simple",
+    "subtipo": "have_got",
+    "leccion": "pronouns_have_got",
+    "frase": "We have got a big house.",
+    "traduccion": "Nosotros tenemos una casa grande.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "We",
+        "significado": "Nosotros"
+      },
+      {
+        "palabra": "have",
+        "significado": "tenemos"
+      },
+      {
+        "palabra": "got",
+        "significado": "(enfatiza tener)"
+      },
+      {
+        "palabra": "a",
+        "significado": "una"
+      },
+      {
+        "palabra": "big",
+        "significado": "grande"
+      },
+      {
+        "palabra": "house",
+        "significado": "casa"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 53,
+    "tipo": "afirmacion_simple",
+    "subtipo": "have_got",
+    "leccion": "pronouns_have_got",
+    "frase": "They have got three cats.",
+    "traduccion": "Ellos tienen tres gatos.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "They",
+        "significado": "Ellos"
+      },
+      {
+        "palabra": "have",
+        "significado": "tienen"
+      },
+      {
+        "palabra": "got",
+        "significado": "(enfatiza tener)"
+      },
+      {
+        "palabra": "three",
+        "significado": "tres"
+      },
+      {
+        "palabra": "cats",
+        "significado": "gatos"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 54,
+    "tipo": "afirmacion_simple",
+    "subtipo": "have_got",
+    "leccion": "pronouns_have_got",
+    "frase": "I have got two brothers.",
+    "traduccion": "Yo tengo dos hermanos.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "I",
+        "significado": "Yo"
+      },
+      {
+        "palabra": "have",
+        "significado": "tengo"
+      },
+      {
+        "palabra": "got",
+        "significado": "(enfatiza tener)"
+      },
+      {
+        "palabra": "two",
+        "significado": "dos"
+      },
+      {
+        "palabra": "brothers",
+        "significado": "hermanos"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 55,
+    "tipo": "afirmacion_simple",
+    "subtipo": "have_got",
+    "leccion": "pronouns_have_got",
+    "frase": "She has got long hair.",
+    "traduccion": "Ella tiene el pelo largo.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "She",
+        "significado": "Ella"
+      },
+      {
+        "palabra": "has",
+        "significado": "tiene"
+      },
+      {
+        "palabra": "got",
+        "significado": "(enfatiza tener)"
+      },
+      {
+        "palabra": "long",
+        "significado": "largo"
+      },
+      {
+        "palabra": "hair",
+        "significado": "pelo"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 56,
+    "tipo": "negacion_simple",
+    "subtipo": "have_got",
+    "leccion": "pronouns_have_got",
+    "frase": "I have not got a bike.",
+    "traduccion": "Yo no tengo bicicleta.",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "I",
+        "significado": "Yo"
+      },
+      {
+        "palabra": "have",
+        "significado": "he"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "got",
+        "significado": "tenido / tengo"
+      },
+      {
+        "palabra": "a",
+        "significado": "una"
+      },
+      {
+        "palabra": "bike",
+        "significado": "bicicleta"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 57,
+    "tipo": "negacion_simple",
+    "subtipo": "have_got",
+    "leccion": "pronouns_have_got",
+    "frase": "He has not got any sisters.",
+    "traduccion": "Él no tiene hermanas.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "He",
+        "significado": "Él"
+      },
+      {
+        "palabra": "has",
+        "significado": "ha"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "got",
+        "significado": "tenido / tiene"
+      },
+      {
+        "palabra": "any",
+        "significado": "ninguna"
+      },
+      {
+        "palabra": "sisters",
+        "significado": "hermanas"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 58,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "have_got",
+    "leccion": "pronouns_have_got",
+    "frase": "Have they got a computer?",
+    "traduccion": "¿Ellos tienen un ordenador?",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "Have",
+        "significado": "¿Tienen"
+      },
+      {
+        "palabra": "they",
+        "significado": "ellos"
+      },
+      {
+        "palabra": "got",
+        "significado": "?"
+      },
+      {
+        "palabra": "a",
+        "significado": "un"
+      },
+      {
+        "palabra": "computer",
+        "significado": "ordenador"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 59,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "have_got",
+    "leccion": "pronouns_have_got",
+    "frase": "Has she got a pet?",
+    "traduccion": "¿Ella tiene una mascota?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Has",
+        "significado": "¿Tiene"
+      },
+      {
+        "palabra": "she",
+        "significado": "ella"
+      },
+      {
+        "palabra": "got",
+        "significado": "?"
+      },
+      {
+        "palabra": "a",
+        "significado": "una"
+      },
+      {
+        "palabra": "pet",
+        "significado": "mascota"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 60,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "have_got",
+    "leccion": "pronouns_have_got",
+    "frase": "Have we got homework today?",
+    "traduccion": "¿Tenemos deberes hoy?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Have",
+        "significado": "¿Tenemos"
+      },
+      {
+        "palabra": "we",
+        "significado": "nosotros"
+      },
+      {
+        "palabra": "got",
+        "significado": "?"
+      },
+      {
+        "palabra": "homework",
+        "significado": "deberes"
+      },
+      {
+        "palabra": "today",
+        "significado": "hoy"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 61,
+    "tipo": "afirmacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "verb_to_do",
+    "frase": "I play football after school.",
+    "traduccion": "Yo juego al fútbol después del colegio.",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "I",
+        "significado": "Yo"
+      },
+      {
+        "palabra": "play",
+        "significado": "juego"
+      },
+      {
+        "palabra": "football",
+        "significado": "al fútbol"
+      },
+      {
+        "palabra": "after",
+        "significado": "después de"
+      },
+      {
+        "palabra": "school",
+        "significado": "colegio"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 62,
+    "tipo": "afirmacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "verb_to_do",
+    "frase": "He reads a book every night.",
+    "traduccion": "Él lee un libro todas las noches.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "He",
+        "significado": "Él"
+      },
+      {
+        "palabra": "reads",
+        "significado": "lee"
+      },
+      {
+        "palabra": "a",
+        "significado": "un"
+      },
+      {
+        "palabra": "book",
+        "significado": "libro"
+      },
+      {
+        "palabra": "every",
+        "significado": "cada"
+      },
+      {
+        "palabra": "night",
+        "significado": "noche"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 63,
+    "tipo": "afirmacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "verb_to_do",
+    "frase": "She watches cartoons in the morning.",
+    "traduccion": "Ella ve dibujos por la mañana.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "She",
+        "significado": "Ella"
+      },
+      {
+        "palabra": "watches",
+        "significado": "ve"
+      },
+      {
+        "palabra": "cartoons",
+        "significado": "dibujos"
+      },
+      {
+        "palabra": "in",
+        "significado": "por"
+      },
+      {
+        "palabra": "the",
+        "significado": "la"
+      },
+      {
+        "palabra": "morning",
+        "significado": "mañana"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 64,
+    "tipo": "afirmacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "verb_to_do",
+    "frase": "We go to the park on Sunday.",
+    "traduccion": "Nosotros vamos al parque los domingos.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "We",
+        "significado": "Nosotros"
+      },
+      {
+        "palabra": "go",
+        "significado": "vamos"
+      },
+      {
+        "palabra": "to",
+        "significado": "al"
+      },
+      {
+        "palabra": "the",
+        "significado": " "
+      },
+      {
+        "palabra": "park",
+        "significado": "parque"
+      },
+      {
+        "palabra": "on",
+        "significado": "los"
+      },
+      {
+        "palabra": "Sunday",
+        "significado": "domingos"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 65,
+    "tipo": "afirmacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "verb_to_do",
+    "frase": "They eat breakfast at seven o'clock.",
+    "traduccion": "Ellos desayunan a las siete.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "They",
+        "significado": "Ellos"
+      },
+      {
+        "palabra": "eat",
+        "significado": "desayunan"
+      },
+      {
+        "palabra": "breakfast",
+        "significado": "desayuno"
+      },
+      {
+        "palabra": "at",
+        "significado": "a las"
+      },
+      {
+        "palabra": "seven",
+        "significado": "siete"
+      },
+      {
+        "palabra": "o'clock",
+        "significado": "en punto"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 66,
+    "tipo": "negacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "verb_to_do",
+    "frase": "I don't play tennis.",
+    "traduccion": "Yo no juego al tenis.",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "I",
+        "significado": "Yo"
+      },
+      {
+        "palabra": "do",
+        "significado": "(auxiliar)"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "play",
+        "significado": "juego"
+      },
+      {
+        "palabra": "tennis",
+        "significado": "tenis"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 67,
+    "tipo": "negacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "verb_to_do",
+    "frase": "She doesn't like milk.",
+    "traduccion": "A ella no le gusta la leche.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "She",
+        "significado": "Ella"
+      },
+      {
+        "palabra": "does",
+        "significado": "(auxiliar)"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "like",
+        "significado": "gusta"
+      },
+      {
+        "palabra": "milk",
+        "significado": "leche"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 68,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "presente_simple",
+    "leccion": "verb_to_do",
+    "frase": "Do you like pizza?",
+    "traduccion": "¿Te gusta la pizza?",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "Do",
+        "significado": "¿(auxiliar)?"
+      },
+      {
+        "palabra": "you",
+        "significado": "te"
+      },
+      {
+        "palabra": "like",
+        "significado": "gusta"
+      },
+      {
+        "palabra": "pizza",
+        "significado": "pizza"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 69,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "presente_simple",
+    "leccion": "verb_to_do",
+    "frase": "Does he play the guitar?",
+    "traduccion": "¿Él toca la guitarra?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Does",
+        "significado": "¿(auxiliar)?"
+      },
+      {
+        "palabra": "he",
+        "significado": "él"
+      },
+      {
+        "palabra": "play",
+        "significado": "toca"
+      },
+      {
+        "palabra": "the",
+        "significado": "la"
+      },
+      {
+        "palabra": "guitar",
+        "significado": "guitarra"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 70,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "presente_simple",
+    "leccion": "verb_to_do",
+    "frase": "Do they go to school by bus?",
+    "traduccion": "¿Van ellos al colegio en autobús?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Do",
+        "significado": "¿(auxiliar)?"
+      },
+      {
+        "palabra": "they",
+        "significado": "ellos"
+      },
+      {
+        "palabra": "go",
+        "significado": "van"
+      },
+      {
+        "palabra": "to",
+        "significado": "a"
+      },
+      {
+        "palabra": "school",
+        "significado": "colegio"
+      },
+      {
+        "palabra": "by",
+        "significado": "en"
+      },
+      {
+        "palabra": "bus",
+        "significado": "autobús"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 71,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "verbo_to_be",
+    "leccion": "yes_no_questions",
+    "frase": "Are they your friends?",
+    "traduccion": "¿Son ellos tus amigos?",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "Are",
+        "significado": "¿Son"
+      },
+      {
+        "palabra": "they",
+        "significado": "ellos"
+      },
+      {
+        "palabra": "your",
+        "significado": "tus"
+      },
+      {
+        "palabra": "friends",
+        "significado": "amigos?"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 72,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "verbo_to_be",
+    "leccion": "yes_no_questions",
+    "frase": "Is it a big school?",
+    "traduccion": "¿Es un colegio grande?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Is",
+        "significado": "¿Es"
+      },
+      {
+        "palabra": "it",
+        "significado": "esto/ello"
+      },
+      {
+        "palabra": "a",
+        "significado": "un"
+      },
+      {
+        "palabra": "big",
+        "significado": "grande"
+      },
+      {
+        "palabra": "school",
+        "significado": "colegio?"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 73,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "verbo_to_be",
+    "leccion": "yes_no_questions",
+    "frase": "Are we late?",
+    "traduccion": "¿Estamos tarde?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Are",
+        "significado": "¿Estamos"
+      },
+      {
+        "palabra": "we",
+        "significado": "nosotros"
+      },
+      {
+        "palabra": "late",
+        "significado": "tarde?"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 74,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "verbo_to_be",
+    "leccion": "yes_no_questions",
+    "frase": "Is she your sister?",
+    "traduccion": "¿Es ella tu hermana?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Is",
+        "significado": "¿Es"
+      },
+      {
+        "palabra": "she",
+        "significado": "ella"
+      },
+      {
+        "palabra": "your",
+        "significado": "tu"
+      },
+      {
+        "palabra": "sister",
+        "significado": "hermana?"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 75,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "presente_simple",
+    "leccion": "yes_no_questions",
+    "frase": "Do you play video games?",
+    "traduccion": "¿Juegas a videojuegos?",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "Do",
+        "significado": "¿(auxiliar)?"
+      },
+      {
+        "palabra": "you",
+        "significado": "tú"
+      },
+      {
+        "palabra": "play",
+        "significado": "juegas"
+      },
+      {
+        "palabra": "video",
+        "significado": "video"
+      },
+      {
+        "palabra": "games",
+        "significado": "juegos"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 76,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "presente_simple",
+    "leccion": "yes_no_questions",
+    "frase": "Does she like chocolate?",
+    "traduccion": "¿A ella le gusta el chocolate?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Does",
+        "significado": "¿(auxiliar)?"
+      },
+      {
+        "palabra": "she",
+        "significado": "ella"
+      },
+      {
+        "palabra": "like",
+        "significado": "gusta"
+      },
+      {
+        "palabra": "chocolate",
+        "significado": "chocolate"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 77,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "presente_simple",
+    "leccion": "yes_no_questions",
+    "frase": "Do they live near here?",
+    "traduccion": "¿Viven ellos cerca de aquí?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Do",
+        "significado": "¿(auxiliar)?"
+      },
+      {
+        "palabra": "they",
+        "significado": "ellos"
+      },
+      {
+        "palabra": "live",
+        "significado": "viven"
+      },
+      {
+        "palabra": "near",
+        "significado": "cerca de"
+      },
+      {
+        "palabra": "here",
+        "significado": "aquí"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 78,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "presente_simple",
+    "leccion": "yes_no_questions",
+    "frase": "Does he go to bed early?",
+    "traduccion": "¿Él se acuesta temprano?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Does",
+        "significado": "¿(auxiliar)?"
+      },
+      {
+        "palabra": "he",
+        "significado": "él"
+      },
+      {
+        "palabra": "go",
+        "significado": "se va"
+      },
+      {
+        "palabra": "to",
+        "significado": "a"
+      },
+      {
+        "palabra": "bed",
+        "significado": "la cama"
+      },
+      {
+        "palabra": "early",
+        "significado": "temprano"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 79,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "presente_simple",
+    "leccion": "yes_no_questions",
+    "frase": "Do we have English today?",
+    "traduccion": "¿Tenemos inglés hoy?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Do",
+        "significado": "¿(auxiliar)?"
+      },
+      {
+        "palabra": "we",
+        "significado": "nosotros"
+      },
+      {
+        "palabra": "have",
+        "significado": "tenemos"
+      },
+      {
+        "palabra": "English",
+        "significado": "inglés"
+      },
+      {
+        "palabra": "today",
+        "significado": "hoy"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 80,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "presente_simple",
+    "leccion": "yes_no_questions",
+    "frase": "Does it rain a lot here?",
+    "traduccion": "¿Llueve mucho aquí?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Does",
+        "significado": "¿(auxiliar)?"
+      },
+      {
+        "palabra": "it",
+        "significado": "ello"
+      },
+      {
+        "palabra": "rain",
+        "significado": "llueve"
+      },
+      {
+        "palabra": "a",
+        "significado": " "
+      },
+      {
+        "palabra": "lot",
+        "significado": "mucho"
+      },
+      {
+        "palabra": "here",
+        "significado": "aquí"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 81,
+    "tipo": "pregunta_simple",
+    "subtipo": "what",
+    "leccion": "wh_questions",
+    "frase": "What is your favorite color?",
+    "traduccion": "¿Cuál es tu color favorito?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "What",
+        "significado": "¿Cuál?"
+      },
+      {
+        "palabra": "is",
+        "significado": "es"
+      },
+      {
+        "palabra": "your",
+        "significado": "tu"
+      },
+      {
+        "palabra": "favorite",
+        "significado": "favorito"
+      },
+      {
+        "palabra": "color",
+        "significado": "color"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 82,
+    "tipo": "pregunta_simple",
+    "subtipo": "what",
+    "leccion": "wh_questions",
+    "frase": "What time is it?",
+    "traduccion": "¿Qué hora es?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "What",
+        "significado": "¿Qué"
+      },
+      {
+        "palabra": "time",
+        "significado": "hora"
+      },
+      {
+        "palabra": "is",
+        "significado": "es"
+      },
+      {
+        "palabra": "it",
+        "significado": "?"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 83,
+    "tipo": "pregunta_simple",
+    "subtipo": "where",
+    "leccion": "wh_questions",
+    "frase": "Where is your backpack?",
+    "traduccion": "¿Dónde está tu mochila?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Where",
+        "significado": "¿Dónde?"
+      },
+      {
+        "palabra": "is",
+        "significado": "está"
+      },
+      {
+        "palabra": "your",
+        "significado": "tu"
+      },
+      {
+        "palabra": "backpack",
+        "significado": "mochila"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 84,
+    "tipo": "pregunta_simple",
+    "subtipo": "where",
+    "leccion": "wh_questions",
+    "frase": "Where do you live?",
+    "traduccion": "¿Dónde vives?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Where",
+        "significado": "¿Dónde?"
+      },
+      {
+        "palabra": "do",
+        "significado": "(auxiliar)"
+      },
+      {
+        "palabra": "you",
+        "significado": "tú"
+      },
+      {
+        "palabra": "live",
+        "significado": "vives"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 85,
+    "tipo": "pregunta_simple",
+    "subtipo": "who",
+    "leccion": "wh_questions",
+    "frase": "Who is your best friend?",
+    "traduccion": "¿Quién es tu mejor amigo?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Who",
+        "significado": "¿Quién?"
+      },
+      {
+        "palabra": "is",
+        "significado": "es"
+      },
+      {
+        "palabra": "your",
+        "significado": "tu"
+      },
+      {
+        "palabra": "best",
+        "significado": "mejor"
+      },
+      {
+        "palabra": "friend",
+        "significado": "amigo"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 86,
+    "tipo": "pregunta_simple",
+    "subtipo": "who",
+    "leccion": "wh_questions",
+    "frase": "Who do you sit with?",
+    "traduccion": "¿Con quién te sientas?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Who",
+        "significado": "¿Con quién"
+      },
+      {
+        "palabra": "do",
+        "significado": "(auxiliar)"
+      },
+      {
+        "palabra": "you",
+        "significado": "tú"
+      },
+      {
+        "palabra": "sit",
+        "significado": "te sientas"
+      },
+      {
+        "palabra": "with",
+        "significado": "?"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 87,
+    "tipo": "pregunta_simple",
+    "subtipo": "how",
+    "leccion": "wh_questions",
+    "frase": "How do you go to school?",
+    "traduccion": "¿Cómo vas al colegio?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "How",
+        "significado": "¿Cómo?"
+      },
+      {
+        "palabra": "do",
+        "significado": "(auxiliar)"
+      },
+      {
+        "palabra": "you",
+        "significado": "tú"
+      },
+      {
+        "palabra": "go",
+        "significado": "vas"
+      },
+      {
+        "palabra": "to",
+        "significado": "a"
+      },
+      {
+        "palabra": "school",
+        "significado": "colegio"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 88,
+    "tipo": "pregunta_simple",
+    "subtipo": "how",
+    "leccion": "wh_questions",
+    "frase": "How is your grandma?",
+    "traduccion": "¿Cómo está tu abuela?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "How",
+        "significado": "¿Cómo?"
+      },
+      {
+        "palabra": "is",
+        "significado": "está"
+      },
+      {
+        "palabra": "your",
+        "significado": "tu"
+      },
+      {
+        "palabra": "grandma",
+        "significado": "abuela"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 89,
+    "tipo": "pregunta_simple",
+    "subtipo": "when",
+    "leccion": "wh_questions",
+    "frase": "When do you have lunch?",
+    "traduccion": "¿Cuándo comes (almuerzas)?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "When",
+        "significado": "¿Cuándo?"
+      },
+      {
+        "palabra": "do",
+        "significado": "(auxiliar)"
+      },
+      {
+        "palabra": "you",
+        "significado": "tú"
+      },
+      {
+        "palabra": "have",
+        "significado": "tomas"
+      },
+      {
+        "palabra": "lunch",
+        "significado": "el almuerzo"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 90,
+    "tipo": "pregunta_simple",
+    "subtipo": "when",
+    "leccion": "wh_questions",
+    "frase": "When do you do your homework?",
+    "traduccion": "¿Cuándo haces tus deberes?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "When",
+        "significado": "¿Cuándo?"
+      },
+      {
+        "palabra": "do",
+        "significado": "(auxiliar)"
+      },
+      {
+        "palabra": "you",
+        "significado": "tú"
+      },
+      {
+        "palabra": "do",
+        "significado": "haces"
+      },
+      {
+        "palabra": "your",
+        "significado": "tus"
+      },
+      {
+        "palabra": "homework",
+        "significado": "deberes"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 91,
+    "tipo": "negacion_simple",
+    "subtipo": "verbo_to_be",
+    "leccion": "negations_simple",
+    "frase": "We are not hungry.",
+    "traduccion": "Nosotros no tenemos hambre.",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "We",
+        "significado": "Nosotros"
+      },
+      {
+        "palabra": "are",
+        "significado": "estamos"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "hungry",
+        "significado": "con hambre"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 92,
+    "tipo": "negacion_simple",
+    "subtipo": "verbo_to_be",
+    "leccion": "negations_simple",
+    "frase": "They are not at school.",
+    "traduccion": "Ellos no están en el colegio.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "They",
+        "significado": "Ellos"
+      },
+      {
+        "palabra": "are",
+        "significado": "están"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "at",
+        "significado": "en"
+      },
+      {
+        "palabra": "school",
+        "significado": "colegio"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 93,
+    "tipo": "negacion_simple",
+    "subtipo": "verbo_to_be",
+    "leccion": "negations_simple",
+    "frase": "He is not sad.",
+    "traduccion": "Él no está triste.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "He",
+        "significado": "Él"
+      },
+      {
+        "palabra": "is",
+        "significado": "está"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "sad",
+        "significado": "triste"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 94,
+    "tipo": "negacion_simple",
+    "subtipo": "verbo_to_be",
+    "leccion": "negations_simple",
+    "frase": "It is not cold today.",
+    "traduccion": "Hoy no hace frío.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "It",
+        "significado": "Esto"
+      },
+      {
+        "palabra": "is",
+        "significado": "está"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "cold",
+        "significado": "frío"
+      },
+      {
+        "palabra": "today",
+        "significado": "hoy"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 95,
+    "tipo": "negacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "negations_simple",
+    "frase": "You don't like spiders.",
+    "traduccion": "A ti no te gustan las arañas.",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "You",
+        "significado": "Tú"
+      },
+      {
+        "palabra": "do",
+        "significado": "(auxiliar)"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "like",
+        "significado": "te gustan"
+      },
+      {
+        "palabra": "spiders",
+        "significado": "arañas"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 96,
+    "tipo": "negacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "negations_simple",
+    "frase": "They don't listen in class.",
+    "traduccion": "Ellos no escuchan en clase.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "They",
+        "significado": "Ellos"
+      },
+      {
+        "palabra": "do",
+        "significado": "(auxiliar)"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "listen",
+        "significado": "escuchan"
+      },
+      {
+        "palabra": "in",
+        "significado": "en"
+      },
+      {
+        "palabra": "class",
+        "significado": "clase"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 97,
+    "tipo": "negacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "negations_simple",
+    "frase": "We don't play outside when it rains.",
+    "traduccion": "No jugamos fuera cuando llueve.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "We",
+        "significado": "Nosotros"
+      },
+      {
+        "palabra": "do",
+        "significado": "(auxiliar)"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "play",
+        "significado": "jugamos"
+      },
+      {
+        "palabra": "outside",
+        "significado": "fuera"
+      },
+      {
+        "palabra": "when",
+        "significado": "cuando"
+      },
+      {
+        "palabra": "it",
+        "significado": " "
+      },
+      {
+        "palabra": "rains",
+        "significado": "llueve"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 98,
+    "tipo": "negacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "negations_simple",
+    "frase": "He doesn't eat sweets.",
+    "traduccion": "Él no come caramelos.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "He",
+        "significado": "Él"
+      },
+      {
+        "palabra": "does",
+        "significado": "(auxiliar)"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "eat",
+        "significado": "come"
+      },
+      {
+        "palabra": "sweets",
+        "significado": "caramelos"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 99,
+    "tipo": "negacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "negations_simple",
+    "frase": "She doesn't do her homework at night.",
+    "traduccion": "Ella no hace sus deberes por la noche.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "She",
+        "significado": "Ella"
+      },
+      {
+        "palabra": "does",
+        "significado": "(auxiliar)"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "do",
+        "significado": "hace"
+      },
+      {
+        "palabra": "her",
+        "significado": "sus"
+      },
+      {
+        "palabra": "homework",
+        "significado": "deberes"
+      },
+      {
+        "palabra": "at",
+        "significado": "por"
+      },
+      {
+        "palabra": "night",
+        "significado": "la noche"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 100,
+    "tipo": "negacion_simple",
+    "subtipo": "presente_simple",
+    "leccion": "negations_simple",
+    "frase": "I don't watch TV in the morning.",
+    "traduccion": "Yo no veo la tele por la mañana.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "I",
+        "significado": "Yo"
+      },
+      {
+        "palabra": "do",
+        "significado": "(auxiliar)"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "watch",
+        "significado": "veo"
+      },
+      {
+        "palabra": "TV",
+        "significado": "la tele"
+      },
+      {
+        "palabra": "in",
+        "significado": "por"
+      },
+      {
+        "palabra": "the",
+        "significado": "la"
+      },
+      {
+        "palabra": "morning",
+        "significado": "mañana"
+      }
+    ],
+    "ejercicio": { "tipo": "ordenar" }
+  },
+  {
+    "id": 101,
+    "tipo": "afirmacion_simple",
+    "subtipo": "verbo_to_be",
+    "leccion": "pronouns_to_be",
+    "frase": "I am happy.",
+    "traduccion": "Yo estoy feliz.",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "I",
+        "significado": "Yo"
+      },
+      {
+        "palabra": "am",
+        "significado": "estoy",
+        "esHueco": true
+      },
+      {
+        "palabra": "happy",
+        "significado": "feliz"
+      }
+    ],
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      }
+    ]
+  }
+]

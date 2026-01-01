@@ -1,0 +1,559 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+button {
+    cursor: pointer;
+}
+/* Estilos pantalla inicial */
+.modos-juego {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.boton-modo {
+    width: 220px;
+    height: 140px;
+    font-size: 20px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: #4a90e2;
+    color: white;
+}
+
+/* Selector de ayuda en español */
+.toggle {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Selector de cantidad */
+.titulo-selector {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.selector-cantidad {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.boton-cantidad {
+    padding: 15px 30px;
+    font-size: 1.1em;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    min-width: 150px;
+}
+
+    .boton-cantidad:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+/* Progreso */
+.progreso {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    background: #f0f0f0;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Botón continuar */
+.boton-continuar {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+    .boton-continuar:hover {
+        background: #229954;
+    }
+
+/* Mensajes mejorados */
+.mensaje-exito {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+.mensaje-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.mensaje-advertencia {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+
+#contenedor {
+    padding: 20px;
+    text-align: center;
+}
+
+.frase {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.traduccion {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.partes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.parte {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.significado {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Contenedor para palabra + ayuda */
+.contenedor-palabra {
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+}
+
+/* Ayuda debajo de cada palabra */
+.ayuda-palabra {
+    font-size: 0.75em;
+    color: #666;
+    margin-top: 3px;
+    font-style: italic;
+    min-height: 18px;
+}
+
+/* Ajustar el contenedor de palabras */
+.palabras {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.ejercicio {
+    margin-top: 30px;
+}
+
+.contador-intentos {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.palabras,
+.respuesta {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.boton-palabra {
+    padding: 8px 12px;
+    background-color: #ffffff;
+    border: 2px solid #4a90e2;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    .boton-palabra:hover {
+        background-color: #eaf3ff;
+    }
+
+.resultado {
+    font-size: 18px;
+    font-weight: bold;
+}
+.boton-reintentar {
+    margin-top: 10px;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    background-color: #f39c12;
+    color: white;
+    cursor: pointer;
+}
+
+    .boton-reintentar:hover {
+        background-color: #e67e22;
+    }
+
+/* Resumen final */
+.resumen-final {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+    .resumen-final h2 {
+        margin-bottom: 20px;
+    }
+
+.estadisticas {
+    background: rgba(255,255,255,0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+    .estadisticas p {
+        font-size: 1.1em;
+        margin: 10px 0;
+    }
+
+.boton-reiniciar {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background: white;
+    color: #667eea;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+    .boton-reiniciar:hover {
+        transform: scale(1.05);
+    }
+/* ===== MODO EXPLICACIÓN ===== */
+
+.navegador-explicacion {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.contador-ejemplos {
+    font-size: 1em;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.info-tipo {
+    font-size: 1.2em;
+    margin: 8px 0 0 0;
+    opacity: 0.95;
+}
+
+.frase-explicacion {
+    font-size: 2em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    background: none; 
+    padding: 0;
+}
+/* Estilo botones de navegación */
+.botones-navegacion-explicacion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #e0e0e0;
+}
+
+.boton-volver {
+    padding: 12px 25px;
+    font-size: 1em;
+    background: #95a5a6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.boton-volver:hover {
+    background: #7f8c8d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.botones-prev-next {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.boton-nav-explicacion {
+    padding: 12px 30px;
+    font-size: 1em;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+    min-width: 140px;
+}
+
+.boton-nav-explicacion:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.boton-nav-explicacion:active {
+    transform: translateY(0);
+}
+
+
+/* ===== CORRECCIÓN: Eliminar puntos de listas ===== */
+.caja-explicacion ul {
+    list-style: none; /* Elimina los puntos */
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.caja-explicacion li {
+    margin: 8px 0;
+    padding-left: 0;
+}
+
+/* Reforzar explicaciones */
+.caja-explicacion {
+    margin-top: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    justify-content: center;
+    text-align: center;
+}
+
+.caja-explicacion .explicacion-icono {
+        font-size: 2em;
+        margin-bottom: 10px;
+}
+
+/* Línea de título de la explicación con icono + texto */
+.explicacion-titulo-linea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 0 8px 0;
+    text-align: center;
+}
+
+.explicacion-icono {
+    font-size: 1.6em;
+}
+
+
+/* ===== PANTALLA DE CONTENIDOS ===== */
+.grid-contenidos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.contenido-card {
+    border: 5px solid #4CAF50;
+    border-radius: 25px;
+    padding: 30px;
+    background: linear-gradient(135deg, #fff, #f0f8ff);
+    text-align: center;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+    .contenido-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(76,175,80,0.3);
+    }
+
+    .contenido-card .emoji {
+        font-size: 4em;
+        margin-bottom: 15px;
+    }
+
+.boton-practica-estrella {
+    background: linear-gradient(45deg, #FF6B6B, #FFD93D);
+    color: white;
+    border: none;
+    padding: 25px 50px;
+    font-size: 22px;
+    border-radius: 50px;
+    width: 100%;
+    margin: 30px 0;
+    font-weight: bold;
+    /*box-shadow: 0 10px 30px rgba(255,107,107,0.4);*/
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s; /* animación suave */
+}
+    .boton-practica-estrella:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 14px 36px rgba(255,107,107,0.6);
+    }
+/*==== MENÚ PRINCIPAL ====*/
+
+.menu-principal {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+    .menu-principal h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+
+    .menu-principal .subtitulo {
+        font-size: 1.4em;
+        color: #555;
+        margin-bottom: 30px;
+    }
+
+.menu-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.boton-menu.grande {
+    padding: 20px 25px;
+    font-size: 1.4em;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(45deg, #4CAF50, #2196F3);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+    .boton-menu.grande span {
+        font-size: 0.8em;
+        opacity: 0.9;
+    }
+
+    .boton-menu.grande:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+@media (max-width: 768px) {
+    .menu-botones {
+        width: 100%;
+    }
+}
+/* Bloque conjunto frase + traducción */
+.frase-bloque {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #eef2f7; /* menos contraste que el degradado principal */
+}
+
+    /* Frase como ejemplo, no como título principal */
+    .frase-bloque .frase-explicacion {
+        font-size: 1.3em; /* antes ~2em, ahora más pequeña */
+        font-weight: normal; /* quitar el super-negrita */
+        color: #34495e;
+        margin-bottom: 6px;
+        background: none;
+        padding: 0;
+    }
+
+/* Traducción aún un poco menor */
+.traduccion-frase {
+    font-size: 0.95em;
+    color: #555;
+    margin-top: 2px;
+}
+/* Botones resumen final*/
+.zona-botones-resumen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+/* Ejercicios de completar hueco */
+.input-hueco {
+    padding: 10px 14px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    border: 2px solid #4a90e2;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}

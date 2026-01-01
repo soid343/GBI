@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>GBI - Gramática Básica Inglés</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gramática Básica de Inglés</h1>
+        <!--Se muestran sólo cuando estamos dentro de un juego, no en pantala inicial -->
+        <div class="controles">
+            <div id="controlesInternos" style="display: none;">
+                <label>
+                    <input type="radio" name="modo" value="explicacion" checked>
+                    Explicación
+                </label>
+
+                <label>
+                    <input type="radio" name="modo" value="practica">
+                    Práctica
+                </label>
+
+                <label class="toggle">
+                    <input type="checkbox" id="toggleTraduccion" checked>
+                    Mostrar ayuda en español
+                </label>
+            </div>
+        </div>
+    </header>
+
+
+    <main id="contenedor">
+        <!-- Aquí se cargará el ejercicio -->
+    </main>
+
+    <script src="js/ui.js"></script>
+    <script src="js/exercises.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
