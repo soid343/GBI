@@ -708,7 +708,7 @@ function renderizarPracticaHueco(contenedor, e, configEjercicio) {
     contador.className = "contador-intentos";
     contenedor.appendChild(contador);
 
-    const tipoHueco = configEjercicio?.campoHueco || "verbo";
+    const tipoHueco = configEjercicio?.campoHueco || "palabra que falta...";
 
     // Parte marcada como hueco
     const parteHueco = e.partes.find(p => p.esHueco);

@@ -10,7 +10,8 @@
     "partes": [
       {
         "palabra": "What",
-        "significado": "¿Qué?"
+        "significado": "¿Qué?",
+        "esHueco": true
       },
       {
         "palabra": "is",
@@ -21,7 +22,10 @@
         "significado": "esto"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 2,
@@ -34,7 +38,8 @@
     "partes": [
       {
         "palabra": "What",
-        "significado": "¿Cuál?"
+        "significado": "¿Cuál?",
+        "esHueco": true
       },
       {
         "palabra": "is",
@@ -49,7 +54,10 @@
         "significado": "nombre"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 3,
@@ -62,7 +70,8 @@
     "partes": [
       {
         "palabra": "What",
-        "significado": "¿Qué?"
+        "significado": "¿Qué?",
+        "esHueco": true
       },
       {
         "palabra": "color",
@@ -77,7 +86,10 @@
         "significado": "ello"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 4,
@@ -90,7 +102,8 @@
     "partes": [
       {
         "palabra": "Where",
-        "significado": "¿Dónde?"
+        "significado": "¿Dónde?",
+        "esHueco": true
       },
       {
         "palabra": "is",
@@ -105,7 +118,10 @@
         "significado": "libro"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 5,
@@ -118,7 +134,8 @@
     "partes": [
       {
         "palabra": "Where",
-        "significado": "¿Dónde?"
+        "significado": "¿Dónde?",
+        "esHueco": true
       },
       {
         "palabra": "are",
@@ -129,7 +146,10 @@
         "significado": "tú"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 6,
@@ -142,7 +162,8 @@
     "partes": [
       {
         "palabra": "Where",
-        "significado": "¿Dónde?"
+        "significado": "¿Dónde?",
+        "esHueco": true
       },
       {
         "palabra": "is",
@@ -157,7 +178,10 @@
         "significado": "lápiz"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 7,
@@ -170,7 +194,8 @@
     "partes": [
       {
         "palabra": "Who",
-        "significado": "¿Quién?"
+        "significado": "¿Quién?",
+        "esHueco": true
       },
       {
         "palabra": "is",
@@ -181,7 +206,10 @@
         "significado": "ella"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 8,
@@ -194,7 +222,8 @@
     "partes": [
       {
         "palabra": "Who",
-        "significado": "¿Quién?"
+        "significado": "¿Quién?",
+        "esHueco": true
       },
       {
         "palabra": "is",
@@ -209,7 +238,10 @@
         "significado": "profesor/a"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 9,
@@ -222,7 +254,8 @@
     "partes": [
       {
         "palabra": "How",
-        "significado": "¿Cómo?"
+        "significado": "¿Cómo?",
+        "esHueco": true
       },
       {
         "palabra": "are",
@@ -233,7 +266,10 @@
         "significado": "tú"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 10,
@@ -246,11 +282,12 @@
     "partes": [
       {
         "palabra": "How",
-        "significado": "¿Cuánto?"
+        "significado": "¿Cuántos?",
+        "esHueco": true
       },
       {
         "palabra": "old",
-        "significado": "viejo/años"
+        "significado": "años"
       },
       {
         "palabra": "are",
@@ -261,7 +298,10 @@
         "significado": "tú"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 11,
@@ -406,11 +446,11 @@
     "partes": [
       {
         "palabra": "I",
-        "significado": "Me"
+        "significado": "Yo (a mí me)"
       },
       {
         "palabra": "like",
-        "significado": "gustan"
+        "significado": "gustar"
       },
       {
         "palabra": "apples",
@@ -586,7 +626,7 @@
     "partes": [
       {
         "palabra": "I",
-        "significado": "No me"
+        "significado": "Yo (a mí)"
       },
       {
         "palabra": "do",
@@ -806,7 +846,8 @@
     "partes": [
       {
         "palabra": "When",
-        "significado": "¿Cuándo?"
+        "significado": "¿Cuándo?",
+        "esHueco": true
       },
       {
         "palabra": "is",
@@ -821,7 +862,10 @@
         "significado": "cumpleaños"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 32,
@@ -834,7 +878,8 @@
     "partes": [
       {
         "palabra": "When",
-        "significado": "¿Cuándo?"
+        "significado": "¿Cuándo?",
+        "esHueco": true
       },
       {
         "palabra": "do",
@@ -857,7 +902,10 @@
         "significado": "la cama"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 33,
@@ -870,7 +918,8 @@
     "partes": [
       {
         "palabra": "When",
-        "significado": "¿Cuándo?"
+        "significado": "¿Cuándo?",
+        "esHueco": true
       },
       {
         "palabra": "does",
@@ -885,7 +934,10 @@
         "significado": "empieza"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 34,
@@ -901,12 +953,8 @@
         "significado": "Yo"
       },
       {
-        "palabra": "have",
+        "palabra": "have got",
         "significado": "tengo"
-      },
-      {
-        "palabra": "got",
-        "significado": "(enfatiza tener)"
       },
       {
         "palabra": "a",
@@ -933,12 +981,8 @@
         "significado": "Ella"
       },
       {
-        "palabra": "has",
+        "palabra": "has got",
         "significado": "tiene"
-      },
-      {
-        "palabra": "got",
-        "significado": "(enfatiza tener)"
       },
       {
         "palabra": "a",
@@ -974,7 +1018,7 @@
       },
       {
         "palabra": "got",
-        "significado": "?"
+        "significado": "acompaña a have/has"
       },
       {
         "palabra": "a",
@@ -1002,7 +1046,7 @@
       },
       {
         "palabra": "have",
-        "significado": "han"
+        "significado": "tienen"
       },
       {
         "palabra": "not",
@@ -1010,7 +1054,7 @@
       },
       {
         "palabra": "got",
-        "significado": "tenido / tienen"
+        "significado": "acompaña a have/has"
       },
       {
         "palabra": "any",
@@ -1295,7 +1339,7 @@
       {
         "palabra": "am",
         "significado": "estoy",
-         "esHueco":  true
+        "esHueco": true
       },
       {
         "palabra": "not",
@@ -1308,8 +1352,11 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco", "campoHueco": "verbo" }
-     
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      }
+
     ]
   },
   {
@@ -1683,7 +1730,7 @@
       },
       {
         "palabra": "got",
-        "significado": "?"
+        "significado": "acompaña a have/has"
       },
       {
         "palabra": "a",
@@ -1715,7 +1762,7 @@
       },
       {
         "palabra": "got",
-        "significado": "?"
+        "significado": "acompaña a have/has"
       },
       {
         "palabra": "a",
@@ -1747,7 +1794,7 @@
       },
       {
         "palabra": "got",
-        "significado": "?"
+        "significado": "acompaña a have/has"
       },
       {
         "palabra": "homework",
@@ -2423,7 +2470,8 @@
     "partes": [
       {
         "palabra": "What",
-        "significado": "¿Cuál?"
+        "significado": "¿Cuál?",
+        "esHueco": true
       },
       {
         "palabra": "is",
@@ -2442,7 +2490,10 @@
         "significado": "color"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 82,
@@ -2455,7 +2506,8 @@
     "partes": [
       {
         "palabra": "What",
-        "significado": "¿Qué"
+        "significado": "¿Qué",
+        "esHueco": true
       },
       {
         "palabra": "time",
@@ -2470,7 +2522,10 @@
         "significado": "?"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 83,
@@ -2483,7 +2538,8 @@
     "partes": [
       {
         "palabra": "Where",
-        "significado": "¿Dónde?"
+        "significado": "¿Dónde?",
+        "esHueco": true
       },
       {
         "palabra": "is",
@@ -2498,7 +2554,10 @@
         "significado": "mochila"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 84,
@@ -2511,7 +2570,8 @@
     "partes": [
       {
         "palabra": "Where",
-        "significado": "¿Dónde?"
+        "significado": "¿Dónde?",
+        "esHueco": true
       },
       {
         "palabra": "do",
@@ -2526,7 +2586,10 @@
         "significado": "vives"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 85,
@@ -2539,7 +2602,8 @@
     "partes": [
       {
         "palabra": "Who",
-        "significado": "¿Quién?"
+        "significado": "¿Quién?",
+        "esHueco": true
       },
       {
         "palabra": "is",
@@ -2558,7 +2622,10 @@
         "significado": "amigo"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 86,
@@ -2571,7 +2638,8 @@
     "partes": [
       {
         "palabra": "Who",
-        "significado": "¿Con quién"
+        "significado": "¿Con quién?",
+        "esHueco": true
       },
       {
         "palabra": "do",
@@ -2590,7 +2658,10 @@
         "significado": "?"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 87,
@@ -2603,7 +2674,8 @@
     "partes": [
       {
         "palabra": "How",
-        "significado": "¿Cómo?"
+        "significado": "¿Cómo?",
+        "esHueco": true
       },
       {
         "palabra": "do",
@@ -2626,7 +2698,10 @@
         "significado": "colegio"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 88,
@@ -2639,7 +2714,8 @@
     "partes": [
       {
         "palabra": "How",
-        "significado": "¿Cómo?"
+        "significado": "¿Cómo?",
+        "esHueco": true
       },
       {
         "palabra": "is",
@@ -2654,7 +2730,10 @@
         "significado": "abuela"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 89,
@@ -2667,7 +2746,8 @@
     "partes": [
       {
         "palabra": "When",
-        "significado": "¿Cuándo?"
+        "significado": "¿Cuándo?",
+        "esHueco": true
       },
       {
         "palabra": "do",
@@ -2686,7 +2766,10 @@
         "significado": "el almuerzo"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 90,
@@ -2699,7 +2782,8 @@
     "partes": [
       {
         "palabra": "When",
-        "significado": "¿Cuándo?"
+        "significado": "¿Cuándo?",
+        "esHueco": true
       },
       {
         "palabra": "do",
@@ -2722,7 +2806,10 @@
         "significado": "deberes"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      { "tipo": "hueco" }
+    ]
   },
   {
     "id": 91,
