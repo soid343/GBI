@@ -4,7 +4,15 @@ body {
     margin: 0;
     padding: 0;
 }
+html {
+    font-size: 16px;
+}
 
+#contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 header {
     background-color: #4a90e2;
     color: white;
@@ -532,8 +540,7 @@ button {
     .boton-practica-estrella:hover {
         transform: translateY(-2px);
         box-shadow: 0 14px 36px rgba(255,107,107,0.6);
-    }
-    }
+    }  
 /*==== MENÚ PRINCIPAL ====*/
 
 .menu-principal {
@@ -620,6 +627,106 @@ button {
     gap: 10px;
     margin-top: 20px;
 }
+@media (max-width: 768px) {
+
+    html {
+        font-size: 17px; /* texto un poco más grande en móvil */
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        padding: 12px;
+    }
+
+    #contenedor {
+        padding: 15px;
+    }
+
+    /* Barra superior de navegación */
+    .barra-navegacion {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .barra-titulo {
+        order: 3;
+        width: 100%;
+        text-align: center;
+        margin-top: 4px;
+    }
+
+        .barra-titulo h2 {
+            font-size: 1.2rem;
+        }
+
+    .btn-icono {
+        min-width: 56px;
+        padding: 4px 6px;
+        font-size: 1rem;
+    }
+
+        .btn-icono .etiqueta-icono {
+            font-size: 0.75rem;
+        }
+
+    /* Pantalla de contenidos (tarjetas de lecciones) */
+    .grid-contenidos {
+        grid-template-columns: 1fr; /* una columna en móvil */
+        gap: 16px;
+        margin: 25px auto;
+    }
+
+    .contenido-card {
+        padding: 20px;
+    }
+
+        .contenido-card .emoji {
+            font-size: 3rem;
+        }
+
+    /* Menú principal (3 botones) */
+    .menu-principal {
+        padding: 30px 16px;
+    }
+
+        .menu-principal h1 {
+            font-size: 2.2rem;
+        }
+
+        .menu-principal .subtitulo {
+            font-size: 1.1rem;
+        }
+
+    .menu-botones {
+        width: 100%;
+    }
+
+    .boton-menu.grande {
+        font-size: 1.1rem;
+        padding: 16px 18px;
+    }
+
+    /* Botón “Practicar esta lección” */
+    .boton-practica-estrella {
+        font-size: 1.05rem;
+        padding: 0.85rem 2rem;
+        margin: 1.2rem auto;
+    }
+
+    /* Bloque frase+traducción en explicación: texto algo más pequeño */
+    .frase-explicacion {
+        font-size: 1.6rem;
+    }
+
+    .traduccion {
+        font-size: 1rem;
+    }
+}
+
 /* Ejercicios de completar hueco */
 .input-hueco {
     padding: 10px 14px;
