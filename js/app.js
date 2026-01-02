@@ -1,22 +1,23 @@
-// =========================================
+// ==// =========================================
 // GRAMÁTICA BÁSICA INGLÉS - APP PRINCIPAL
 // =========================================
 
 // Estado global de la aplicación
 let estadoApp = {
-    modoPrincipal: "menu",      // "menu" | "lecciones" | "reto" | "records"
-    modoJuego: null, // null = pantalla inicial --> "explicacion" | "practica" | "reto"
-    modo: "explicacion", // explicacion | practica
+    modoPrincipal: "menu", // "menu" | "lecciones" | "reto" | "records"
+    modoJuego: null,       // null = pantalla inicial --> "explicacion" | "practica" | "reto"
+    modo: "explicacion",   // explicacion | practica
     tipoPractica: "ordenar", // ordenar | hueco (futuros tipos)
     mostrarAyuda: true,
     ejercicioActual: null,
-    categoriaActual: null,      // saber qué lección está activa
+    categoriaActual: null, // saber qué lección está activa
     oracionesCategoriaActual: [],
     respuestaUsuario: [],
     palabrasPractica: [],
-    resultado: null, // "correcto" | "incorrecto" | "finalizado" | null
+    resultado: null,       // "correcto" | "incorrecto" | "finalizado" | null
     intentos: 0,
     maxIntentos: 3,
+
     // Propiedades para gestionar múltiples oraciones
     todasLasOraciones: [],
     oracionesSeleccionadas: [],
@@ -26,9 +27,10 @@ let estadoApp = {
     oracionesCorrectas: 0,
     indiceExplicacion: 0,
     tipoExplicacionSeleccionado: null,
+
     // Datos para el modo Reto
     retoActivo: false,
-    retoCantidad: 0,            // 3 | 5 | 10
+    retoCantidad: 0, // 3 | 5 | 10
     retoPuntuacion: 0,
     retoAciertos: 0,
     retoFallos: 0
@@ -36,12 +38,18 @@ let estadoApp = {
 
 // Inicializar la aplicación al cargar el DOM
 document.addEventListener("DOMContentLoaded", () => {
+    estadoApp.modoPrincipal = "menu";
     renderizarMenuPrincipal();
+    //cargarDatos();
+    //configurarEventosUI();
 
-    document.getElementById("toggleTraduccion").addEventListener("change", e => {
-        estadoApp.mostrarAyuda = e.target.checked;
-        renderizar();
-    });
+    const toggleTraduccion = document.getElementById("toggleTraduccion");
+    if (toggleTraduccion) {
+        toggleTraduccion.addEventListener("change", e => {
+            estadoApp.mostrarAyuda = e.target.checked;
+            renderizar();
+        });
+    }
 
     document.querySelectorAll("input[name='modo']").forEach(radio => {
         radio.addEventListener("change", e => {
@@ -79,13 +87,12 @@ function iniciarModoJuego(modoJuego) {
     if (controles) controles.style.display = "block";
 
     cargarEjercicio();
+    renderizar();
 }
-
 
 // Renderizar la interfaz según el estado actual
 function renderizar() {
     const toggle = document.querySelector(".toggle");
-
     if (toggle) {
         if (
             (estadoApp.modo === "explicacion" && estadoApp.tipoExplicacionSeleccionado !== null) ||
@@ -101,13 +108,17 @@ function renderizar() {
     if (!estadoApp.modoJuego && estadoApp.modo !== "practica") {
         if (estadoApp.modoPrincipal === "menu") {
             renderizarMenuPrincipal();
+            return;
         } else if (estadoApp.modoPrincipal === "lecciones") {
             renderizarInicio();
+            return;
         }
-        return;
+        // "reto" y "records" de momento solo muestran alerts en los handlers
     }
 
     const contenedor = document.getElementById("contenedor");
+    if (!contenedor) return;
+
     contenedor.innerHTML = "";
 
     if (estadoApp.modo === "explicacion") {
@@ -118,14 +129,17 @@ function renderizar() {
             mostrarSelectorTipoExplicacion();
         }
     } else {
+        // modo === "practica"
         renderizarPractica(contenedor);
     }
 }
 
+// =======================
 // Navegación desde el menú principal
+// =======================
 function irALecciones() {
     estadoApp.modoPrincipal = "lecciones";
-    renderizarInicio();   // reutilizamos pantalla de tarjetas de lecciones
+    renderizarInicio(); // reutilizamos pantalla de tarjetas de lecciones
 }
 
 function irAReto() {
@@ -141,6 +155,7 @@ function irARecords() {
 // ================================
 // Navegación superior (Home/Volver)
 // ================================
+
 // Ir al menú principal (botón Home)
 function irAlMenuPrincipal() {
     estadoApp.modoPrincipal = "menu";
@@ -160,21 +175,20 @@ function irAlMenuPrincipal() {
 // Volver a las lecciones de la categoría actual
 function volverALecciones() {
     // Mantenemos la categoría actual para que se muestre el listado de oraciones
-    estadoApp.modo = "explicacion";        // o practica, según "renderizarInicio"
+    estadoApp.modo = "explicacion"; // o practica, según "renderizarInicio"
     estadoApp.modoJuego = null;
     estadoApp.tipoExplicacionSeleccionado = null;
     estadoApp.cantidadOraciones = 0;
     estadoApp.oracionesSeleccionadas = [];
     estadoApp.indiceOracionActual = 0;
-
     estadoApp.modoPrincipal = "lecciones";
+
     renderizarInicio();
 }
 
-
 // Función para lanzar el ejercicio de práctica seleccionado
 function seleccionarModoPractica(tipo) {
-    estadoApp.tipoPractica = tipo;      // "ordenar" o "hueco"
+    estadoApp.tipoPractica = tipo; // "ordenar" o "hueco"
     iniciarPracticaLeccion();
 }
 

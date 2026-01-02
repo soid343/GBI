@@ -5,6 +5,13 @@
 // ==============================
 // MENÚ PRINCIPAL (3 BOTONES)
 // ==============================
+// =========================================
+// UI.JS - FUNCIONES DE INTERFAZ SOLO
+// =========================================
+
+// ==============================
+// MENÚ PRINCIPAL (3 BOTONES)
+// ==============================
 function renderizarMenuPrincipal() {
     const contenedor = document.getElementById("contenedor");
     contenedor.innerHTML = `
@@ -31,69 +38,85 @@ function renderizarMenuPrincipal() {
         </div>
     `;
 }
+
+
+
 // ==============================
 // PANTALLA DE LECCIONES
 // ==============================
 function renderizarInicio() {
-
     const contenedor = document.getElementById("contenedor");
+    if (!contenedor) return;
+
     contenedor.innerHTML = "";
 
-    // Según el modo principal, mostramos lecciones o selector de cantidad (ojo con el + de innerHTML)
-    const contenedor = document.getElementById("contenedor");
-    contenedor.innerHTML = `
-        <div class="portada-principal">
-            <h1>¡Gramática Básica Inglés! 🌟</h1>
-            <p class="subtitulo">Aprende jugando con oraciones reales</p>
-            
-            <div class="grid-contenidos">
-                <button class="contenido-card" onclick="iniciarContenido('pronouns_to_be')">
-                    <div class="emoji">🧑‍🤝‍🧑</div>
-                    <h3>Pronouns & To be</h3>
-                    <p>I am / You are / He is</p>
-                </button>
+    // Botón Home arriba a la izquierda
+    const barra = document.createElement("div");
+    barra.className = "barra-navegacion";
 
-                <button class="contenido-card" onclick="iniciarContenido('pronouns_have_got')">
-                    <div class="emoji">📦</div>
-                    <h3>Pronouns & Have got</h3>
-                    <p>I have got / She has got</p>
-                </button>
+    barra.innerHTML = `
+     <button class="btn-icono btn-home" title="Menú principal" onclick="irAlMenuPrincipal()">
+      <span class="icono">🏠</span>
+      <span class="etiqueta-icono">Home</span>
+    </button>
+  `;
 
-                <button class="contenido-card" onclick="iniciarContenido('wh_questions')">
-                    <div class="emoji">❓</div>
-                    <h3>Preguntas simples (Wh-)</h3>
-                    <p>What / Where / Who / How</p>
-                </button>
+    contenedor.appendChild(barra);
 
-                <button class="contenido-card" onclick="iniciarContenido('negations_simple')">
-                    <div class="emoji">❌</div>
-                    <h3>Negaciones</h3>
-                    <p>don't / doesn't / isn't</p>
-                </button>
+    // Contenido principal debajo de la barra
+    const portada = document.createElement("div");
+    portada.className = "portada-principal";
+    portada.innerHTML = `
+    <h1>¡Gramática Básica Inglés! 🌟</h1>
+    <p class="subtitulo">Aprende jugando con oraciones reales</p>
+    
+    <div class="grid-contenidos">
+      <button class="contenido-card" onclick="iniciarContenido('pronouns_to_be')">
+        <div class="emoji">🧑‍🤝‍🧑</div>
+        <h3>Pronouns & To be</h3>
+        <p>I am / You are / He is</p>
+      </button>
 
-                <button class="contenido-card" onclick="iniciarContenido('yes_no_questions')">
-                    <div class="emoji">🤔</div>
-                    <h3>Preguntas Sí/No</h3>
-                    <p>Do you...? / Does she...?</p>
-                </button>
+      <button class="contenido-card" onclick="iniciarContenido('pronouns_have_got')">
+        <div class="emoji">📦</div>
+        <h3>Pronouns & Have got</h3>
+        <p>I have got / She has got</p>
+      </button>
 
-                <button class="contenido-card" onclick="iniciarContenido('verb_to_do')">
-                    <div class="emoji">👉</div>
-                    <h3>Verbo "to do"</h3>
-                    <p>Do / Does / Don't</p>
-                </button>
+      <button class="contenido-card" onclick="iniciarContenido('wh_questions')">
+        <div class="emoji">❓</div>
+        <h3>Preguntas simples (Wh-)</h3>
+        <p>What / Where / Who / How</p>
+      </button>
 
-                <button class="contenido-card especial" onclick="iniciarContenido('all_mixed')">
-                    <div class="emoji">📚</div>
-                    <h3>Clasificación / mezcla</h3>
-                    <p>¡Todas las oraciones!</p>
-                </button>
-            </div>
-        </div>
-    `;
+      <button class="contenido-card" onclick="iniciarContenido('negations_simple')">
+        <div class="emoji">❌</div>
+        <h3>Negaciones</h3>
+        <p>don't / doesn't / isn't</p>
+      </button>
+
+      <button class="contenido-card" onclick="iniciarContenido('yes_no_questions')">
+        <div class="emoji">🤔</div>
+        <h3>Preguntas Sí/No</h3>
+        <p>Do you...? / Does she...?</p>
+      </button>
+
+      <button class="contenido-card" onclick="iniciarContenido('verb_to_do')">
+        <div class="emoji">👉</div>
+        <h3>Verbo "to do"</h3>
+        <p>Do / Does / Don't</p>
+      </button>
+
+      <button class="contenido-card especial" onclick="iniciarContenido('all_mixed')">
+        <div class="emoji">📚</div>
+        <h3>Clasificación / mezcla</h3>
+        <p>¡Todas las oraciones!</p>
+      </button>
+    </div>
+  `;
+
+    contenedor.appendChild(portada);
 }
-
-
 
 // Mostrar selector de cantidad de oraciones
 function mostrarSelectorCantidad() {
@@ -237,22 +260,9 @@ function renderizarContenidoLeccion() {
 
     contenedor.innerHTML = "";
 
-    // Barra de navegación (Home + título + Volver)
-    const barra = document.createElement("div");
-    barra.className = "barra-navegacion";
-    barra.innerHTML = `
-    <button class="btn-icono btn-home" title="Menú principal">🏠</button>
-    <div class="barra-titulo">
-      <h2 id="titulo-leccion">${obtenerNombreLeccion(estadoApp.categoriaActual)}</h2>
-    </div>
-    <button class="btn-icono btn-volver" title="Volver">←</button>
-  `;
+    // Barra de navegación (Home + título + Volver) SUSTITUIR POR LLAMADA A FUNCIÓN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    const barra = crearBarraNavegacion("Gramática Básica de Inglés");
     contenedor.appendChild(barra);
-
-    const btnHome = barra.querySelector(".btn-home");
-    const btnVolver = barra.querySelector(".btn-volver");
-    if (btnHome) btnHome.addEventListener("click", irAlMenuPrincipal);
-    if (btnVolver) btnVolver.addEventListener("click", volverALecciones);
 
     // Info de progreso por subtipo (no por oración)
     const info = document.createElement("p");
@@ -352,8 +362,8 @@ function mostrarMenuPracticaLeccion() {
     if (btnHome) btnHome.addEventListener("click", irAlMenuPrincipal);
     if (btnVolver) btnVolver.addEventListener("click", volverALecciones);
 
-    // 🔹 Tus tarjetas de selección de modo de práctica
-    const portada = document.createElement("div");
+    // Tus tarjetas de selección de modo de práctica
+       const portada = document.createElement("div");
     portada.className = "portada-principal";
     portada.innerHTML = `
     <h1>Elige cómo practicar 🌟</h1>
@@ -370,12 +380,6 @@ function mostrarMenuPracticaLeccion() {
             <div class="emoji">✏️</div>
             <h3>Completar huecos</h3>
             <p>Escribe la palabra que falta</p>
-        </button>
-
-        <button class="contenido-card especial" onclick="renderizarContenidoLeccion()">
-            <div class="emoji">⬅️</div>
-            <h3>Volver a la lección</h3>
-            <p>Ver de nuevo las explicaciones</p>
         </button>
     </div>
   `;
