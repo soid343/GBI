@@ -138,6 +138,40 @@ function irARecords() {
     alert("Próximamente: récords");
 }
 
+// ================================
+// Navegación superior (Home/Volver)
+// ================================
+// Ir al menú principal (botón Home)
+function irAlMenuPrincipal() {
+    estadoApp.modoPrincipal = "menu";
+    estadoApp.modoJuego = null;
+    estadoApp.categoriaActual = null;
+    estadoApp.tipoExplicacionSeleccionado = null;
+    estadoApp.cantidadOraciones = 0;
+    estadoApp.oracionesSeleccionadas = [];
+    estadoApp.indiceOracionActual = 0;
+
+    const controles = document.getElementById("controlesInternos");
+    if (controles) controles.style.display = "none";
+
+    renderizarMenuPrincipal();
+}
+
+// Volver a las lecciones de la categoría actual
+function volverALecciones() {
+    // Mantenemos la categoría actual para que se muestre el listado de oraciones
+    estadoApp.modo = "explicacion";        // o practica, según "renderizarInicio"
+    estadoApp.modoJuego = null;
+    estadoApp.tipoExplicacionSeleccionado = null;
+    estadoApp.cantidadOraciones = 0;
+    estadoApp.oracionesSeleccionadas = [];
+    estadoApp.indiceOracionActual = 0;
+
+    estadoApp.modoPrincipal = "lecciones";
+    renderizarInicio();
+}
+
+
 // Función para lanzar el ejercicio de práctica seleccionado
 function seleccionarModoPractica(tipo) {
     estadoApp.tipoPractica = tipo;      // "ordenar" o "hueco"

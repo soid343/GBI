@@ -18,7 +18,7 @@
         "significado": "es"
       },
       {
-        "palabra": "this",
+        "palabra": "this?",
         "significado": "esto"
       }
     ],
@@ -50,7 +50,7 @@
         "significado": "tu"
       },
       {
-        "palabra": "name",
+        "palabra": "name?",
         "significado": "nombre"
       }
     ],
@@ -82,7 +82,7 @@
         "significado": "es"
       },
       {
-        "palabra": "it",
+        "palabra": "it?",
         "significado": "ello"
       }
     ],
@@ -114,7 +114,7 @@
         "significado": "el"
       },
       {
-        "palabra": "book",
+        "palabra": "book?",
         "significado": "libro"
       }
     ],
@@ -142,7 +142,7 @@
         "significado": "estás"
       },
       {
-        "palabra": "you",
+        "palabra": "you?",
         "significado": "tú"
       }
     ],
@@ -174,7 +174,7 @@
         "significado": "mi"
       },
       {
-        "palabra": "pencil",
+        "palabra": "pencil?",
         "significado": "lápiz"
       }
     ],
@@ -202,7 +202,7 @@
         "significado": "es"
       },
       {
-        "palabra": "she",
+        "palabra": "she?",
         "significado": "ella"
       }
     ],
@@ -234,7 +234,7 @@
         "significado": "tu"
       },
       {
-        "palabra": "teacher",
+        "palabra": "teacher?",
         "significado": "profesor/a"
       }
     ],
@@ -262,7 +262,7 @@
         "significado": "estás"
       },
       {
-        "palabra": "you",
+        "palabra": "you?",
         "significado": "tú"
       }
     ],
@@ -294,7 +294,7 @@
         "significado": "tienes"
       },
       {
-        "palabra": "you",
+        "palabra": "you?",
         "significado": "tú"
       }
     ],
@@ -858,7 +858,7 @@
         "significado": "tu"
       },
       {
-        "palabra": "birthday",
+        "palabra": "birthday?",
         "significado": "cumpleaños"
       }
     ],
@@ -898,7 +898,7 @@
         "significado": "a"
       },
       {
-        "palabra": "bed",
+        "palabra": "bed?",
         "significado": "la cama"
       }
     ],
@@ -930,7 +930,7 @@
         "significado": "colegio"
       },
       {
-        "palabra": "start",
+        "palabra": "start?",
         "significado": "empieza"
       }
     ],
@@ -2486,7 +2486,7 @@
         "significado": "favorito"
       },
       {
-        "palabra": "color",
+        "palabra": "color?",
         "significado": "color"
       }
     ],
@@ -2518,8 +2518,8 @@
         "significado": "es"
       },
       {
-        "palabra": "it",
-        "significado": "?"
+        "palabra": "it?",
+        "significado": "esto/eso"
       }
     ],
     "ejercicios": [
@@ -2550,7 +2550,7 @@
         "significado": "tu"
       },
       {
-        "palabra": "backpack",
+        "palabra": "backpack?",
         "significado": "mochila"
       }
     ],
@@ -2582,7 +2582,7 @@
         "significado": "tú"
       },
       {
-        "palabra": "live",
+        "palabra": "live?",
         "significado": "vives"
       }
     ],
@@ -2618,7 +2618,7 @@
         "significado": "mejor"
       },
       {
-        "palabra": "friend",
+        "palabra": "friend?",
         "significado": "amigo"
       }
     ],
@@ -2654,8 +2654,8 @@
         "significado": "te sientas"
       },
       {
-        "palabra": "with",
-        "significado": "?"
+        "palabra": "with?",
+        "significado": "con"
       }
     ],
     "ejercicios": [
@@ -2694,7 +2694,7 @@
         "significado": "a"
       },
       {
-        "palabra": "school",
+        "palabra": "school?",
         "significado": "colegio"
       }
     ],
@@ -2726,7 +2726,7 @@
         "significado": "tu"
       },
       {
-        "palabra": "grandma",
+        "palabra": "grandma?",
         "significado": "abuela"
       }
     ],
@@ -2758,13 +2758,9 @@
         "significado": "tú"
       },
       {
-        "palabra": "have",
-        "significado": "tomas"
-      },
-      {
-        "palabra": "lunch",
-        "significado": "el almuerzo"
-      }
+        "palabra": "have lunch?",
+        "significado": "almorzar"
+      }      
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
@@ -2802,7 +2798,7 @@
         "significado": "tus"
       },
       {
-        "palabra": "homework",
+        "palabra": "homework?",
         "significado": "deberes"
       }
     ],
@@ -2833,7 +2829,7 @@
         "significado": "no"
       },
       {
-        "palabra": "hungry",
+        "palabra": "hungry?",
         "significado": "con hambre"
       }
     ],

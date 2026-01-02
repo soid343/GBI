@@ -100,6 +100,76 @@ button {
         background: #229954;
     }
 
+/* Barra superior de navegación (Home + título + Volver) */
+.barra-navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Contenedor del título para poder centrarlo/mejorarlo después */
+.barra-titulo {
+    flex: 1;
+    text-align: center;
+}
+
+    .barra-titulo h2 {
+        margin: 0;
+        font-size: 1.4rem;
+        color: #2c3e50;
+    }
+
+/* Botones de icono (Home y Volver) */
+.btn-icono {
+    background: #ffffff;
+    border: 2px solid #4a90e2;
+    color: #4a90e2;
+    border-radius: 12px;
+    min-width: 60px;
+    padding: 4px 8px;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column; /* icono arriba, texto abajo */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+    .btn-icono .etiqueta-icono {
+        font-size: 0.75rem;
+        margin-top: 2px;
+    }
+
+    .btn-icono:hover {
+        background: #eaf3ff;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+/* WebApp adaptativa: en pantallas pequeñas, apilar si hace falta */
+@media (max-width: 600px) {
+    .barra-navegacion {
+        flex-wrap: wrap;
+    }
+
+    .barra-titulo {
+        order: 3;
+        width: 100%;
+    }
+
+    .btn-home {
+        order: 1;
+    }
+
+    .btn-volver {
+        order: 2;
+    }
+}
+
+
 /* Mensajes mejorados */
 .mensaje-exito {
     background-color: #d4edda;

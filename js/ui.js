@@ -169,6 +169,32 @@ function mostrarSelectorTipoExplicacion() {
     contenedor.appendChild(selectorDiv);
 }
 
+// Barra superior reutilizable para lección y práctica
+function crearBarraNavegacion() {
+    const barra = document.createElement("div");
+    barra.className = "barra-navegacion";
+    barra.innerHTML = `
+    <button class="btn-icono btn-home" title="Menú principal">
+      <span class="icono">🏠</span>
+      <span class="etiqueta-icono">Home</span>
+    </button>
+    <div class="barra-titulo">
+      <h2 id="titulo-leccion">${obtenerNombreLeccion(estadoApp.categoriaActual)}</h2>
+    </div>
+    <button class="btn-icono btn-volver" title="Volver">
+      <span class="icono">←</span>
+      <span class="etiqueta-icono">Volver</span>
+    </button>
+  `;
+
+    const btnHome = barra.querySelector(".btn-home");
+    const btnVolver = barra.querySelector(".btn-volver");
+    if (btnHome) btnHome.addEventListener("click", irAlMenuPrincipal);
+    if (btnVolver) btnVolver.addEventListener("click", volverALecciones);
+
+    return barra;
+}
+
 // Renderizar contenido de una lección concreta
 function renderizarContenidoLeccion() {
     const contenedor = document.getElementById("contenedor");
@@ -200,10 +226,22 @@ function renderizarContenidoLeccion() {
 
     contenedor.innerHTML = "";
 
-    // Título de la lección
-    const titulo = document.createElement("h2");
-    titulo.textContent = obtenerNombreLeccion(estadoApp.categoriaActual);
-    contenedor.appendChild(titulo);
+    // Barra de navegación (Home + título + Volver)
+    const barra = document.createElement("div");
+    barra.className = "barra-navegacion";
+    barra.innerHTML = `
+    <button class="btn-icono btn-home" title="Menú principal">🏠</button>
+    <div class="barra-titulo">
+      <h2 id="titulo-leccion">${obtenerNombreLeccion(estadoApp.categoriaActual)}</h2>
+    </div>
+    <button class="btn-icono btn-volver" title="Volver">←</button>
+  `;
+    contenedor.appendChild(barra);
+
+    const btnHome = barra.querySelector(".btn-home");
+    const btnVolver = barra.querySelector(".btn-volver");
+    if (btnHome) btnHome.addEventListener("click", irAlMenuPrincipal);
+    if (btnVolver) btnVolver.addEventListener("click", volverALecciones);
 
     // Info de progreso por subtipo (no por oración)
     const info = document.createElement("p");
@@ -284,34 +322,60 @@ function renderizarContenidoLeccion() {
 // Menú con los tipos de ejercicios para practicar una lección
 function mostrarMenuPracticaLeccion() {
     const contenedor = document.getElementById("contenedor");
-    contenedor.innerHTML = `
-        <div class="portada-principal">
-            <h1>Elige cómo practicar 🌟</h1>
-            <p class="subtitulo">Escoge el tipo de ejercicio para esta lección</p>
-            
-            <div class="grid-contenidos">
-                <button class="contenido-card" onclick="seleccionarModoPractica('ordenar')">
-                    <div class="emoji">🔤</div>
-                    <h3>Ordenar palabras</h3>
-                    <p>Coloca las palabras en el orden correcto</p>
-                </button>
+    contenedor.innerHTML = "";
 
-                <button class="contenido-card" onclick="seleccionarModoPractica('hueco')">
-                    <div class="emoji">✏️</div>
-                    <h3>Completar huecos</h3>
-                    <p>Escribe la palabra que falta</p>
-                </button>
+    // 🔹 Barra de navegación (Home + título + Volver)
+    const barra = document.createElement("div");
+    barra.className = "barra-navegacion";
+    barra.innerHTML = `
+    <button class="btn-icono btn-home" title="Menú principal">
+      <span class="icono">🏠</span>
+      <span class="etiqueta-icono">Home</span>
+    </button>
+    <div class="barra-titulo">
+      <h2 id="titulo-leccion">${obtenerNombreLeccion(estadoApp.categoriaActual)}</h2>
+    </div>
+    <button class="btn-icono btn-volver" title="Volver">
+      <span class="icono">←</span>
+      <span class="etiqueta-icono">Volver</span>
+    </button>
+  `;
+    contenedor.appendChild(barra);
 
-                <button class="contenido-card especial" onclick="renderizarContenidoLeccion()">
-                    <div class="emoji">⬅️</div>
-                    <h3>Volver a la lección</h3>
-                    <p>Ver de nuevo las explicaciones</p>
-                </button>
-            </div>
-        </div>
-    `;
+    const btnHome = barra.querySelector(".btn-home");
+    const btnVolver = barra.querySelector(".btn-volver");
+    if (btnHome) btnHome.addEventListener("click", irAlMenuPrincipal);
+    if (btnVolver) btnVolver.addEventListener("click", volverALecciones);
+
+    // 🔹 Tus tarjetas de selección de modo de práctica
+    const portada = document.createElement("div");
+    portada.className = "portada-principal";
+    portada.innerHTML = `
+    <h1>Elige cómo practicar 🌟</h1>
+    <p class="subtitulo">Escoge el tipo de ejercicio para esta lección</p>
+    
+    <div class="grid-contenidos">
+        <button class="contenido-card" onclick="seleccionarModoPractica('ordenar')">
+            <div class="emoji">🔤</div>
+            <h3>Ordenar palabras</h3>
+            <p>Coloca las palabras en el orden correcto</p>
+        </button>
+
+        <button class="contenido-card" onclick="seleccionarModoPractica('hueco')">
+            <div class="emoji">✏️</div>
+            <h3>Completar huecos</h3>
+            <p>Escribe la palabra que falta</p>
+        </button>
+
+        <button class="contenido-card especial" onclick="renderizarContenidoLeccion()">
+            <div class="emoji">⬅️</div>
+            <h3>Volver a la lección</h3>
+            <p>Ver de nuevo las explicaciones</p>
+        </button>
+    </div>
+  `;
+    contenedor.appendChild(portada);
 }
-
 
 // Nombre para cada lección
 function obtenerNombreLeccion(leccionId) {

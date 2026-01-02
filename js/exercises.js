@@ -539,6 +539,11 @@ function renderizarContenido() {
 function renderizarPractica(contenedor) {
     const e = estadoApp.ejercicioActual;
 
+    // Limpiar y añadir barra de navegación (Home + Volver)
+    contenedor.innerHTML = "";
+    const barra = crearBarraNavegacion();   // función definida en ui.js
+    contenedor.appendChild(barra);
+
     // Normalizar definición de ejercicios para esta oración
     let listaEjercicios = [];
     if (Array.isArray(e.ejercicios)) {
@@ -561,8 +566,7 @@ function renderizarPractica(contenedor) {
         renderizarPracticaHueco(contenedor, e, ejercicioSeleccionado);
         return;
     }
-
- 
+    
     // Mostrar progreso
     const progreso = document.createElement("div");
     progreso.className = "progreso";
@@ -697,6 +701,12 @@ function renderizarPractica(contenedor) {
 
 // Práctica de completar hueco (gap-fill)
 function renderizarPracticaHueco(contenedor, e, configEjercicio) {
+
+    // Limpiar y añadir barra de navegación
+    contenedor.innerHTML = "";
+    const barra = crearBarraNavegacion();
+    contenedor.appendChild(barra);
+
     // Progreso
     const progreso = document.createElement("div");
     progreso.className = "progreso";
