@@ -518,19 +518,21 @@ button {
     background: linear-gradient(45deg, #FF6B6B, #FFD93D);
     color: white;
     border: none;
-    padding: 25px 50px;
-    font-size: 22px;
-    border-radius: 50px;
-    width: 100%;
-    margin: 30px 0;
+    padding: 0.9rem 2.2rem; /* antes: 25px 50px */
+    font-size: 1.1rem; /* antes: 22px */
+    border-radius: 999px;
+    width: auto; /* antes: 100% */
+    display: inline-block; /* para que respete el ancho del contenido */
+    margin: 1.5rem auto; /* margen vertical y centrado si el contenedor tiene text-align:center */
     font-weight: bold;
-    /*box-shadow: 0 10px 30px rgba(255,107,107,0.4);*/
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s; /* animación suave */
+    transition: transform 0.2s, box-shadow 0.2s;
 }
+
     .boton-practica-estrella:hover {
         transform: translateY(-2px);
         box-shadow: 0 14px 36px rgba(255,107,107,0.6);
+    }
     }
 /*==== MENÚ PRINCIPAL ====*/
 
