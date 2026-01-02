@@ -589,7 +589,7 @@ button {
         transform: translateY(-3px);
         box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
-
+/* Ajustes del funcionamiento responsive */
 @media (max-width: 768px) {
     .menu-botones {
         width: 100%;
