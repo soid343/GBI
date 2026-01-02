@@ -35,6 +35,11 @@ function renderizarMenuPrincipal() {
 // PANTALLA DE LECCIONES
 // ==============================
 function renderizarInicio() {
+
+    const contenedor = document.getElementById("contenedor");
+    contenedor.innerHTML = "";
+
+    // Según el modo principal, mostramos lecciones o selector de cantidad (ojo con el + de innerHTML)
     const contenedor = document.getElementById("contenedor");
     contenedor.innerHTML = `
         <div class="portada-principal">
@@ -173,13 +178,18 @@ function mostrarSelectorTipoExplicacion() {
 function crearBarraNavegacion() {
     const barra = document.createElement("div");
     barra.className = "barra-navegacion";
+
+    const nombreLeccion = estadoApp.categoriaActual
+        ? obtenerNombreLeccion(estadoApp.categoriaActual)
+        : "Gramática Básica de Inglés";
+
     barra.innerHTML = `
     <button class="btn-icono btn-home" title="Menú principal">
       <span class="icono">🏠</span>
       <span class="etiqueta-icono">Home</span>
     </button>
     <div class="barra-titulo">
-      <h2 id="titulo-leccion">${obtenerNombreLeccion(estadoApp.categoriaActual)}</h2>
+      <h2 id="titulo-leccion">${nombreLeccion}</h2>
     </div>
     <button class="btn-icono btn-volver" title="Volver">
       <span class="icono">←</span>
@@ -194,6 +204,7 @@ function crearBarraNavegacion() {
 
     return barra;
 }
+
 
 // Renderizar contenido de una lección concreta
 function renderizarContenidoLeccion() {
@@ -283,12 +294,6 @@ function renderizarContenidoLeccion() {
     // Navegación entre tipos/subtipos
     const nav = document.createElement("div");
     nav.className = "botones-navegacion-explicacion";
-
-    const btnInicio = document.createElement("button");
-    btnInicio.className = "boton-volver";
-    btnInicio.textContent = "🏠 Volver a las lecciones";
-    btnInicio.onclick = () => renderizarInicio();
-    nav.appendChild(btnInicio);
 
     const navPrevNext = document.createElement("div");
     navPrevNext.className = "botones-prev-next";
