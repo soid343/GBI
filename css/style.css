@@ -717,15 +717,48 @@ button {
         margin: 1.2rem auto;
     }
 
-    /* Bloque frase+traducción en explicación: texto algo más pequeño */
-    .frase-explicacion {
-        font-size: 1.6rem;
+    /* Texto de explicaciones */
+    .caja-explicacion {
+        padding: 18px;
+        font-size: 1.05rem;
     }
 
-    .traduccion {
+        .caja-explicacion p,
+        .caja-explicacion li {
+            font-size: 1.05rem;
+            line-height: 1.5;
+        }
+
+    .frase-explicacion {
+        font-size: 1.8rem; /* antes 1.6rem */
+    }
+
+    .traduccion,
+    .traduccion-completa,
+    .traduccion-frase {
+        font-size: 1.05rem;
+    }
+
+    /* Texto de ejercicios (palabras, botones y mensajes) */
+    .palabras,
+    .respuesta,
+    .boton-palabra,
+    .boton-reintentar,
+    .boton-nav-explicacion,
+    .boton-continuar,
+    .boton-cantidad {
+        font-size: 1.05rem;
+    }
+
+    .mensaje-exito,
+    .mensaje-error,
+    .mensaje-advertencia,
+    .progreso,
+    .contador-intentos {
         font-size: 1rem;
     }
 }
+
 
 /* Ejercicios de completar hueco */
 .input-hueco {
