@@ -367,19 +367,35 @@ function mostrarMenuPracticaLeccion() {
     portada.className = "portada-principal";
     portada.innerHTML = `
     <h1>Elige cómo practicar 🌟</h1>
-    <p class="subtitulo">Escoge el tipo de ejercicio para esta lección</p>
-    
+        <p class="subtitulo">Escoge el tipo de ejercicio para esta lección</p>
+
     <div class="grid-contenidos">
+    <!-- Ordenar palabras -->
         <button class="contenido-card" onclick="seleccionarModoPractica('ordenar')">
             <div class="emoji">🔤</div>
             <h3>Ordenar palabras</h3>
             <p>Coloca las palabras en el orden correcto</p>
         </button>
 
+    <!-- Completar huecos -->
         <button class="contenido-card" onclick="seleccionarModoPractica('hueco')">
             <div class="emoji">✏️</div>
             <h3>Completar huecos</h3>
             <p>Escribe la palabra que falta</p>
+        </button>
+
+    <!-- Emparejar pregunta–respuesta -->
+        <button class="contenido-card" onclick="seleccionarModoPractica('emparejar')">
+            <div class="emoji">🧩</div>
+            <h3>Emparejar</h3>
+            <p>Une la frase con su respuesta o traducción</p>
+        </button>
+
+    <!-- Elegir opción correcta dentro de la frase -->
+        <button class="contenido-card" onclick="seleccionarModoPractica('opcion')">
+            <div class="emoji">✅</div>
+            <h3>Elegir la forma correcta</h3>
+            <p>Elige la palabra correcta en la frase</p>
         </button>
     </div>
   `;

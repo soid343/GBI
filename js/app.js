@@ -33,7 +33,11 @@ let estadoApp = {
     retoCantidad: 0, // 3 | 5 | 10
     retoPuntuacion: 0,
     retoAciertos: 0,
-    retoFallos: 0
+    retoFallos: 0,
+
+     // Estado específico para ejercicios especiales
+    emparejarSeleccionActual: null,   // {lado: "izq"|"der", id: ...}
+    emparejarParejasCorrectas: 0
 };
 
 // Inicializar la aplicación al cargar el DOM
