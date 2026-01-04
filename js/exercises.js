@@ -84,9 +84,43 @@ function mostrarContenidoPorLeccion(leccionId) {
 // Inicia la práctica usando solo las oraciones de la lección actual,
 // con máximo 5 y procurando variedad de subtipos.
 function iniciarPracticaLeccion() {
-    const oraciones = estadoApp.oracionesCategoriaActual; 
+    let oraciones = estadoApp.oracionesCategoriaActual;
     
     if (!oraciones || oraciones.length === 0) return;
+
+    // Si el tipo de práctica es emparejar, nos quedamos solo con oraciones que tengan ese ejercicio
+    if (estadoApp.tipoPractica === "emparejar") {
+        oraciones = oraciones.filter(ej =>
+            Array.isArray(ej.ejercicios) &&
+            ej.ejercicios.some(ex => ex.tipo === "emparejar")
+        );
+        if (oraciones.length === 0) {
+            // No hay ninguna oración con emparejar en esta lección
+            // Dejamos que renderizarPractica muestre el mensaje genérico
+            estadoApp.oracionesCategoriaActual = [];
+            estadoApp.oracionesSeleccionadas = [];
+            estadoApp.cantidadOraciones = 0;
+            renderizar();
+            return;
+        }
+    }
+
+    // Si el tipo de práctica es opcion, nos quedamos solo con oraciones que tengan ese ejercicio
+    if (estadoApp.tipoPractica === "opcion") {
+        oraciones = oraciones.filter(ej =>
+            Array.isArray(ej.ejercicios) &&
+            ej.ejercicios.some(ex => ex.tipo === "opcion")
+        );
+        if (oraciones.length === 0) {
+            // No hay ninguna oración con emparejar en esta lección
+            // Dejamos que renderizarPractica muestre el mensaje genérico
+            estadoApp.oracionesCategoriaActual = [];
+            estadoApp.oracionesSeleccionadas = [];
+            estadoApp.cantidadOraciones = 0;
+            renderizar();
+            return;
+        }
+    }
 
     // 1) Agrupar por subtipo para asegurar variedad
     const gruposPorSubtipo = {};
@@ -535,13 +569,13 @@ function renderizarContenido() {
         </div>
     `;
 }
-//Renderizar la práctica del ejercicio (selección de palabras)
+// Renderizar la práctica del ejercicio (selección de palabras / hueco / emparejar / opción)
 function renderizarPractica(contenedor) {
     const e = estadoApp.ejercicioActual;
 
-    // Limpiar y añadir barra de navegación (Home + Volver)
+    // Limpiar y añadir barra de navegación Home / Volver
     contenedor.innerHTML = "";
-    const barra = crearBarraNavegacion();   // función definida en ui.js
+    const barra = crearBarraNavegacion();
     contenedor.appendChild(barra);
 
     // Normalizar definición de ejercicios para esta oración
@@ -551,36 +585,50 @@ function renderizarPractica(contenedor) {
     } else if (e.ejercicio) {
         listaEjercicios = [e.ejercicio];
     } else {
+        // Compatibilidad antigua: solo ordenar
         listaEjercicios = [{ tipo: "ordenar" }];
     }
 
     // Elegir ejercicio según el modo de práctica actual
     const tipoObjetivo = estadoApp.tipoPractica || "ordenar";
-    const ejercicioSeleccionado =
-        listaEjercicios.find(ex => ex.tipo === tipoObjetivo) || listaEjercicios[0];
+    let ejercicioSeleccionado = listaEjercicios.find(ex => ex.tipo === tipoObjetivo);
+
+    // Si no hay ejercicio de ese tipo, mostrar aviso y salir
+    if (!ejercicioSeleccionado) {
+        const aviso = document.createElement("div");
+        aviso.className = "mensaje-advertencia";
+        aviso.textContent = "No se encuentran oraciones adecuadas para este tipo de ejercicio.";
+        contenedor.appendChild(aviso);
+
+        const botonVolver = document.createElement("button");
+        botonVolver.className = "boton-volver";
+        botonVolver.textContent = "Elegir otro tipo de práctica";
+        botonVolver.onclick = mostrarMenuPracticaLeccion;
+        contenedor.appendChild(botonVolver);
+        return;
+    }
 
     const tipoEjercicio = ejercicioSeleccionado.tipo;
 
-    // Si es un ejercicio de hueco, derivamos a su render específico
+    // Ramas específicas según el tipo de ejercicio
     if (tipoEjercicio === "hueco") {
         renderizarPracticaHueco(contenedor, e, ejercicioSeleccionado);
         return;
     }
 
-    // Si es un ejercicio de emparejar, derivamos a su render específico
     if (tipoEjercicio === "emparejar") {
         renderizarPracticaEmparejar(contenedor, e, ejercicioSeleccionado);
         return;
     }
 
-    // Si es un ejercicio de opción múltiple, derivamos a su render específico
     if (tipoEjercicio === "opcion") {
         renderizarPracticaOpcion(contenedor, e, ejercicioSeleccionado);
         return;
     }
 
-    
-    // Mostrar progreso
+    // ---------- ejercicio de ORDENAR ----------
+
+    // Progreso
     const progreso = document.createElement("div");
     progreso.className = "progreso";
     progreso.textContent = `Oración ${estadoApp.indiceOracionActual + 1} de ${estadoApp.cantidadOraciones}`;
@@ -591,35 +639,32 @@ function renderizarPractica(contenedor) {
     contador.className = "contador-intentos";
     contenedor.appendChild(contador);
 
-    // Validación automática al completar (SOLO si no se ha validado antes)
+    // Validación automática al completar
     if (estadoApp.respuestaUsuario.length === e.partes.length && estadoApp.resultado === null) {
         validarRespuesta();
     }
 
-    // Si agota intentos, mostrar solución y botón continuar
+    // Estados finales (finalizado / correcto / incorrecto) -> mismo código que tenías
     if (estadoApp.resultado === "finalizado") {
         const solucion = document.createElement("div");
         solucion.className = "mensaje-error";
-        solucion.innerHTML = `
-            ❌ Has agotado los ${estadoApp.maxIntentos} intentos.<br>
-            La respuesta correcta era:<br>
-            <strong>${e.frase}</strong>
-        `;
+        solucion.innerHTML =
+            `Has agotado los ${estadoApp.maxIntentos} intentos.<br>` +
+            `La respuesta correcta era:<br><strong>${e.frase}</strong>`;
         contenedor.appendChild(solucion);
 
         const botonContinuar = document.createElement("button");
         botonContinuar.className = "boton-continuar";
-        botonContinuar.textContent = "Continuar →";
+        botonContinuar.textContent = "Continuar";
         botonContinuar.onclick = () => {
             estadoApp.oracionesCompletadas++;
             estadoApp.indiceOracionActual++;
             cargarSiguienteOracion();
         };
         contenedor.appendChild(botonContinuar);
-        return; // ⬅️ IMPORTANTE: Salir aquí
+        return;
     }
 
-    // Mostrar resultado correcto y botón continuar
     if (estadoApp.resultado === "correcto") {
         const respuesta = document.createElement("div");
         respuesta.className = "respuesta";
@@ -628,12 +673,12 @@ function renderizarPractica(contenedor) {
 
         const resultado = document.createElement("div");
         resultado.className = "mensaje-exito";
-        resultado.textContent = "✓ ¡Muy bien! ¡Correcto!";
+        resultado.textContent = "¡Muy bien! ¡Correcto!";
         contenedor.appendChild(resultado);
 
         const botonContinuar = document.createElement("button");
         botonContinuar.className = "boton-continuar";
-        botonContinuar.textContent = "Continuar →";
+        botonContinuar.textContent = "Continuar";
         botonContinuar.onclick = () => {
             estadoApp.oracionesCompletadas++;
             estadoApp.oracionesCorrectas++;
@@ -641,10 +686,9 @@ function renderizarPractica(contenedor) {
             cargarSiguienteOracion();
         };
         contenedor.appendChild(botonContinuar);
-        return; // ⬅️ IMPORTANTE: Salir aquí
+        return;
     }
 
-    // Si es incorrecto, mostrar mensaje y botón reintentar
     if (estadoApp.resultado === "incorrecto") {
         const respuesta = document.createElement("div");
         respuesta.className = "respuesta";
@@ -653,27 +697,28 @@ function renderizarPractica(contenedor) {
 
         const resultado = document.createElement("div");
         resultado.className = "mensaje-advertencia";
-        resultado.textContent = "❌ No es correcto. Inténtalo de nuevo.";
+        resultado.textContent = "No es correcto. Inténtalo de nuevo.";
         contenedor.appendChild(resultado);
 
         const boton = document.createElement("button");
         boton.className = "boton-reintentar";
-        boton.textContent = "🔄 Reintentar";
+        boton.textContent = "Reintentar";
         boton.onclick = reintentarEjercicio;
         contenedor.appendChild(boton);
-        return; // ⬅️ IMPORTANTE: Salir aquí
+        return;
     }
 
-    // Si llegamos aquí, es porque aún no se ha respondido o está en progreso
-    // Inicializar palabras mezcladas una sola vez
+    // Inicializar palabras mezcladas (ordenar) una sola vez
     if (estadoApp.palabrasPractica.length === 0) {
-        estadoApp.palabrasPractica = [...e.partes.map(p => p.palabra)]
-            .sort(() => Math.random() - 0.5);
+        estadoApp.palabrasPractica = [...e.partes.map(p => p.palabra)].sort(
+            () => Math.random() - 0.5
+        );
     }
 
     const respuesta = document.createElement("div");
     respuesta.className = "respuesta";
-    respuesta.textContent = estadoApp.respuestaUsuario.join(" ") || "Selecciona las palabras en orden...";
+    respuesta.textContent =
+        estadoApp.respuestaUsuario.join(" ") || "Selecciona las palabras en orden...";
     contenedor.appendChild(respuesta);
 
     const zonaPalabras = document.createElement("div");
@@ -687,15 +732,12 @@ function renderizarPractica(contenedor) {
         btn.className = "boton-palabra";
         btn.textContent = p;
         btn.disabled = estadoApp.respuestaUsuario.includes(p);
-
         btn.onclick = () => {
             estadoApp.respuestaUsuario.push(p);
             renderizar();
         };
-
         contenedorPalabra.appendChild(btn);
 
-        // Mostrar ayuda en español si está activada
         if (estadoApp.mostrarAyuda) {
             const significado = e.partes.find(parte => parte.palabra === p)?.significado;
             if (significado) {
@@ -711,6 +753,7 @@ function renderizarPractica(contenedor) {
 
     contenedor.appendChild(zonaPalabras);
 }
+
 
 // Práctica de completar hueco (gap-fill)
 function renderizarPracticaHueco(contenedor, e, configEjercicio) {
@@ -1016,10 +1059,12 @@ function validarRespuestaOpcion(e) {
 
 // Práctica emparejar pregunta
 function renderizarPracticaEmparejar(contenedor, e, configEjercicio) {
-    // Limpiar y añadir barra de navegación
+    // Limpiar y añadir barra de navegación   
     contenedor.innerHTML = "";
     const barra = crearBarraNavegacion();
     contenedor.appendChild(barra);
+    let fallos = 0;
+    let huboError = false;
 
     // Progreso
     const progreso = document.createElement("div");
@@ -1031,6 +1076,12 @@ function renderizarPracticaEmparejar(contenedor, e, configEjercicio) {
     contador.textContent = `Intento ${estadoApp.intentos + 1} de ${estadoApp.maxIntentos}`;
     contador.className = "contador-intentos";
     contenedor.appendChild(contador);
+
+    // Texto de instrucción
+    const instruccion = document.createElement("p");
+    instruccion.className = "texto-instruccion";
+    instruccion.textContent = "Toca una frase de la izquierda y luego su pareja de la derecha.";
+    contenedor.appendChild(instruccion);
 
     const pares = configEjercicio.pares || [];
     if (pares.length === 0) {
@@ -1044,17 +1095,15 @@ function renderizarPracticaEmparejar(contenedor, e, configEjercicio) {
     // Mezclar lados
     const izquierda = [...pares];
     const derecha = [...pares];
-
     izquierda.sort(() => Math.random() - 0.5);
     derecha.sort(() => Math.random() - 0.5);
 
-    // Estado local: parejas correctas
     if (typeof estadoApp.emparejarParejasCorrectas !== "number") {
         estadoApp.emparejarParejasCorrectas = 0;
     }
 
     const layout = document.createElement("div");
-    layout.className = "layout-emparejar"; // añades estilos en CSS
+    layout.className = "layout-emparejar";
     contenedor.appendChild(layout);
 
     const colIzq = document.createElement("div");
@@ -1065,60 +1114,74 @@ function renderizarPracticaEmparejar(contenedor, e, configEjercicio) {
     layout.appendChild(colIzq);
     layout.appendChild(colDer);
 
-    // Helpers para selección
-    let seleccionActual = estadoApp.emparejarSeleccionActual || null;
+    // Estado local
+    let seleccionActual = null;
     const emparejados = new Set();
+    let contadorPareja = 0;
 
     function manejarClick(lado, item, boton) {
         if (emparejados.has(item.id)) return;
 
+        // Primer click
         if (!seleccionActual) {
             seleccionActual = { lado, id: item.id, boton };
             boton.classList.add("seleccionado");
-            estadoApp.emparejarSeleccionActual = seleccionActual;
             return;
         }
 
-        // Segundo clic
+        // Segundo click mismo lado -> reset selección
         if (seleccionActual.lado === lado) {
-            // mismo lado -> reiniciar selección
             seleccionActual.boton.classList.remove("seleccionado");
             seleccionActual = null;
-            estadoApp.emparejarSeleccionActual = null;
             return;
         }
 
-        // Comprobamos pareja
+        // Segundo click lado contrario -> comprobar pareja
         if (seleccionActual.id === item.id) {
             // Correcto
+            contadorPareja++;
+            let claseColor = "";
+            if (contadorPareja === 1) claseColor = "pareja-1";
+            else if (contadorPareja === 2) claseColor = "pareja-2";
+            else if (contadorPareja === 3) claseColor = "pareja-3";
+
             seleccionActual.boton.classList.remove("seleccionado");
-            seleccionActual.boton.classList.add("correcto");
-            boton.classList.add("correcto");
+            seleccionActual.boton.classList.add("correcto", claseColor);
+            boton.classList.add("correcto", claseColor);
+
             emparejados.add(item.id);
             estadoApp.emparejarParejasCorrectas++;
 
-            // ¿Todas hechas?
+            // ¿Todas las parejas hechas?
             if (emparejados.size === pares.length) {
                 estadoApp.resultado = "correcto";
-                estadoApp.oracionesCorrectas++;
-                mostrarResultadoEmparejarFinal(contenedor, e);
+                // Solo sumamos como correcta global si no hubo errores
+                if (!huboError) {
+                    estadoApp.oracionesCorrectas++;
+                }
+                mostrarResultadoEmparejarFinal(contenedor, e, fallos, huboError);
                 return;
             }
         } else {
-            // Incorrecto
+            // Incorrecto con control de intentos
             seleccionActual.boton.classList.remove("seleccionado");
             boton.classList.add("incorrecto");
             estadoApp.intentos++;
+            fallos++;
+            huboError = true;
 
             if (estadoApp.intentos >= estadoApp.maxIntentos) {
                 estadoApp.resultado = "finalizado";
-                mostrarResultadoEmparejarFinal(contenedor, e);
+                mostrarResultadoEmparejarFinal(contenedor, e, fallos, huboError);
                 return;
             }
+
+            setTimeout(() => {
+                boton.classList.remove("incorrecto");
+            }, 600);
         }
 
         seleccionActual = null;
-        estadoApp.emparejarSeleccionActual = null;
     }
 
     // Render columnas
@@ -1139,17 +1202,35 @@ function renderizarPracticaEmparejar(contenedor, e, configEjercicio) {
     });
 }
 
+
 // Resultado final para emparejar (correcto o finalizado)
-function mostrarResultadoEmparejarFinal(contenedor, e) {
+function mostrarResultadoEmparejarFinal(contenedor, e, fallos = 0, huboError = false) {
     const mensaje = document.createElement("div");
+
+    const intentoUsado = estadoApp.intentos + 1; // intentos empieza en 0
+
     if (estadoApp.resultado === "correcto") {
         mensaje.className = "mensaje-exito";
-        mensaje.textContent = "¡Muy bien! Has emparejado todas las frases.";
+        if (!huboError) {
+            mensaje.textContent =
+                `¡Genial! Has emparejado todas las frases a la primera (intento ${intentoUsado}). `;
+        } else {
+            mensaje.textContent =
+                `¡Muy bien! Has completado todas las parejas en el intento ${intentoUsado}. ` +
+                `Te has equivocado ${fallos} vez/veces, pero has seguido intentando.`;
+        }
     } else {
         mensaje.className = "mensaje-error";
-        mensaje.innerHTML = `Has agotado los ${estadoApp.maxIntentos} intentos.`;
+        mensaje.innerHTML =
+            `Has agotado los ${estadoApp.maxIntentos} intentos.<br>` +
+            `En el próximo ejercicio lo harás mejor, ¡sigue intentándolo!`;
     }
     contenedor.appendChild(mensaje);
+
+    const animos = document.createElement("div");
+    animos.className = "texto-instruccion";
+    animos.textContent = "¡Vamos a por la siguiente frase!";
+    contenedor.appendChild(animos);
 
     const botonContinuar = document.createElement("button");
     botonContinuar.className = "boton-continuar";
@@ -1158,10 +1239,10 @@ function mostrarResultadoEmparejarFinal(contenedor, e) {
         estadoApp.oracionesCompletadas++;
         estadoApp.indiceOracionActual++;
         estadoApp.intentos = 0;
-        estadoApp.emparejarSeleccionActual = null;
         estadoApp.emparejarParejasCorrectas = 0;
         cargarSiguienteOracion();
     };
     contenedor.appendChild(botonContinuar);
 }
+
 

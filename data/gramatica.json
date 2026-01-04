@@ -1092,7 +1092,7 @@
     "tipo": "negacion_simple",
     "subtipo": "presente_simple",
     "leccion": "negations_simple",
-    "frase": "I don't like carrots.",
+    "frase": "I do not like carrots.",
     "traduccion": "No me gustan las zanahorias.",
     "mostrarModelo": false,
     "partes": [
@@ -1124,7 +1124,7 @@
     "tipo": "negacion_simple",
     "subtipo": "presente_simple",
     "leccion": "negations_simple",
-    "frase": "He doesn't watch TV.",
+    "frase": "He does not watch TV.",
     "traduccion": "Él no ve la tele.",
     "mostrarModelo": false,
     "partes": [
@@ -1165,13 +1165,9 @@
         "significado": "Nosotros"
       },
       {
-        "palabra": "do",
-        "significado": "(auxiliar)"
-      },
-      {
-        "palabra": "not",
-        "significado": "no"
-      },
+        "palabra": "don't",
+        "significado": "contracción 'do not' (No)"
+      },     
       {
         "palabra": "play",
         "significado": "jugamos"
@@ -2012,7 +2008,7 @@
     "tipo": "negacion_simple",
     "subtipo": "presente_simple",
     "leccion": "verb_to_do",
-    "frase": "I don't play tennis.",
+    "frase": "I do not play tennis.",
     "traduccion": "Yo no juego al tenis.",
     "mostrarModelo": true,
     "partes": [
@@ -2053,12 +2049,8 @@
         "significado": "Ella"
       },
       {
-        "palabra": "does",
-        "significado": "(auxiliar)"
-      },
-      {
-        "palabra": "not",
-        "significado": "no"
+        "palabra": "doesn't'",
+        "significado": "contracción 'does not' (No)"
       },
       {
         "palabra": "like",
@@ -2961,12 +2953,8 @@
         "significado": "Tú"
       },
       {
-        "palabra": "do",
-        "significado": "(auxiliar)"
-      },
-      {
-        "palabra": "not",
-        "significado": "no"
+        "palabra": "don't",
+        "significado": "contracción 'do not'(No)"
       },
       {
         "palabra": "like",
@@ -2984,7 +2972,7 @@
     "tipo": "negacion_simple",
     "subtipo": "presente_simple",
     "leccion": "negations_simple",
-    "frase": "They don't listen in class.",
+    "frase": "They do not listen in class.",
     "traduccion": "Ellos no escuchan en clase.",
     "mostrarModelo": false,
     "partes": [
@@ -3029,12 +3017,8 @@
         "significado": "Nosotros"
       },
       {
-        "palabra": "do",
-        "significado": "(auxiliar)"
-      },
-      {
-        "palabra": "not",
-        "significado": "no"
+        "palabra": "don't",
+        "significado": "contracción 'do not' (No)"
       },
       {
         "palabra": "play",
@@ -3064,7 +3048,7 @@
     "tipo": "negacion_simple",
     "subtipo": "presente_simple",
     "leccion": "negations_simple",
-    "frase": "He doesn't eat sweets.",
+    "frase": "He does not eat sweets.",
     "traduccion": "Él no come caramelos.",
     "mostrarModelo": false,
     "partes": [
@@ -3105,13 +3089,9 @@
         "significado": "Ella"
       },
       {
-        "palabra": "does",
-        "significado": "(auxiliar)"
-      },
-      {
-        "palabra": "not",
-        "significado": "no"
-      },
+        "palabra": "doesn't'",
+        "significado": "contracción 'does not' (No)"
+      },      
       {
         "palabra": "do",
         "significado": "hace"
@@ -3149,8 +3129,8 @@
         "significado": "Yo"
       },
       {
-        "palabra": "do",
-        "significado": "(auxiliar)"
+        "palabra": "don't'",
+        "significado": "contracción 'do not' (No)"
       },
       {
         "palabra": "not",

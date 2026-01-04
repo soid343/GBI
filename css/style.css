@@ -769,3 +769,81 @@ button {
     margin-top: 15px;
     margin-bottom: 10px;
 }
+/* Layout de emparejar */
+.layout-emparejar {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.columna-emparejar {
+    flex: 1;
+    max-width: 420px;
+}
+
+/* Botones de cada lado */
+.boton-emparejar {
+    width: 100%;
+    margin-bottom: 0.75rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    background: #fff;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s, transform 0.1s;
+}
+
+    .boton-emparejar.izquierda {
+        text-align: right;
+    }
+
+    .boton-emparejar:hover {
+        border-color: #4a90e2;
+        transform: translateY(-1px);
+    }
+
+    .boton-emparejar.correcto.pareja-1 {
+        border-color: #ff9a00;
+        background: #fcd18e;
+    }
+
+    .boton-emparejar.correcto.pareja-2 {
+        border-color: #2196f3;
+        background: #e3f2fd;
+    }
+
+    .boton-emparejar.correcto.pareja-3 {
+        border-color: #4caf50;
+        background: #e8f5e9;
+    }
+
+    /* Intrucciones de ayuda en el ejercicio */
+    .texto-instruccion {
+        text-align: center;
+        margin-top: 1rem;
+        color: #555;
+    }
+
+    /* Estado seleccionado */
+    .boton-emparejar.seleccionado {
+        border-color: #ff9800;
+        background: #fff8e1;
+    }
+
+    /* Estado correcto */
+    .boton-emparejar.correcto {
+        border-color: #4caf50;
+        background: #e8f5e9;
+        color: #1b5e20;
+    }
+
+    /* Estado incorrecto (parpadeo corto) */
+    .boton-emparejar.incorrecto {
+        border-color: #f44336;
+        background: #ffebee;
+        color: #b71c1c;
+    }
+/*Fin MODO EMPAREJAR */
