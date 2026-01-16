@@ -207,10 +207,16 @@ function mostrarContenidoPorCategoria(categoria) {
 // Validar respuesta al ejercicio y mostrar resultado
 function validarRespuesta() {
     const e = estadoApp.ejercicioActual;
-    const correcta = e.frase; // ← Usar directamente el campo frase
+
+    // Construir la respuesta del usuario
     const usuario = estadoApp.respuestaUsuario.join(" ");
 
-    if (usuario === correcta) {
+    // Normalizar ambas cadenas: quitar puntuación final y espacios extra
+    const usuarioNormalizado = usuario.replace(/[.,!?;:]+$/g, '').trim();
+    const correctaNormalizada = e.frase.replace(/[.,!?;:]+$/g, '').trim();
+
+    // Comparar versiones normalizadas
+    if (usuarioNormalizado === correctaNormalizada) {
         estadoApp.resultado = "correcto";
         return;
     }
@@ -223,6 +229,7 @@ function validarRespuesta() {
         estadoApp.resultado = "incorrecto";
     }
 }
+
 
 // Reiniciar ejercicio tras error
 function reintentarEjercicio() {
@@ -356,7 +363,9 @@ function obtenerExplicacionGramatical(ejercicio) {
                     <li>She <strong>is not</strong>... (Ella no es/está)</li>
                     <li>They <strong>are not</strong>... (Ellos no son/están)</li>
                 </ul>
-                <p> 👇 Ejemplo:</p>
+                 <p>También podemos encontrarlo contraído, como vimos anteriormente, <strong>"I am not"</strong> y <strong>"I'm not"</strong> son lo mismo, <strong>"I"</strong> se une con <strong>"am"</strong> para crear la contracción <strong>"I'm"</strong>.</p>
+                 <p>Sucede igual con <strong>"She is not"</strong> y <strong>"She isn't"</strong> o con <strong>"They are not"</strong> y <strong>"The aren't"</strong></p>
+                 <p> 👇 Ejemplo:</p>
             `,
             "presente_simple": `
                 <p class="explicacion-titulo-linea">
@@ -667,7 +676,7 @@ function renderizarPractica(contenedor) {
     if (estadoApp.resultado === "correcto") {
         const respuesta = document.createElement("div");
         respuesta.className = "respuesta";
-        respuesta.textContent = estadoApp.respuestaUsuario.join(" ");
+        respuesta.textContent = e.frase;
         contenedor.appendChild(respuesta);
 
         const resultado = document.createElement("div");
@@ -691,7 +700,7 @@ function renderizarPractica(contenedor) {
     if (estadoApp.resultado === "incorrecto") {
         const respuesta = document.createElement("div");
         respuesta.className = "respuesta";
-        respuesta.textContent = estadoApp.respuestaUsuario.join(" ");
+        respuesta.textContent = e.frase;
         contenedor.appendChild(respuesta);
 
         const resultado = document.createElement("div");
@@ -752,8 +761,6 @@ function renderizarPractica(contenedor) {
 
     contenedor.appendChild(zonaPalabras);
 }
-
-
 // Práctica de completar hueco (gap-fill)
 function renderizarPracticaHueco(contenedor, e, configEjercicio) {
 
@@ -782,7 +789,8 @@ function renderizarPracticaHueco(contenedor, e, configEjercicio) {
     // Si ya hay respuesta escrita y aún no se ha evaluado, validamos
     if (estadoApp.respuestaUsuario.length > 0 && estadoApp.resultado === null) {
         const respuestaTexto = estadoApp.respuestaUsuario[0];
-        if (respuestaTexto === solucion) {
+        // Comparación insensible a mayúsculas/minúsculas
+        if (respuestaTexto.toLowerCase() === solucion.toLowerCase()) {
             estadoApp.resultado = "correcto";
         } else {
             estadoApp.intentos++;
@@ -818,6 +826,12 @@ function renderizarPracticaHueco(contenedor, e, configEjercicio) {
     }
 
     if (estadoApp.resultado === "correcto") {
+        // Mostrar la oración completa correctamente escrita
+        const fraseCompletaDiv = document.createElement("div");
+        fraseCompletaDiv.className = "frase-explicacion";
+        fraseCompletaDiv.textContent = e.frase;
+        contenedor.appendChild(fraseCompletaDiv);
+
         const resultado = document.createElement("div");
         resultado.className = "mensaje-exito";
         resultado.textContent = "✓ ¡Muy bien! ¡Correcto!";
@@ -854,14 +868,19 @@ function renderizarPracticaHueco(contenedor, e, configEjercicio) {
         return;
     }
 
-    // Frase con hueco
+    // Frase con hueco - usar e.frase y reemplazar la palabra marcada como hueco
     const fraseDiv = document.createElement("div");
     fraseDiv.className = "frase-explicacion";
 
-    const textoConHueco = e.partes.map(p => {
-        if (p.esHueco) return "____";
-        return p.palabra;
-    }).join(" ");
+    let textoConHueco = e.frase;
+
+    if (parteHueco) {  // ← Usar la variable ya declarada arriba
+        // Escapar caracteres especiales en la palabra
+        const palabraEscapada = parteHueco.palabra.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        // Crear regex para encontrar la palabra completa (case-insensitive)
+        const regex = new RegExp('\\b' + palabraEscapada + '\\b', 'i');
+        textoConHueco = e.frase.replace(regex, '______');
+    }
 
     fraseDiv.textContent = textoConHueco;
     contenedor.appendChild(fraseDiv);

@@ -20,7 +20,7 @@
         "significado": "es"
       },
       {
-        "palabra": "this?",
+        "palabra": "this",
         "significado": "esto"
       }
     ],
@@ -76,7 +76,7 @@
         "significado": "tu"
       },
       {
-        "palabra": "name?",
+        "palabra": "name",
         "significado": "nombre"
       }
     ],
@@ -108,8 +108,8 @@
         "significado": "es"
       },
       {
-        "palabra": "it?",
-        "significado": "ello"
+        "palabra": "it",
+        "significado": "este"
       }
     ],
     "ejercicios": [
@@ -194,7 +194,7 @@
         "significado": "estás"
       },
       {
-        "palabra": "you?",
+        "palabra": "you",
         "significado": "tú"
       }
     ],
@@ -226,7 +226,7 @@
         "significado": "mi"
       },
       {
-        "palabra": "pencil?",
+        "palabra": "pencil",
         "significado": "lápiz"
       }
     ],
@@ -254,7 +254,7 @@
         "significado": "es"
       },
       {
-        "palabra": "she?",
+        "palabra": "she",
         "significado": "ella"
       }
     ],
@@ -286,7 +286,7 @@
         "significado": "tu"
       },
       {
-        "palabra": "teacher?",
+        "palabra": "teacher",
         "significado": "profesor/a"
       }
     ],
@@ -314,7 +314,7 @@
         "significado": "estás"
       },
       {
-        "palabra": "you?",
+        "palabra": "you",
         "significado": "tú"
       }
     ],
@@ -346,7 +346,7 @@
         "significado": "tienes"
       },
       {
-        "palabra": "you?",
+        "palabra": "you",
         "significado": "tú"
       }
     ],
@@ -940,7 +940,7 @@
         "significado": "tu"
       },
       {
-        "palabra": "birthday?",
+        "palabra": "birthday",
         "significado": "cumpleaños"
       }
     ],
@@ -980,7 +980,7 @@
         "significado": "a"
       },
       {
-        "palabra": "bed?",
+        "palabra": "bed",
         "significado": "la cama"
       }
     ],
@@ -1012,7 +1012,7 @@
         "significado": "colegio"
       },
       {
-        "palabra": "start?",
+        "palabra": "start",
         "significado": "empieza"
       }
     ],
@@ -2166,7 +2166,7 @@
     "partes": [
       {
         "palabra": "Do",
-        "significado": "¿(auxiliar)?"
+        "significado": "(auxiliar)"
       },
       {
         "palabra": "you",
@@ -2194,7 +2194,7 @@
     "partes": [
       {
         "palabra": "Does",
-        "significado": "¿(auxiliar)?"
+        "significado": "(auxiliar)"
       },
       {
         "palabra": "he",
@@ -2266,7 +2266,7 @@
     "partes": [
       {
         "palabra": "Are",
-        "significado": "¿Son"
+        "significado": "Son"
       },
       {
         "palabra": "they",
@@ -2278,7 +2278,7 @@
       },
       {
         "palabra": "friends",
-        "significado": "amigos?"
+        "significado": "amigos"
       }
     ],
     "ejercicio": { "tipo": "ordenar" }
@@ -2294,7 +2294,7 @@
     "partes": [
       {
         "palabra": "Is",
-        "significado": "¿Es"
+        "significado": "Es"
       },
       {
         "palabra": "it",
@@ -2310,7 +2310,7 @@
       },
       {
         "palabra": "school",
-        "significado": "colegio?"
+        "significado": "colegio"
       }
     ],
     "ejercicio": { "tipo": "ordenar" }
@@ -2326,7 +2326,7 @@
     "partes": [
       {
         "palabra": "Are",
-        "significado": "¿Estamos"
+        "significado": "Estamos"
       },
       {
         "palabra": "we",
@@ -2334,7 +2334,7 @@
       },
       {
         "palabra": "late",
-        "significado": "tarde?"
+        "significado": "tarde"
       }
     ],
     "ejercicio": { "tipo": "ordenar" }
@@ -2350,7 +2350,7 @@
     "partes": [
       {
         "palabra": "Is",
-        "significado": "¿Es"
+        "significado": "Es"
       },
       {
         "palabra": "she",
@@ -2362,7 +2362,7 @@
       },
       {
         "palabra": "sister",
-        "significado": "hermana?"
+        "significado": "hermana"
       }
     ],
     "ejercicio": { "tipo": "ordenar" }
@@ -2590,7 +2590,7 @@
         "significado": "favorito"
       },
       {
-        "palabra": "color?",
+        "palabra": "color",
         "significado": "color"
       }
     ],
@@ -2622,7 +2622,7 @@
         "significado": "es"
       },
       {
-        "palabra": "it?",
+        "palabra": "it",
         "significado": "esto/eso"
       }
     ],
@@ -2654,7 +2654,7 @@
         "significado": "tu"
       },
       {
-        "palabra": "backpack?",
+        "palabra": "backpack",
         "significado": "mochila"
       }
     ],
@@ -2686,7 +2686,7 @@
         "significado": "tú"
       },
       {
-        "palabra": "live?",
+        "palabra": "live",
         "significado": "vives"
       }
     ],
@@ -2722,7 +2722,7 @@
         "significado": "mejor"
       },
       {
-        "palabra": "friend?",
+        "palabra": "friend",
         "significado": "amigo"
       }
     ],
@@ -2758,7 +2758,7 @@
         "significado": "te sientas"
       },
       {
-        "palabra": "with?",
+        "palabra": "with",
         "significado": "con"
       }
     ],
@@ -2798,7 +2798,7 @@
         "significado": "a"
       },
       {
-        "palabra": "school?",
+        "palabra": "school",
         "significado": "colegio"
       }
     ],
@@ -2830,7 +2830,7 @@
         "significado": "tu"
       },
       {
-        "palabra": "grandma?",
+        "palabra": "grandma",
         "significado": "abuela"
       }
     ],
@@ -2862,7 +2862,7 @@
         "significado": "tú"
       },
       {
-        "palabra": "have lunch?",
+        "palabra": "have lunch",
         "significado": "almorzar"
       }      
     ],
@@ -2883,7 +2883,9 @@
       {
         "palabra": "When",
         "significado": "¿Cuándo?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "When", "What", "Where", "Who" ],
+        "correcta": "When"
       },
       {
         "palabra": "do",
@@ -2902,13 +2904,37 @@
         "significado": "tus"
       },
       {
-        "palabra": "homework?",
+        "palabra": "homework",
         "significado": "deberes"
       }
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "When do you do your homework?",
+            "der": "¿Cuándo haces tus deberes?"
+          },
+          {
+            "id": 2,
+            "izq": "When is your birthday?",
+            "der": "¿Cuándo es tu cumpleaños?"
+          },
+          {
+            "id": 3,
+            "izq": "When do you go to bed?",
+            "der": "¿Cuándo te vas a la cama?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -2933,7 +2959,7 @@
         "significado": "no"
       },
       {
-        "palabra": "hungry?",
+        "palabra": "hungry",
         "significado": "con hambre"
       }
     ],
@@ -3181,7 +3207,7 @@
         "significado": "Ella"
       },
       {
-        "palabra": "doesn't'",
+        "palabra": "doesn't",
         "significado": "contracción 'does not' (No)"
       },      
       {
