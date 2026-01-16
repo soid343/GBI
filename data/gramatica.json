@@ -40,8 +40,8 @@
           },
           {
             "id": 2,
-            "izq": "Where is the book?",
-            "der": "¿Dónde está el libro?"
+            "izq": "Where is my sandwich?",
+            "der": "¿Dónde está mi sandwich?"
           },
           {
             "id": 3,
@@ -124,12 +124,14 @@
     "leccion": "wh_questions",
     "frase": "Where is the book?",
     "traduccion": "¿Dónde está el libro?",
-    "mostrarModelo": true,
+    "mostrarModelo": false,
     "partes": [
       {
         "palabra": "Where",
         "significado": "¿Dónde?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "What", "Where", "Who", "When" ],
+        "correcta": "Where"
       },
       {
         "palabra": "is",
@@ -140,13 +142,37 @@
         "significado": "el"
       },
       {
-        "palabra": "book?",
+        "palabra": "book",
         "significado": "libro"
       }
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Where is the book?",
+            "der": "¿Dónde está el libro?"
+          },
+          {
+            "id": 2,
+            "izq": "Where are you?",
+            "der": "¿Dónde estás?"
+          },
+          {
+            "id": 3,
+            "izq": "Where is my pencil?",
+            "der": "¿Dónde está mi lápiz?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -336,7 +362,7 @@
     "leccion": "pronouns_to_be",
     "frase": "I am happy.",
     "traduccion": "Yo estoy feliz.",
-    "mostrarModelo": true,
+    "mostrarModelo": false,
     "partes": [
       {
         "palabra": "I",
@@ -344,14 +370,44 @@
       },
       {
         "palabra": "am",
-        "significado": "estoy"
+        "significado": "estoy",
+        "esHueco": true,
+        "opciones": [ "am", "is", "are" ],
+        "correcta": "am"
       },
       {
-        "palabra": "happy",
+        "palabra": "happy.",
         "significado": "feliz"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "I am happy.",
+            "der": "Yo estoy feliz."
+          },
+          {
+            "id": 2,
+            "izq": "You are sad.",
+            "der": "Tú estás triste."
+          },
+          {
+            "id": 3,
+            "izq": "We are friends.",
+            "der": "Nosotros somos amigos."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
+    ]
   },
   {
     "id": 12,
@@ -1428,18 +1484,48 @@
       },
       {
         "palabra": "are",
-        "significado": "están"
+        "significado": "están",
+        "esHueco": true,
+        "opciones": [ "am", "is", "are" ],
+        "correcta": "are"
       },
       {
         "palabra": "not",
         "significado": "no"
       },
       {
-        "palabra": "tired",
+        "palabra": "tired.",
         "significado": "cansados"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "They are not tired.",
+            "der": "Ellos no están cansados."
+          },
+          {
+            "id": 2,
+            "izq": "She is not angry.",
+            "der": "Ella no está enfadada."
+          },
+          {
+            "id": 3,
+            "izq": "I am not sad.",
+            "der": "Yo no estoy triste."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
+    ]
   },
   {
     "id": 49,
@@ -1487,7 +1573,7 @@
         "significado": "tu"
       },
       {
-        "palabra": "teacher?",
+        "palabra": "teacher",
         "significado": "profesor?"
       }
     ],

@@ -207,7 +207,7 @@ function mostrarContenidoPorCategoria(categoria) {
 // Validar respuesta al ejercicio y mostrar resultado
 function validarRespuesta() {
     const e = estadoApp.ejercicioActual;
-    const correcta = e.partes.map(p => p.palabra).join(" ");
+    const correcta = e.frase; // ← Usar directamente el campo frase
     const usuario = estadoApp.respuestaUsuario.join(" ");
 
     if (usuario === correcta) {
