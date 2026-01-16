@@ -191,10 +191,10 @@ function volverALecciones() {
 }
 
 // Función para lanzar el ejercicio de práctica seleccionado
-function seleccionarModoPractica(tipo) {
-    estadoApp.tipoPractica = tipo; // "ordenar" o "hueco"
-    iniciarPracticaLeccion();
-}
+//function seleccionarModoPractica(tipo) {
+ //   estadoApp.tipoPractica = tipo; // "ordenar" o "hueco"
+ //   iniciarPracticaLeccion();
+//}
 
 // IMPORTAR FUNCIONES DE UI Y EXERCISES
 // (Se cargan automáticamente por orden de scripts en index.html)

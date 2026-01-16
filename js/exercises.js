@@ -177,7 +177,7 @@ function iniciarPracticaLeccion() {
 
 // Función para lanzar el ejercicio de práctica seleccionado
 function seleccionarModoPractica(tipo) {
-    estadoApp.tipoPractica = tipo;  // "ordenar" o "hueco"
+    estadoApp.tipoPractica = tipo;  //  "ordenar", "hueco", "emparejar", "opcion"
     iniciarPracticaLeccion();
 }
 
@@ -267,7 +267,6 @@ function obtenerNombreTipo(tipo, subtipo) {
     return `${emoji} ${nombre}${sub}`;
 }
 
-// Función para generar explicaciones gramaticales simples para niños
 // Función para generar explicaciones gramaticales simples para niños
 function obtenerExplicacionGramatical(ejercicio) {
     const explicaciones = {
@@ -892,7 +891,6 @@ function renderizarPracticaHueco(contenedor, e, configEjercicio) {
     botonComprobar.onclick = () => renderizar();
     contenedor.appendChild(botonComprobar);
 }
-
 // Práctica de seleccionar opción correcta en la frase
 function renderizarPracticaOpcion(contenedor, e, configEjercicio) {
     // Limpiar y añadir barra de navegación
@@ -911,7 +909,7 @@ function renderizarPracticaOpcion(contenedor, e, configEjercicio) {
     contador.className = "contador-intentos";
     contenedor.appendChild(contador);
 
-    // Si ya hay resultado, mostramos estados finales (igual que en hueco)
+    // Si ya hay resultado, mostramos estados finales
     if (estadoApp.resultado === "finalizado") {
         const solucionDiv = document.createElement("div");
         solucionDiv.className = "mensaje-error";
@@ -936,9 +934,15 @@ function renderizarPracticaOpcion(contenedor, e, configEjercicio) {
     }
 
     if (estadoApp.resultado === "correcto") {
+        // Mostrar la oración completada correctamente
+        const fraseCompletaDiv = document.createElement("div");
+        fraseCompletaDiv.className = "frase-explicacion";
+        fraseCompletaDiv.textContent = e.frase;
+        contenedor.appendChild(fraseCompletaDiv);
+
         const resultado = document.createElement("div");
         resultado.className = "mensaje-exito";
-        resultado.textContent = "¡Muy bien! ¡Correcto!";
+        resultado.textContent = "¡Muy bien! Has completado correctamente la oración.";
         contenedor.appendChild(resultado);
 
         const botonContinuar = document.createElement("button");
@@ -960,57 +964,42 @@ function renderizarPracticaOpcion(contenedor, e, configEjercicio) {
     if (estadoApp.resultado === "incorrecto") {
         const resultado = document.createElement("div");
         resultado.className = "mensaje-advertencia";
-        resultado.textContent = "No es correcto. Inténtalo de nuevo.";
+        resultado.textContent = "Hay algún error. Inténtalo de nuevo.";
         contenedor.appendChild(resultado);
     }
 
-    // ---------- Frase con selects de opción ----------
-    const fraseDiv = document.createElement("div");
-    fraseDiv.className = "frase-explicacion";
+    // ---------- Instrucción ----------
+    const instruccion = document.createElement("p");
+    instruccion.className = "texto-instruccion";
+    instruccion.textContent = "Completa la oración eligiendo la opción correcta.";
+    contenedor.appendChild(instruccion);
 
-    const fragment = document.createDocumentFragment();
+    // ---------- Frase con huecos ----------
+    const fraseDiv = document.createElement("div");
+    fraseDiv.className = "frase-explicacion contenedor-oracion-opcion";
+    contenedor.appendChild(fraseDiv);
 
     // Inicializar array de respuestas si hace falta
     if (!Array.isArray(estadoApp.respuestaUsuario) || estadoApp.respuestaUsuario.length !== e.partes.length) {
         estadoApp.respuestaUsuario = new Array(e.partes.length).fill(null);
     }
 
-    e.partes.forEach((p, idx) => {
+    e.partes.forEach((p, idxParte) => {
         if (p.opciones && p.correcta) {
-            const select = document.createElement("select");
-            select.className = "select-opcion";
-
-            // Primera opción vacía
-            const optVacia = document.createElement("option");
-            optVacia.value = "";
-            optVacia.textContent = "___";
-            select.appendChild(optVacia);
-
-            p.opciones.forEach(op => {
-                const opt = document.createElement("option");
-                opt.value = op;
-                opt.textContent = op;
-                select.appendChild(opt);
-            });
-
-            const valorGuardado = estadoApp.respuestaUsuario[idx];
-            if (valorGuardado) {
-                select.value = valorGuardado;
-            }
-
-            select.onchange = ev => {
-                estadoApp.respuestaUsuario[idx] = ev.target.value;
-            };
-
-            fragment.appendChild(select);
-            fragment.appendChild(document.createTextNode(" "));
+            // Es un hueco con opciones
+            const gap = document.createElement("span");
+            gap.classList.add("gap-opcion");
+            gap.dataset.indiceParte = idxParte;
+            gap.textContent = estadoApp.respuestaUsuario[idxParte] || "______";
+            fraseDiv.appendChild(gap);
+            fraseDiv.appendChild(document.createTextNode(" "));
         } else {
-            fragment.appendChild(document.createTextNode(p.palabra + " "));
+            // Es texto fijo
+            const spanTexto = document.createElement("span");
+            spanTexto.textContent = p.palabra + " ";
+            fraseDiv.appendChild(spanTexto);
         }
     });
-
-    fraseDiv.appendChild(fragment);
-    contenedor.appendChild(fraseDiv);
 
     // Traducción como ayuda
     if (estadoApp.mostrarAyuda) {
@@ -1019,6 +1008,52 @@ function renderizarPracticaOpcion(contenedor, e, configEjercicio) {
         traduccionDiv.innerHTML = `<strong>En español</strong>: ${e.traduccion}`;
         contenedor.appendChild(traduccionDiv);
     }
+
+    // ---------- Botones de opciones para cada hueco ----------
+    e.partes.forEach((p, idxParte) => {
+        if (p.opciones && p.correcta) {
+            const contenedorOpciones = document.createElement("div");
+            contenedorOpciones.classList.add("contenedor-opciones-opcion");
+            contenedorOpciones.dataset.indiceParte = idxParte;
+
+            p.opciones.forEach((opcionTexto, idxOpcion) => {
+                const boton = document.createElement("button");
+                boton.type = "button";
+                boton.classList.add("boton-opcion");
+
+                // Marcar como seleccionado si ya está guardado
+                if (estadoApp.respuestaUsuario[idxParte] === opcionTexto) {
+                    boton.classList.add("emparejar-seleccionado");
+                }
+
+                boton.textContent = opcionTexto;
+                boton.dataset.indiceParte = idxParte;
+                boton.dataset.indiceOpcion = idxOpcion;
+
+                boton.addEventListener("click", () => {
+                    // Deseleccionar todos los botones de ese hueco
+                    const hermanos = contenedorOpciones.querySelectorAll(".boton-opcion");
+                    hermanos.forEach(b => b.classList.remove("emparejar-seleccionado"));
+
+                    // Seleccionar éste
+                    boton.classList.add("emparejar-seleccionado");
+
+                    // Actualizar respuesta del usuario
+                    estadoApp.respuestaUsuario[idxParte] = opcionTexto;
+
+                    // Actualizar texto del hueco en la oración
+                    const gap = fraseDiv.querySelector(`[data-indice-parte="${idxParte}"]`);
+                    if (gap) {
+                        gap.textContent = opcionTexto;
+                    }
+                });
+
+                contenedorOpciones.appendChild(boton);
+            });
+
+            contenedor.appendChild(contenedorOpciones);
+        }
+    });
 
     // Botón comprobar
     const botonComprobar = document.createElement("button");
@@ -1030,7 +1065,6 @@ function renderizarPracticaOpcion(contenedor, e, configEjercicio) {
     };
     contenedor.appendChild(botonComprobar);
 }
-
 // Validar respuesta de opción múltiple
 function validarRespuestaOpcion(e) {
     const respuestas = estadoApp.respuestaUsuario;

@@ -769,6 +769,54 @@ button {
     margin-top: 15px;
     margin-bottom: 10px;
 }
+/* Modo opción */
+.contenedor-oracion-opcion {
+    font-size: 1.4rem;
+    line-height: 2;
+    margin: 1.5rem 0;
+}
+
+.gap-opcion {
+    display: inline-block;
+    min-width: 100px;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    padding: 0.25rem 0.5rem;
+    margin: 0 0.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.contenedor-opciones-opcion {
+    margin: 0.75rem 0 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.boton-opcion {
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+    .boton-opcion:hover {
+        border-color: #999;
+        transform: translateY(-2px);
+    }
+
+    /* Reutiliza la clase de emparejar para el color naranja */
+    .boton-opcion.emparejar-seleccionado {
+        background-color: #f28c28;
+        color: #fff;
+        border-color: #f28c28;
+    }
+
 /* Layout de emparejar */
 .layout-emparejar {
     display: flex;

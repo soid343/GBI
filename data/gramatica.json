@@ -11,7 +11,9 @@
       {
         "palabra": "What",
         "significado": "¿Qué?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "What", "Where", "Who", "When" ],
+        "correcta": "What"
       },
       {
         "palabra": "is",
@@ -24,7 +26,10 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
       {
         "tipo": "emparejar",
         "pares": [
@@ -44,7 +49,8 @@
             "der": "¿Quién es ella?"
           }
         ]
-      }
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -1481,7 +1487,7 @@
         "significado": "tu"
       },
       {
-        "palabra": "teacher",
+        "palabra": "teacher?",
         "significado": "profesor?"
       }
     ],
@@ -3175,7 +3181,9 @@
       {
         "palabra": "is",
         "significado": "está",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "am", "is", "are" ],
+        "correcta": "is"
       },
       {
         "palabra": "bored",
@@ -3187,6 +3195,26 @@
       {
         "tipo": "hueco",
         "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "She is bored.",
+            "der": "Ella está aburrida."
+          },
+          {
+            "id": 2,
+            "izq": "He is tired.",
+            "der": "Él está cansado."
+          },
+          {
+            "id": 3,
+            "izq": "I am happy.",
+            "der": "Yo estoy feliz."
+          }
+        ]
       },
       { "tipo": "opcion" }
     ]
