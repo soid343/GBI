@@ -632,7 +632,10 @@
       },
       {
         "palabra": "is",
-        "significado": "es"
+        "significado": "es",
+        "esHueco": true,
+        "opciones": [ "am", "is", "are" ],
+        "correcta": "is"
       },
       {
         "palabra": "a",
@@ -644,7 +647,32 @@
       }
     ],
     "ejercicios": [
-      { "tipo": "ordenar" }
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "She is a student.",
+            "der": "Ella es una estudiante."
+          },
+          {
+            "id": 2,
+            "izq": "He is a teacher.",
+            "der": "Él es un profesor."
+          },
+          {
+            "id": 3,
+            "izq": "They are friends.",
+            "der": "Ellos son amigos."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -662,7 +690,10 @@
       },
       {
         "palabra": "are",
-        "significado": "son"
+        "significado": "son",
+        "esHueco": true,
+        "opciones": [ "am", "is", "are" ],
+        "correcta": "are"
       },
       {
         "palabra": "friends",
@@ -670,7 +701,32 @@
       }
     ],
     "ejercicios": [
-      { "tipo": "ordenar" }
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "They are friends.",
+            "der": "Ellos son amigos."
+          },
+          {
+            "id": 2,
+            "izq": "We are at school.",
+            "der": "Nosotros estamos en la escuela."
+          },
+          {
+            "id": 3,
+            "izq": "You are my best friend.",
+            "der": "Tú eres mi mejor amigo."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -688,7 +744,10 @@
       },
       {
         "palabra": "are",
-        "significado": "estamos"
+        "significado": "estamos",
+        "esHueco": true,
+        "opciones": [ "am", "is", "are" ],
+        "correcta": "are"
       },
       {
         "palabra": "at",
@@ -700,7 +759,32 @@
       }
     ],
     "ejercicios": [
-      { "tipo": "ordenar" }
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "We are at school.",
+            "der": "Nosotros estamos en la escuela."
+          },
+          {
+            "id": 2,
+            "izq": "They are at the park.",
+            "der": "Ellos están en el parque."
+          },
+          {
+            "id": 3,
+            "izq": "We are in the classroom.",
+            "der": "Nosotros estamos en la clase."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -722,7 +806,10 @@
       },
       {
         "palabra": "is",
-        "significado": "es"
+        "significado": "es",
+        "esHueco": true,
+        "opciones": [ "am", "is", "are" ],
+        "correcta": "is"
       },
       {
         "palabra": "black",
@@ -730,7 +817,32 @@
       }
     ],
     "ejercicios": [
-      { "tipo": "ordenar" }
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "The cat is black.",
+            "der": "El gato es negro."
+          },
+          {
+            "id": 2,
+            "izq": "The dog is brown.",
+            "der": "El perro es marrón."
+          },
+          {
+            "id": 3,
+            "izq": "The sky is blue.",
+            "der": "El cielo es azul."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -748,7 +860,10 @@
       },
       {
         "palabra": "like",
-        "significado": "gustar"
+        "significado": "gustar",
+        "esHueco": true,
+        "opciones": [ "like", "likes", "liked" ],
+        "correcta": "like"
       },
       {
         "palabra": "apples",
@@ -756,7 +871,32 @@
       }
     ],
     "ejercicios": [
-      { "tipo": "ordenar" }
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "I like apples.",
+            "der": "Me gustan las manzanas."
+          },
+          {
+            "id": 2,
+            "izq": "She plays soccer.",
+            "der": "Ella juega al fútbol."
+          },
+          {
+            "id": 3,
+            "izq": "We read books.",
+            "der": "Nosotros leemos libros."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -774,7 +914,10 @@
       },
       {
         "palabra": "plays",
-        "significado": "juega"
+        "significado": "juega",
+        "esHueco": true,
+        "opciones": [ "play", "plays", "played" ],
+        "correcta": "plays"
       },
       {
         "palabra": "soccer",
@@ -782,7 +925,32 @@
       }
     ],
     "ejercicios": [
-      { "tipo": "ordenar" }
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "She plays soccer.",
+            "der": "Ella juega al fútbol."
+          },
+          {
+            "id": 2,
+            "izq": "He plays basketball.",
+            "der": "Él juega al baloncesto."
+          },
+          {
+            "id": 3,
+            "izq": "I play the guitar.",
+            "der": "Yo toco la guitarra."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -800,7 +968,10 @@
       },
       {
         "palabra": "eats",
-        "significado": "come"
+        "significado": "come",
+        "esHueco": true,
+        "opciones": [ "eat", "eats", "ate" ],
+        "correcta": "eats"
       },
       {
         "palabra": "breakfast",
@@ -808,7 +979,32 @@
       }
     ],
     "ejercicios": [
-      { "tipo": "ordenar" }
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "He eats breakfast.",
+            "der": "Él desayuna."
+          },
+          {
+            "id": 2,
+            "izq": "She eats lunch.",
+            "der": "Ella almuerza."
+          },
+          {
+            "id": 3,
+            "izq": "They eat dinner.",
+            "der": "Ellos cenan."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -826,7 +1022,10 @@
       },
       {
         "palabra": "read",
-        "significado": "leemos"
+        "significado": "leemos",
+        "esHueco": true,
+        "opciones": [ "read", "reads", "reading" ],
+        "correcta": "read"
       },
       {
         "palabra": "books",
@@ -834,7 +1033,32 @@
       }
     ],
     "ejercicios": [
-      { "tipo": "ordenar" }
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "We read books.",
+            "der": "Nosotros leemos libros."
+          },
+          {
+            "id": 2,
+            "izq": "I read comics.",
+            "der": "Yo leo cómics."
+          },
+          {
+            "id": 3,
+            "izq": "She reads magazines.",
+            "der": "Ella lee revistas."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -852,7 +1076,10 @@
       },
       {
         "palabra": "go",
-        "significado": "van"
+        "significado": "van",
+        "esHueco": true,
+        "opciones": [ "go", "goes", "went" ],
+        "correcta": "go"
       },
       {
         "palabra": "to",
@@ -864,7 +1091,32 @@
       }
     ],
     "ejercicios": [
-      { "tipo": "ordenar" }
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "They go to school.",
+            "der": "Ellos van a la escuela."
+          },
+          {
+            "id": 2,
+            "izq": "We go to the park.",
+            "der": "Nosotros vamos al parque."
+          },
+          {
+            "id": 3,
+            "izq": "I go home.",
+            "der": "Yo voy a casa."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
