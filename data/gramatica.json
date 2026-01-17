@@ -3330,5 +3330,482 @@
       },
       { "tipo": "opcion" }
     ]
+  },
+  {
+    "id": 102,
+    "tipo": "afirmacion_simple",
+    "subtipo": "there_is",
+    "leccion": "there_is_there_are",
+    "frase": "There is a cinema in my town.",
+    "traduccion": "Hay un cine en mi pueblo.",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "There",
+        "significado": "Hay"
+      },
+      {
+        "palabra": "is",
+        "significado": "(auxiliar singular)"
+      },
+      {
+        "palabra": "a",
+        "significado": "un"
+      },
+      {
+        "palabra": "cinema",
+        "significado": "cine"
+      },
+      {
+        "palabra": "in",
+        "significado": "en"
+      },
+      {
+        "palabra": "my",
+        "significado": "mi"
+      },
+      {
+        "palabra": "town.",
+        "significado": "pueblo"
+      }
+    ],
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "there_is_are"
+      },
+      {
+        "tipo": "opcion"
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "tipo": "negacion_simple",
+    "subtipo": "there_is",
+    "leccion": "there_is_there_are",
+    "frase": "There isn't a hospital in my village.",
+    "traduccion": "No hay un hospital en mi pueblo.",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "There",
+        "significado": "No hay"
+      },
+      {
+        "palabra": "isn't",
+        "significado": "contracción 'is not'"
+      },
+      {
+        "palabra": "a",
+        "significado": "un"
+      },
+      {
+        "palabra": "hospital",
+        "significado": "hospital"
+      },
+      {
+        "palabra": "in",
+        "significado": "en"
+      },
+      {
+        "palabra": "my",
+        "significado": "mi"
+      },
+      {
+        "palabra": "village.",
+        "significado": "pueblo"
+      }
+    ],
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "negacion"
+      },
+      { "tipo": "opcion" }
+    ]
+  },
+  {
+    "id": 104,
+    "tipo": "afirmacion_simple",
+    "subtipo": "there_are",
+    "leccion": "there_is_there_are",
+    "frase": "There are three shops in my street.",
+    "traduccion": "Hay tres tiendas en mi calle.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "There",
+        "significado": "Hay"
+      },
+      {
+        "palabra": "are",
+        "significado": "(auxiliar plural)"
+      },
+      {
+        "palabra": "three",
+        "significado": "tres"
+      },
+      {
+        "palabra": "shops",
+        "significado": "tiendas"
+      },
+      {
+        "palabra": "in",
+        "significado": "en"
+      },
+      {
+        "palabra": "my",
+        "significado": "mi"
+      },
+      {
+        "palabra": "street.",
+        "significado": "calle"
+      }
+    ],
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "there_is_are"
+      },
+      { "tipo": "opcion" }
+    ]
+  },
+  {
+    "id": 104,
+    "tipo": "afirmacion_simple",
+    "subtipo": "there_are",
+    "leccion": "there_is_there_are",
+    "frase": "There are three shops in my street.",
+    "traduccion": "Hay tres tiendas en mi calle.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "There",
+        "significado": "Hay"
+      },
+      {
+        "palabra": "are",
+        "significado": "(auxiliar plural)"
+      },
+      {
+        "palabra": "three",
+        "significado": "tres"
+      },
+      {
+        "palabra": "shops",
+        "significado": "tiendas"
+      },
+      {
+        "palabra": "in",
+        "significado": "en"
+      },
+      {
+        "palabra": "my",
+        "significado": "mi"
+      },
+      {
+        "palabra": "street.",
+        "significado": "calle"
+      }
+    ],
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "there_is_are"
+      },
+      { "tipo": "opcion" }
+    ]
+  },
+  {
+    "id": 105,
+    "tipo": "negacion_simple",
+    "subtipo": "there_are",
+    "leccion": "there_is_there_are",
+    "frase": "There aren't any parks in my town.",
+    "traduccion": "No hay parques en mi pueblo.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "There",
+        "significado": "No hay"
+      },
+      {
+        "palabra": "aren't",
+        "significado": "contracción 'are not'"
+      },
+      {
+        "palabra": "any",
+        "significado": "ningún/ningunos"
+      },
+      {
+        "palabra": "parks",
+        "significado": "parques"
+      },
+      {
+        "palabra": "in",
+        "significado": "en"
+      },
+      {
+        "palabra": "my",
+        "significado": "mi"
+      },
+      {
+        "palabra": "town.",
+        "significado": "pueblo"
+      }
+    ],
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "negacion"
+      },
+      { "tipo": "opcion" }
+    ]
+  },
+  {
+    "id": 106,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "there_is",
+    "leccion": "there_is_there_are",
+    "frase": "Is there a museum in your town?",
+    "traduccion": "¿Hay un museo en tu pueblo?",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "Is",
+        "significado": "¿Hay"
+      },
+      {
+        "palabra": "there",
+        "significado": "(indica existencia)"
+      },
+      {
+        "palabra": "a",
+        "significado": "un"
+      },
+      {
+        "palabra": "museum",
+        "significado": "museo"
+      },
+      {
+        "palabra": "in",
+        "significado": "en"
+      },
+      {
+        "palabra": "your",
+        "significado": "tu"
+      },
+      {
+        "palabra": "town?",
+        "significado": "pueblo"
+      }
+    ],
+    "ejercicios": [
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Is there a museum in your town?",
+            "der": "Yes, there is."
+          }
+        ]
+      },
+      {
+        "tipo": "opcion",
+        "opciones": [
+          "Yes, there is.",
+          "Yes, there are.", // error: plural
+          "Yes, it is." // error: estructura equivocada
+        ],
+        "correcta": "Yes, there is."
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "there_is",
+    "leccion": "there_is_there_are",
+    "frase": "Is there a cinema in your village?",
+    "traduccion": "¿Hay un cine en tu pueblo?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Is",
+        "significado": "¿Hay"
+      },
+      {
+        "palabra": "there",
+        "significado": "(indica existencia)"
+      },
+      {
+        "palabra": "a",
+        "significado": "un"
+      },
+      {
+        "palabra": "cinema",
+        "significado": "cine"
+      },
+      {
+        "palabra": "in",
+        "significado": "en"
+      },
+      {
+        "palabra": "your",
+        "significado": "tu"
+      },
+      {
+        "palabra": "village?",
+        "significado": "pueblo"
+      }
+    ],
+    "ejercicios": [
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Is there a cinema in your village?",
+            "der": "No, there isn't."
+          }
+        ]
+      },
+      {
+        "tipo": "opcion",
+        "opciones": [
+          "No, there isn't.",
+          "No, there aren't.", // error: plural
+          "No, it isn't." // error: estructura no estándar en este contexto
+        ],
+        "correcta": "No, there isn't."
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "there_are",
+    "leccion": "there_is_there_are",
+    "frase": "Are there any parks in your town?",
+    "traduccion": "¿Hay parques en tu pueblo?",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "Are",
+        "significado": "¿Hay"
+      },
+      {
+        "palabra": "there",
+        "significado": "(indica existencia)"
+      },
+      {
+        "palabra": "any",
+        "significado": "algunos"
+      },
+      {
+        "palabra": "parks",
+        "significado": "parques"
+      },
+      {
+        "palabra": "in",
+        "significado": "en"
+      },
+      {
+        "palabra": "your",
+        "significado": "tu"
+      },
+      {
+        "palabra": "town?",
+        "significado": "pueblo"
+      }
+    ],
+    "ejercicios": [
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Are there any parks in your town?",
+            "der": "Yes, there are."
+          }
+        ]
+      },
+      {
+        "tipo": "opcion",
+        "opciones": [
+          "Yes, there are.",
+          "Yes, there is.", // error: singular
+          "Yes, they are." // error: pronombre / estructura
+        ],
+        "correcta": "Yes, there are."
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "there_are",
+    "leccion": "there_is_there_are",
+    "frase": "Are there any buses in your street?",
+    "traduccion": "¿Hay autobuses en tu calle?",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "Are",
+        "significado": "¿Hay"
+      },
+      {
+        "palabra": "there",
+        "significado": "(indica existencia)"
+      },
+      {
+        "palabra": "any",
+        "significado": "algunos"
+      },
+      {
+        "palabra": "buses",
+        "significado": "autobuses"
+      },
+      {
+        "palabra": "in",
+        "significado": "en"
+      },
+      {
+        "palabra": "your",
+        "significado": "tu"
+      },
+      {
+        "palabra": "street?",
+        "significado": "calle"
+      }
+    ],
+    "ejercicios": [
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Are there any buses in your street?",
+            "der": "No, there aren't."
+          }
+        ]
+      },
+      {
+        "tipo": "opcion",
+        "opciones": [
+          "No, there aren't.",
+          "No, there isn't.", // error: singular
+          "No, they aren't." // error: pronombre / estructura
+        ],
+        "correcta": "No, there aren't."
+      }
+    ]
   }
 ]
