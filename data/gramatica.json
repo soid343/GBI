@@ -65,7 +65,9 @@
       {
         "palabra": "What",
         "significado": "¿Cuál?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "What", "Where", "Who", "When" ],
+        "correcta": "What"
       },
       {
         "palabra": "is",
@@ -82,7 +84,31 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "What is your name?",
+            "der": "¿Cuál es tu nombre?"
+          },
+          {
+            "id": 2,
+            "izq": "What is this?",
+            "der": "¿Qué es esto?"
+          },
+          {
+            "id": 3,
+            "izq": "What color is it?",
+            "der": "¿De qué color es?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -97,7 +123,9 @@
       {
         "palabra": "What",
         "significado": "¿Qué?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "What", "Where", "Who", "How" ],
+        "correcta": "What"
       },
       {
         "palabra": "color",
@@ -114,7 +142,31 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "What color is it?",
+            "der": "¿De qué color es?"
+          },
+          {
+            "id": 2,
+            "izq": "What is your name?",
+            "der": "¿Cuál es tu nombre?"
+          },
+          {
+            "id": 3,
+            "izq": "What time is it?",
+            "der": "¿Qué hora es?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -187,7 +239,9 @@
       {
         "palabra": "Where",
         "significado": "¿Dónde?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "What", "Where", "Who", "When" ],
+        "correcta": "Where"
       },
       {
         "palabra": "are",
@@ -200,7 +254,31 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Where are you?",
+            "der": "¿Dónde estás?"
+          },
+          {
+            "id": 2,
+            "izq": "Where is the book?",
+            "der": "¿Dónde está el libro?"
+          },
+          {
+            "id": 3,
+            "izq": "Where is my pencil?",
+            "der": "¿Dónde está mi lápiz?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -215,7 +293,9 @@
       {
         "palabra": "Where",
         "significado": "¿Dónde?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "What", "Where", "Who", "When" ],
+        "correcta": "Where"
       },
       {
         "palabra": "is",
@@ -232,7 +312,31 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Where is my pencil?",
+            "der": "¿Dónde está mi lápiz?"
+          },
+          {
+            "id": 2,
+            "izq": "Where is your backpack?",
+            "der": "¿Dónde está tu mochila?"
+          },
+          {
+            "id": 3,
+            "izq": "Where are you?",
+            "der": "¿Dónde estás?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -247,7 +351,9 @@
       {
         "palabra": "Who",
         "significado": "¿Quién?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "What", "Where", "Who", "When" ],
+        "correcta": "Who"
       },
       {
         "palabra": "is",
@@ -260,7 +366,31 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Who is she?",
+            "der": "¿Quién es ella?"
+          },
+          {
+            "id": 2,
+            "izq": "Who is your teacher?",
+            "der": "¿Quién es tu profesor/a?"
+          },
+          {
+            "id": 3,
+            "izq": "Who is your best friend?",
+            "der": "¿Quién es tu mejor amigo?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -275,7 +405,9 @@
       {
         "palabra": "Who",
         "significado": "¿Quién?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "What", "Where", "Who", "When" ],
+        "correcta": "Who"
       },
       {
         "palabra": "is",
@@ -292,7 +424,31 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Who is your teacher?",
+            "der": "¿Quién es tu profesor/a?"
+          },
+          {
+            "id": 2,
+            "izq": "Who do you sit with?",
+            "der": "¿Con quién te sientas?"
+          },
+          {
+            "id": 3,
+            "izq": "Who is she?",
+            "der": "¿Quién es ella?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -307,7 +463,9 @@
       {
         "palabra": "How",
         "significado": "¿Cómo?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "How", "What", "Where", "Who" ],
+        "correcta": "How"
       },
       {
         "palabra": "are",
@@ -320,7 +478,31 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "How are you?",
+            "der": "¿Cómo estás?"
+          },
+          {
+            "id": 2,
+            "izq": "How old are you?",
+            "der": "¿Cuántos años tienes?"
+          },
+          {
+            "id": 3,
+            "izq": "How is your grandma?",
+            "der": "¿Cómo está tu abuela?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -335,7 +517,9 @@
       {
         "palabra": "How",
         "significado": "¿Cuántos?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "How", "What", "Where", "When" ],
+        "correcta": "How"
       },
       {
         "palabra": "old",
@@ -352,7 +536,31 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "How old are you?",
+            "der": "¿Cuántos años tienes?"
+          },
+          {
+            "id": 2,
+            "izq": "How are you?",
+            "der": "¿Cómo estás?"
+          },
+          {
+            "id": 3,
+            "izq": "How do you go to school?",
+            "der": "¿Cómo vas al colegio?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -1277,7 +1485,9 @@
       {
         "palabra": "When",
         "significado": "¿Cuándo?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "When", "What", "Where", "Who" ],
+        "correcta": "When"
       },
       {
         "palabra": "do",
@@ -1302,7 +1512,31 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "When do you go to bed?",
+            "der": "¿Cuándo te vas a la cama?"
+          },
+          {
+            "id": 2,
+            "izq": "When is your birthday?",
+            "der": "¿Cuándo es tu cumpleaños?"
+          },
+          {
+            "id": 3,
+            "izq": "When does school start?",
+            "der": "¿Cuándo empieza el colegio?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -1317,7 +1551,9 @@
       {
         "palabra": "When",
         "significado": "¿Cuándo?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "When", "What", "Where", "Who" ],
+        "correcta": "When"
       },
       {
         "palabra": "does",
@@ -1334,7 +1570,31 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "When does school start?",
+            "der": "¿Cuándo empieza el colegio?"
+          },
+          {
+            "id": 2,
+            "izq": "When do you have lunch?",
+            "der": "¿Cuándo comes (almuerzas)?"
+          },
+          {
+            "id": 3,
+            "izq": "When do you go to bed?",
+            "der": "¿Cuándo te vas a la cama?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -2003,7 +2263,9 @@
       {
         "palabra": "am",
         "significado": "estoy",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "am", "is", "are" ],
+        "correcta": "am"
       },
       {
         "palabra": "not",
@@ -2019,8 +2281,28 @@
       {
         "tipo": "hueco",
         "campoHueco": "verbo"
-      }
-
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "I am not angry.",
+            "der": "Yo no estoy enfadado."
+          },
+          {
+            "id": 2,
+            "izq": "She is not sad.",
+            "der": "Ella no está triste."
+          },
+          {
+            "id": 3,
+            "izq": "They are not tired.",
+            "der": "Ellos no están cansados."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -3161,7 +3443,9 @@
       {
         "palabra": "What",
         "significado": "¿Cuál?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "What", "Where", "Who", "When" ],
+        "correcta": "What"
       },
       {
         "palabra": "is",
@@ -3182,7 +3466,31 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "What is your favorite color?",
+            "der": "¿Cuál es tu color favorito?"
+          },
+          {
+            "id": 2,
+            "izq": "What is your name?",
+            "der": "¿Cuál es tu nombre?"
+          },
+          {
+            "id": 3,
+            "izq": "What time is it?",
+            "der": "¿Qué hora es?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -3197,7 +3505,9 @@
       {
         "palabra": "What",
         "significado": "¿Qué",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "What", "Where", "Who", "When" ],
+        "correcta": "What"
       },
       {
         "palabra": "time",
@@ -3214,7 +3524,31 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "What time is it?",
+            "der": "¿Qué hora es?"
+          },
+          {
+            "id": 2,
+            "izq": "What is this?",
+            "der": "¿Qué es esto?"
+          },
+          {
+            "id": 3,
+            "izq": "What color is it?",
+            "der": "¿De qué color es?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -3229,7 +3563,9 @@
       {
         "palabra": "Where",
         "significado": "¿Dónde?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "What", "Where", "Who", "When" ],
+        "correcta": "Where"
       },
       {
         "palabra": "is",
@@ -3246,7 +3582,31 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Where is your backpack?",
+            "der": "¿Dónde está tu mochila?"
+          },
+          {
+            "id": 2,
+            "izq": "Where is the book?",
+            "der": "¿Dónde está el libro?"
+          },
+          {
+            "id": 3,
+            "izq": "Where do you live?",
+            "der": "¿Dónde vives?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -3261,7 +3621,9 @@
       {
         "palabra": "Where",
         "significado": "¿Dónde?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "What", "Where", "Who", "When" ],
+        "correcta": "Where"
       },
       {
         "palabra": "do",
@@ -3278,7 +3640,31 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Where do you live?",
+            "der": "¿Dónde vives?"
+          },
+          {
+            "id": 2,
+            "izq": "Where are you?",
+            "der": "¿Dónde estás?"
+          },
+          {
+            "id": 3,
+            "izq": "Where is my pencil?",
+            "der": "¿Dónde está mi lápiz?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -3293,7 +3679,9 @@
       {
         "palabra": "Who",
         "significado": "¿Quién?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "What", "Where", "Who", "When" ],
+        "correcta": "Who"
       },
       {
         "palabra": "is",
@@ -3314,7 +3702,31 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Who is your best friend?",
+            "der": "¿Quién es tu mejor amigo?"
+          },
+          {
+            "id": 2,
+            "izq": "Who is she?",
+            "der": "¿Quién es ella?"
+          },
+          {
+            "id": 3,
+            "izq": "Who is your teacher?",
+            "der": "¿Quién es tu profesor/a?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -3329,7 +3741,9 @@
       {
         "palabra": "Who",
         "significado": "¿Con quién?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "What", "Where", "Who", "When" ],
+        "correcta": "Who"
       },
       {
         "palabra": "do",
@@ -3350,7 +3764,31 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Who do you sit with?",
+            "der": "¿Con quién te sientas?"
+          },
+          {
+            "id": 2,
+            "izq": "Who is your teacher?",
+            "der": "¿Quién es tu profesor/a?"
+          },
+          {
+            "id": 3,
+            "izq": "Who is your best friend?",
+            "der": "¿Quién es tu mejor amigo?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -3365,7 +3803,9 @@
       {
         "palabra": "How",
         "significado": "¿Cómo?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "How", "What", "Where", "When" ],
+        "correcta": "How"
       },
       {
         "palabra": "do",
@@ -3390,7 +3830,31 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "How do you go to school?",
+            "der": "¿Cómo vas al colegio?"
+          },
+          {
+            "id": 2,
+            "izq": "How are you?",
+            "der": "¿Cómo estás?"
+          },
+          {
+            "id": 3,
+            "izq": "How is your grandma?",
+            "der": "¿Cómo está tu abuela?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -3405,7 +3869,9 @@
       {
         "palabra": "How",
         "significado": "¿Cómo?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "How", "What", "Where", "When" ],
+        "correcta": "How"
       },
       {
         "palabra": "is",
@@ -3422,7 +3888,31 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "How is your grandma?",
+            "der": "¿Cómo está tu abuela?"
+          },
+          {
+            "id": 2,
+            "izq": "How are you?",
+            "der": "¿Cómo estás?"
+          },
+          {
+            "id": 3,
+            "izq": "How old are you?",
+            "der": "¿Cuántos años tienes?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -3437,7 +3927,9 @@
       {
         "palabra": "When",
         "significado": "¿Cuándo?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "When", "What", "Where", "Who" ],
+        "correcta": "When"
       },
       {
         "palabra": "do",
@@ -3454,7 +3946,31 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "When do you have lunch?",
+            "der": "¿Cuándo comes (almuerzas)?"
+          },
+          {
+            "id": 2,
+            "izq": "When is your birthday?",
+            "der": "¿Cuándo es tu cumpleaños?"
+          },
+          {
+            "id": 3,
+            "izq": "When do you do your homework?",
+            "der": "¿Cuándo haces tus deberes?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -4061,53 +4577,6 @@
     ]
   },
   {
-    "id": 104,
-    "tipo": "afirmacion_simple",
-    "subtipo": "there_are",
-    "leccion": "there_is_there_are",
-    "frase": "There are three shops in my street.",
-    "traduccion": "Hay tres tiendas en mi calle.",
-    "mostrarModelo": false,
-    "partes": [
-      {
-        "palabra": "There",
-        "significado": "Hay"
-      },
-      {
-        "palabra": "are",
-        "significado": "(auxiliar plural)"
-      },
-      {
-        "palabra": "three",
-        "significado": "tres"
-      },
-      {
-        "palabra": "shops",
-        "significado": "tiendas"
-      },
-      {
-        "palabra": "in",
-        "significado": "en"
-      },
-      {
-        "palabra": "my",
-        "significado": "mi"
-      },
-      {
-        "palabra": "street.",
-        "significado": "calle"
-      }
-    ],
-    "ejercicios": [
-      { "tipo": "ordenar" },
-      {
-        "tipo": "hueco",
-        "campoHueco": "there_is_are"
-      },
-      { "tipo": "opcion" }
-    ]
-  },
-  {
     "id": 105,
     "tipo": "negacion_simple",
     "subtipo": "there_are",
@@ -4392,6 +4861,57 @@
         ],
         "correcta": "No, there aren't."
       }
+    ]
+  },
+  {
+    "id": 110,
+    "tipo": "afirmacion_simple",
+    "subtipo": "there_are",
+    "leccion": "there_is_there_are",
+    "frase": "There are five parked cars on my street.",
+    "traduccion": "Hay cinco coches aparcados en mi calle.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "There",
+        "significado": "Hay"
+      },
+      {
+        "palabra": "are",
+        "significado": "(auxiliar plural)"
+      },
+      {
+        "palabra": "five",
+        "significado": "cinco"
+      },
+      {
+        "palabra": "parked",
+        "significado": "aparcados"
+      },
+      {
+        "palabra": "cars",
+        "significado": "coches"
+      },
+      {
+        "palabra": "on",
+        "significado": "en"
+      },
+      {
+        "palabra": "my",
+        "significado": "mi"
+      },
+      {
+        "palabra": "street.",
+        "significado": "calle"
+      }
+    ],
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "there_is_are"
+      },
+      { "tipo": "opcion" }
     ]
   }
 ]
