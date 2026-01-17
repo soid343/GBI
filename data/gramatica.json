@@ -1124,7 +1124,7 @@
     "tipo": "negacion_simple",
     "subtipo": "verbo_to_be",
     "leccion": "pronouns_to_be",
-    "frase": "I am not tired.",
+    "frase": "I am not cansado.",
     "traduccion": "Yo no estoy cansado.",
     "mostrarModelo": true,
     "partes": [
@@ -1134,19 +1134,47 @@
       },
       {
         "palabra": "am",
-        "significado": "estoy"
+        "significado": "estoy",
+        "esHueco": true,
+        "opciones": [ "am", "is", "are" ],
+        "correcta": "am"
       },
       {
         "palabra": "not",
         "significado": "no"
       },
       {
-        "palabra": "tired",
+        "palabra": "cansado",
         "significado": "cansado"
       }
     ],
     "ejercicios": [
-      { "tipo": "ordenar" }
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Yo am not cansado.",
+            "der": "Yo no estoy cansado."
+          },
+          {
+            "id": 2,
+            "izq": "Ella no está triste.",
+            "der": "Ella no está triste."
+          },
+          {
+            "id": 3,
+            "izq": "No están cansados.",
+            "der": "Ellos no están cansados."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -6290,6 +6318,12 @@
       }
     ],
     "ejercicios": [
+      {"tipo": "ordenar"},
+      {
+        "tipo": "hueco",
+        "campoHueco": "hay_hay"
+
+      },
       {
         "tipo": "emparejar",
         "pares": [
@@ -6350,6 +6384,12 @@
       }
     ],
     "ejercicios": [
+      {"tipo": "ordenar"},
+      {
+        "tipo": "hueco",
+        "campoHueco": "hay_hay"
+
+      },
       {
         "tipo": "emparejar",
         "pares": [
@@ -6410,6 +6450,12 @@
       }
     ],
     "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "hay_hay"
+
+      },
       {
         "tipo": "emparejar",
         "pares": [
@@ -6470,6 +6516,12 @@
       }
     ],
     "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "hay_hay"
+
+      },
       {
         "tipo": "emparejar",
         "pares": [
