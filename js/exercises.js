@@ -1122,7 +1122,7 @@ function renderizarPracticaEmparejar(contenedor, e, configEjercicio) {
     // Progreso
     const progreso = document.createElement("div");
     progreso.className = "progreso";
-    progreso.textContent = `Oración ${estadoApp.indiceOracionActual + 1} de ${estadoApp.cantidadOraciones}`;
+    progreso.textContent = `Bloque ${estadoApp.indiceOracionActual + 1} de ${estadoApp.cantidadOraciones}`;
     contenedor.appendChild(progreso);
 
     const contador = document.createElement("p");
@@ -1231,6 +1231,7 @@ function renderizarPracticaEmparejar(contenedor, e, configEjercicio) {
 
             setTimeout(() => {
                 boton.classList.remove("incorrecto");
+                renderizar();
             }, 600);
         }
 
@@ -1266,7 +1267,7 @@ function mostrarResultadoEmparejarFinal(contenedor, e, fallos = 0, huboError = f
         mensaje.className = "mensaje-exito";
         if (!huboError) {
             mensaje.textContent =
-                `¡Genial! Has emparejado todas las frases a la primera (intento ${intentoUsado}). `;
+                `¡Genial! Has emparejado todas las frases (intento ${intentoUsado}). `;
         } else {
             mensaje.textContent =
                 `¡Muy bien! Has completado todas las parejas en el intento ${intentoUsado}. ` +
@@ -1282,7 +1283,7 @@ function mostrarResultadoEmparejarFinal(contenedor, e, fallos = 0, huboError = f
 
     const animos = document.createElement("div");
     animos.className = "texto-instruccion";
-    animos.textContent = "¡Vamos a por la siguiente frase!";
+    animos.textContent = "¡Vamos a por el siguiente bloque!";
     contenedor.appendChild(animos);
 
     const botonContinuar = document.createElement("button");
