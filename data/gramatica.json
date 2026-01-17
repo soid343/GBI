@@ -435,7 +435,9 @@
         "significado": "estudiante"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" }
+    ]
   },
   {
     "id": 13,
@@ -459,7 +461,9 @@
         "significado": "amigos"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" }
+    ]
   },
   {
     "id": 14,
@@ -487,7 +491,9 @@
         "significado": "escuela"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" }
+    ]
   },
   {
     "id": 15,
@@ -515,7 +521,9 @@
         "significado": "negro"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" }
+    ]
   },
   {
     "id": 16,
@@ -539,7 +547,9 @@
         "significado": "manzanas"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" }
+    ]
   },
   {
     "id": 17,
@@ -563,7 +573,9 @@
         "significado": "fútbol"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" }
+    ]
   },
   {
     "id": 18,
@@ -587,7 +599,9 @@
         "significado": "desayuno"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" }
+    ]
   },
   {
     "id": 19,
@@ -611,7 +625,9 @@
         "significado": "libros"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" }
+    ]
   },
   {
     "id": 20,
@@ -639,7 +655,9 @@
         "significado": "escuela"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" }
+    ]
   },
   {
     "id": 21,
@@ -667,7 +685,9 @@
         "significado": "cansado"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" }
+    ]
   },
   {
     "id": 22,
@@ -684,7 +704,10 @@
       },
       {
         "palabra": "is",
-        "significado": "está"
+        "significado": "está",
+        "esHueco": true,
+        "opciones": [ "am", "is", "are" ],
+        "correcta": "is"
       },
       {
         "palabra": "not",
@@ -695,7 +718,34 @@
         "significado": "triste"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "She is not sad.",
+            "der": "Ella no está triste."
+          },
+          {
+            "id": 2,
+            "izq": "He is not angry.",
+            "der": "Él no está enfadado."
+          },
+          {
+            "id": 3,
+            "izq": "I am not tired.",
+            "der": "Yo no estoy cansado."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
+    ]
   },
   {
     "id": 23,
@@ -712,7 +762,10 @@
       },
       {
         "palabra": "do",
-        "significado": "(auxiliar)"
+        "significado": "(auxiliar)",
+        "esHueco": true,
+        "opciones": [ "do", "does", "did" ],
+        "correcta": "do"
       },
       {
         "palabra": "not",
@@ -727,7 +780,34 @@
         "significado": "pizza"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "auxiliar"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "I do not like pizza.",
+            "der": "No me gusta la pizza."
+          },
+          {
+            "id": 2,
+            "izq": "He does not like carrots.",
+            "der": "No le gustan las zanahorias."
+          },
+          {
+            "id": 3,
+            "izq": "We do not play football.",
+            "der": "No jugamos al fútbol."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
+    ]
   },
   {
     "id": 24,
@@ -744,7 +824,10 @@
       },
       {
         "palabra": "does",
-        "significado": "(auxiliar)"
+        "significado": "(auxiliar)",
+        "esHueco": true,
+        "opciones": [ "do", "does", "did" ],
+        "correcta": "does"
       },
       {
         "palabra": "not",
@@ -759,7 +842,34 @@
         "significado": "tenis"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "auxiliar"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "He does not play tennis.",
+            "der": "Él no juega al tenis."
+          },
+          {
+            "id": 2,
+            "izq": "She does not watch TV.",
+            "der": "Ella no ve la tele."
+          },
+          {
+            "id": 3,
+            "izq": "It does not rain here.",
+            "der": "No llueve aquí."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
+    ]
   },
   {
     "id": 25,
@@ -772,7 +882,10 @@
     "partes": [
       {
         "palabra": "Is",
-        "significado": "¿Es?"
+        "significado": "¿Es?",
+        "esHueco": true,
+        "opciones": [ "Is", "Are", "Am" ],
+        "correcta": "Is"
       },
       {
         "palabra": "this",
@@ -787,7 +900,34 @@
         "significado": "bolígrafo"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Is this your pen?",
+            "der": "¿Es este tu bolígrafo?"
+          },
+          {
+            "id": 2,
+            "izq": "Are you hungry?",
+            "der": "¿Tienes hambre?"
+          },
+          {
+            "id": 3,
+            "izq": "Is she your teacher?",
+            "der": "¿Es ella tu profesora?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
+    ]
   },
   {
     "id": 26,
@@ -800,7 +940,10 @@
     "partes": [
       {
         "palabra": "Are",
-        "significado": "¿Tienes?"
+        "significado": "¿Tienes?",
+        "esHueco": true,
+        "opciones": [ "Is", "Are", "Am" ],
+        "correcta": "Are"
       },
       {
         "palabra": "you",
@@ -811,7 +954,34 @@
         "significado": "hambre"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Are you hungry?",
+            "der": "¿Tienes hambre?"
+          },
+          {
+            "id": 2,
+            "izq": "Are they friends?",
+            "der": "¿Son ellos amigos?"
+          },
+          {
+            "id": 3,
+            "izq": "Are we late?",
+            "der": "¿Estamos tarde?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
+    ]
   },
   {
     "id": 27,
@@ -824,7 +994,10 @@
     "partes": [
       {
         "palabra": "Do",
-        "significado": "¿(auxiliar)?"
+        "significado": "(auxiliar)",
+        "esHueco": true,
+        "opciones": [ "Do", "Does", "Did" ],
+        "correcta": "Do"
       },
       {
         "palabra": "you",
@@ -839,7 +1012,34 @@
         "significado": "helado"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "auxiliar"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Do you like ice cream?",
+            "der": "¿Te gusta el helado?"
+          },
+          {
+            "id": 2,
+            "izq": "Does she speak English?",
+            "der": "¿Ella habla inglés?"
+          },
+          {
+            "id": 3,
+            "izq": "Do they play football?",
+            "der": "¿Ellos juegan al fútbol?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
+    ]
   },
   {
     "id": 28,
@@ -852,7 +1052,10 @@
     "partes": [
       {
         "palabra": "Does",
-        "significado": "¿(auxiliar)?"
+        "significado": "(auxiliar)",
+        "esHueco": true,
+        "opciones": [ "Do", "Does", "Did" ],
+        "correcta": "Does"
       },
       {
         "palabra": "she",
@@ -867,7 +1070,34 @@
         "significado": "inglés"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "auxiliar"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Does she speak English?",
+            "der": "¿Ella habla inglés?"
+          },
+          {
+            "id": 2,
+            "izq": "Does he play guitar?",
+            "der": "¿Él toca la guitarra?"
+          },
+          {
+            "id": 3,
+            "izq": "Does it rain a lot?",
+            "der": "¿Llueve mucho?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
+    ]
   },
   {
     "id": 29,
@@ -880,7 +1110,10 @@
     "partes": [
       {
         "palabra": "Open",
-        "significado": "Abre"
+        "significado": "Abre",
+        "esHueco": true,
+        "opciones": [ "Open", "Close", "Listen" ],
+        "correcta": "Open"
       },
       {
         "palabra": "the",
@@ -891,7 +1124,34 @@
         "significado": "puerta"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo imperativo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Open the door.",
+            "der": "Abre la puerta."
+          },
+          {
+            "id": 2,
+            "izq": "Close your book.",
+            "der": "Cierra tu libro."
+          },
+          {
+            "id": 3,
+            "izq": "Listen to the teacher.",
+            "der": "Escucha al profesor."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
+    ]
   },
   {
     "id": 30,
@@ -904,7 +1164,10 @@
     "partes": [
       {
         "palabra": "Close",
-        "significado": "Cierra"
+        "significado": "Cierra",
+        "esHueco": true,
+        "opciones": [ "Open", "Close", "Read" ],
+        "correcta": "Close"
       },
       {
         "palabra": "your",
@@ -915,7 +1178,34 @@
         "significado": "libro"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo imperativo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Close your book.",
+            "der": "Cierra tu libro."
+          },
+          {
+            "id": 2,
+            "izq": "Open the window.",
+            "der": "Abre la ventana."
+          },
+          {
+            "id": 3,
+            "izq": "Sit down, please.",
+            "der": "Siéntate, por favor."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
+    ]
   },
   {
     "id": 31,
@@ -929,7 +1219,9 @@
       {
         "palabra": "When",
         "significado": "¿Cuándo?",
-        "esHueco": true
+        "esHueco": true,
+        "opciones": [ "When", "What", "Where", "Who" ],
+        "correcta": "When"
       },
       {
         "palabra": "is",
@@ -946,7 +1238,31 @@
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
-      { "tipo": "hueco" }
+      {
+        "tipo": "hueco",
+        "campoHueco": "palabra interrogativa"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "When is your birthday?",
+            "der": "¿Cuándo es tu cumpleaños?"
+          },
+          {
+            "id": 2,
+            "izq": "When do you go to bed?",
+            "der": "¿Cuándo te vas a la cama?"
+          },
+          {
+            "id": 3,
+            "izq": "When does school start?",
+            "der": "¿Cuándo empieza el colegio?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
     ]
   },
   {
@@ -1036,7 +1352,10 @@
       },
       {
         "palabra": "have got",
-        "significado": "tengo"
+        "significado": "tengo",
+        "esHueco": true,
+        "opciones": [ "have got", "has got", "had got" ],
+        "correcta": "have got"
       },
       {
         "palabra": "a",
@@ -1047,7 +1366,34 @@
         "significado": "perro"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "I have got a dog.",
+            "der": "Yo tengo un perro."
+          },
+          {
+            "id": 2,
+            "izq": "She has got a cat.",
+            "der": "Ella tiene un gato."
+          },
+          {
+            "id": 3,
+            "izq": "They have got a car.",
+            "der": "Ellos tienen un coche."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
+    ]
   },
   {
     "id": 35,
@@ -1064,7 +1410,10 @@
       },
       {
         "palabra": "has got",
-        "significado": "tiene"
+        "significado": "tiene",
+        "esHueco": true,
+        "opciones": [ "have got", "has got", "had got" ],
+        "correcta": "has got"
       },
       {
         "palabra": "a",
@@ -1079,7 +1428,34 @@
         "significado": "bicicleta"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "She has got a new bike.",
+            "der": "Ella tiene una bicicleta nueva."
+          },
+          {
+            "id": 2,
+            "izq": "He has got a new phone.",
+            "der": "Él tiene un teléfono nuevo."
+          },
+          {
+            "id": 3,
+            "izq": "It has got four legs.",
+            "der": "Tiene cuatro patas."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
+    ]
   },
   {
     "id": 36,
@@ -1092,7 +1468,10 @@
     "partes": [
       {
         "palabra": "Have",
-        "significado": "¿Tienes"
+        "significado": "¿Tienes",
+        "esHueco": true,
+        "opciones": [ "Have", "Has", "Had" ],
+        "correcta": "Have"
       },
       {
         "palabra": "you",
@@ -1111,7 +1490,34 @@
         "significado": "lápiz"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "auxiliar"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Have you got a pencil?",
+            "der": "¿Tienes un lápiz?"
+          },
+          {
+            "id": 2,
+            "izq": "Has she got a pet?",
+            "der": "¿Ella tiene una mascota?"
+          },
+          {
+            "id": 3,
+            "izq": "Have they got a computer?",
+            "der": "¿Ellos tienen un ordenador?"
+          }
+        ]
+      },
+      { "tipo": "opcion" }
+    ]
   },
   {
     "id": 37,
@@ -1128,7 +1534,10 @@
       },
       {
         "palabra": "have",
-        "significado": "tienen"
+        "significado": "tienen",
+        "esHueco": true,
+        "opciones": [ "have", "has", "had" ],
+        "correcta": "have"
       },
       {
         "palabra": "not",
@@ -1147,7 +1556,34 @@
         "significado": "mascotas"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "They have not got any pets.",
+            "der": "Ellos no tienen mascotas."
+          },
+          {
+            "id": 2,
+            "izq": "I have not got a bike.",
+            "der": "Yo no tengo bicicleta."
+          },
+          {
+            "id": 3,
+            "izq": "He has not got any sisters.",
+            "der": "Él no tiene hermanas."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
+    ]
   },
   {
     "id": 38,
@@ -1164,7 +1600,10 @@
       },
       {
         "palabra": "do",
-        "significado": "(auxiliar)"
+        "significado": "(auxiliar)",
+        "esHueco": true,
+        "opciones": [ "do", "does", "did" ],
+        "correcta": "do"
       },
       {
         "palabra": "not",
@@ -1179,7 +1618,34 @@
         "significado": "zanahorias"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "auxiliar"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "I do not like carrots.",
+            "der": "No me gustan las zanahorias."
+          },
+          {
+            "id": 2,
+            "izq": "You do not like spiders.",
+            "der": "No te gustan las arañas."
+          },
+          {
+            "id": 3,
+            "izq": "We do not like rain.",
+            "der": "No nos gusta la lluvia."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
+    ]
   },
   {
     "id": 39,
@@ -1196,7 +1662,10 @@
       },
       {
         "palabra": "does",
-        "significado": "(auxiliar)"
+        "significado": "(auxiliar)",
+        "esHueco": true,
+        "opciones": [ "do", "does", "did" ],
+        "correcta": "does"
       },
       {
         "palabra": "not",
@@ -1211,7 +1680,34 @@
         "significado": "la tele"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "auxiliar"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "He does not watch TV.",
+            "der": "Él no ve la tele."
+          },
+          {
+            "id": 2,
+            "izq": "She does not eat meat.",
+            "der": "Ella no come carne."
+          },
+          {
+            "id": 3,
+            "izq": "It does not work.",
+            "der": "No funciona."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
+    ]
   },
   {
     "id": 40,
@@ -1228,8 +1724,11 @@
       },
       {
         "palabra": "don't",
-        "significado": "contracción 'do not' (No)"
-      },     
+        "significado": "contracción 'do not' (No)",
+        "esHueco": true,
+        "opciones": [ "don't", "doesn't", "didn't" ],
+        "correcta": "don't"
+      },
       {
         "palabra": "play",
         "significado": "jugamos"
@@ -1247,7 +1746,34 @@
         "significado": "lunes"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "negacion"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "We don't play football on Monday.",
+            "der": "No jugamos al fútbol los lunes."
+          },
+          {
+            "id": 2,
+            "izq": "They don't go to school on Sunday.",
+            "der": "No van al colegio los domingos."
+          },
+          {
+            "id": 3,
+            "izq": "I don't eat breakfast at school.",
+            "der": "No desayuno en el colegio."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
+    ]
   },
   {
     "id": 41,
@@ -1264,7 +1790,10 @@
       },
       {
         "palabra": "are",
-        "significado": "eres"
+        "significado": "eres",
+        "esHueco": true,
+        "opciones": [ "am", "is", "are" ],
+        "correcta": "are"
       },
       {
         "palabra": "my",
@@ -1279,7 +1808,34 @@
         "significado": "amigo"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "You are my best friend.",
+            "der": "Tú eres mi mejor amigo."
+          },
+          {
+            "id": 2,
+            "izq": "She is my sister.",
+            "der": "Ella es mi hermana."
+          },
+          {
+            "id": 3,
+            "izq": "They are my parents.",
+            "der": "Ellos son mis padres."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
+    ]
   },
   {
     "id": 42,
@@ -1296,7 +1852,10 @@
       },
       {
         "palabra": "is",
-        "significado": "es"
+        "significado": "es",
+        "esHueco": true,
+        "opciones": [ "am", "is", "are" ],
+        "correcta": "is"
       },
       {
         "palabra": "my",
@@ -1307,7 +1866,34 @@
         "significado": "hermano"
       }
     ],
-    "ejercicio": { "tipo": "ordenar" }
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "He is my brother.",
+            "der": "Él es mi hermano."
+          },
+          {
+            "id": 2,
+            "izq": "She is my cousin.",
+            "der": "Ella es mi prima."
+          },
+          {
+            "id": 3,
+            "izq": "He is my teacher.",
+            "der": "Él es mi profesor."
+          }
+        ]
+      },
+      { "tipo": "opcion" }
+    ]
   },
   {
     "id": 43,
@@ -2226,7 +2812,7 @@
     "partes": [
       {
         "palabra": "Do",
-        "significado": "¿(auxiliar)?"
+        "significado": "(auxiliar)"
       },
       {
         "palabra": "they",
@@ -2378,7 +2964,7 @@
     "partes": [
       {
         "palabra": "Do",
-        "significado": "¿(auxiliar)?"
+        "significado": "(auxiliar)"
       },
       {
         "palabra": "you",
@@ -2410,7 +2996,7 @@
     "partes": [
       {
         "palabra": "Does",
-        "significado": "¿(auxiliar)?"
+        "significado": "(auxiliar)"
       },
       {
         "palabra": "she",
@@ -2438,7 +3024,7 @@
     "partes": [
       {
         "palabra": "Do",
-        "significado": "¿(auxiliar)?"
+        "significado": "(auxiliar)"
       },
       {
         "palabra": "they",
@@ -2470,7 +3056,7 @@
     "partes": [
       {
         "palabra": "Does",
-        "significado": "¿(auxiliar)?"
+        "significado": "(auxiliar)"
       },
       {
         "palabra": "he",
@@ -2506,7 +3092,7 @@
     "partes": [
       {
         "palabra": "Do",
-        "significado": "¿(auxiliar)?"
+        "significado": "(auxiliar)"
       },
       {
         "palabra": "we",
@@ -2538,7 +3124,7 @@
     "partes": [
       {
         "palabra": "Does",
-        "significado": "¿(auxiliar)?"
+        "significado": "(auxiliar)"
       },
       {
         "palabra": "it",
@@ -2864,7 +3450,7 @@
       {
         "palabra": "have lunch",
         "significado": "almorzar"
-      }      
+      }
     ],
     "ejercicios": [
       { "tipo": "ordenar" },
@@ -3209,7 +3795,7 @@
       {
         "palabra": "doesn't",
         "significado": "contracción 'does not' (No)"
-      },      
+      },
       {
         "palabra": "do",
         "significado": "hace"
