@@ -349,6 +349,41 @@ function obtenerExplicacionGramatical(ejercicio) {
                 <p></p>
                 <p><strong>¡Ojo!</strong> Con <strong>He/She/It</strong> añadimos <strong>-s</strong> al final del verbo.</p>
                 <p> 👇 Ejemplo:</p>
+            `,
+            "have_got": `
+                 <p class="explicacion-titulo-linea">
+                    <span class="explicacion-icono">📦</span>
+                    <strong>Usar "have got" para decir que tenemos algo</strong>
+                </p>
+                <p>Usamos <strong>have got</strong> para decir que tenemos algo.</p>
+                <ul>
+                    <li>🙋 <strong>I have got</strong> = Yo tengo</li>
+                    <li>👦👧 <strong>You have got</strong> = Tú tienes / Vosotros tenéis</li>
+                    <li>👦 <strong>He has got</strong> = Él tiene</li>
+                    <li>👧 <strong>She has got</strong> = Ella tiene</li>
+                    <li>🐶 <strong>It has got</strong> = (un animal o cosa) tiene</li>
+                    <li>👨‍👩‍👧‍👦 <strong>We have got</strong> = Nosotros tenemos</li>
+                    <li>👥 <strong>They have got</strong> = Ellos tienen</li>
+                </ul>
+                <p class="ejemplo">👉 I have got a bike. = Yo tengo una bici.</p>
+                <p class="ejemplo">👉 She has got a dog. = Ella tiene un perro.</p>
+                <p><strong>La clave está en saber que...</strong> Con <strong>he/she/it</strong> usamos <strong>HAS got</strong>, con los demás <strong>HAVE got</strong>.</p>
+                <p>👇 Otro ejemplo:</p>
+            `,
+            "there_is_are": `
+                <p class="explicacion-titulo-linea">
+                    <span class="explicacion-icono">🏠</span>
+                    <strong>Usar "There is / There are" para decir lo que hay</strong>
+                </p>
+                <p>Usamos <strong>there is / there are</strong> para decir lo que <strong>hay</strong> en un lugar.</p>
+                <ul>
+                    <li><strong>There is</strong> + una cosa (singular)</li>
+                    <li><strong>There are</strong> + varias cosas (plural)</li>
+                </ul>
+                <p class="ejemplo">👉 There is a cat in the garden. = Hay un gato en el jardín.</p>
+                <p class="ejemplo">👉 There are two chairs in the room. = Hay dos sillas en la habitación.</p>
+                <p><strong>Truco:</strong> piensa en español “hay 1” → there is, “hay muchos” → there are.</p>
+                <p>👇 Otro ejemplo:</p>
             `
         },
         "negacion_simple": {
@@ -379,6 +414,39 @@ function obtenerExplicacionGramatical(ejercicio) {
                 </ul>
                 <p>Como ves, <strong>"do not"</strong> y <strong>"don't"</strong> son lo mismo. <strong>"Do"</strong> se une con <strong>"not"</strong> para crear la contracción <strong>"don't"</strong>. Sucede igual con <strong>"does not"</strong> y <strong>"doesn't"</strong>.</p>
                 <p> 👇 Otro ejemplo:</p>
+            `,
+            "have_got": `
+                <p class="explicacion-titulo-linea">
+                    <span class="explicacion-icono">🚫</span>
+                    <strong>Decir que NO tenemos algo con "have got"</strong>
+                </p>
+                <p>Para decir que <strong>NO</strong> tenemos algo usamos <strong>haven't got</strong> o <strong>hasn't got</strong>:</p>
+                <ul>
+                    <li>I <strong>haven't got</strong>... = No tengo...</li>
+                    <li>You <strong>haven't got</strong>... = No tienes...</li>
+                    <li>He/She/It <strong>hasn't got</strong>... = Él/Ella (eso) no tiene...</li>
+                    <li>We/They <strong>haven't got</strong>... = Nosotros/Ellos no tienen...</li>
+                </ul>
+                <p class="ejemplo">👉 I haven't got a pencil. = No tengo un lápiz.</p>
+                <p class="ejemplo">👉 He hasn't got a sister. = Él no tiene una hermana.</p>
+                <p><strong>La clave está en saber que...</strong> Con <strong>he/she/it</strong> usamos <strong>HAS NOT got</strong>, con los demás <strong>HAVE NOT got</strong>.</p>
+                <p><strong>Recuerda que...</strong> <strong>haven't</strong> = have not, <strong>hasn't</strong> = has not. Simplemente son contracciones para abreviar, pero significan los mismo.</p>
+                <p>👇 Otro ejemplo:</p>
+            `,
+            "there_is_are": `
+                <p class="explicacion-titulo-linea">
+                    <span class="explicacion-icono">🚫</span>
+                    <strong>Decir que NO hay algo: "There isn't / There aren't"</strong>
+                </p>
+                <p>Para decir que <strong>no hay</strong> algo usamos:</p>
+                <ul>
+                    <li><strong>There isn't</strong> + una cosa</li>
+                    <li><strong>There aren't</strong> + varias cosas</li>
+                </ul>
+                <p class="ejemplo">👉 There isn't a TV in my room. = No hay una tele en mi habitación.</p>
+                <p class="ejemplo">👉 There aren't any books on the table. = No hay libros en la mesa.</p>
+                <p><strong>Truco:</strong> "isn't" = is not, "aren't" = are not. Significan lo mismo pero <strong>ISN'T</strong> y <strong> AREN'T</strong> están contraídas.</p>
+                <p>👇 Otro ejemplo:</p>
             `
         },
         "pregunta_yes_no": {
@@ -404,6 +472,44 @@ function obtenerExplicacionGramatical(ejercicio) {
                 <p class="ejemplo">👉 Does she play...? = ¿Ella juega...?</p>
                 <p></p>
                 <p> 👇 Otro ejemplo:</p>
+            `,
+            "have_got": `
+                <p class="explicacion-titulo-linea">
+                    <span class="explicacion-icono">❓</span>
+                    <strong>Preguntas Sí/No con "have got"</strong>
+                </p>
+                <p>Para preguntar si alguien tiene algo, empezamos con <strong>Have</strong> o <strong>Has</strong>:</p>
+                <ul>
+                    <li><strong>Have</strong> + I/you/we/they + got ...?</li>
+                    <li><strong>Has</strong> + he/she/it + got ...?</li>
+                </ul>
+                <p class="ejemplo">👉 Have you got a pet? = ¿Tienes una mascota?</p>
+                <p class="ejemplo">👉 Has she got a bike? = ¿Ella tiene una bici?</p>
+                <p>Las respuestas son cortas:</p>
+                <ul>
+                    <li>Yes, I have. / No, I haven't.</li>
+                    <li>Yes, he has. / No, he hasn't.</li>
+                </ul>
+                <p>👇 Otro ejemplo:</p>
+            `,
+            "there_is_are": `
+                <p class="explicacion-titulo-linea">
+                    <span class="explicacion-icono">❓</span>
+                    <strong>Preguntar si hay algo: "Is there...? / Are there...?"</strong>
+                </p>
+                <p>Para preguntar si hay algo, cambiamos el orden:</p>
+                <ul>
+                    <li><strong>Is there</strong> + una cosa ...?</li>
+                    <li><strong>Are there</strong> + varias cosas ...?</li>
+                </ul>
+                <p class="ejemplo">👉 Is there a park near your house? = ¿Hay un parque cerca de tu casa?</p>
+                <p class="ejemplo">👉 Are there any posters on the wall? = ¿Hay pósters en la pared?</p>
+                <p>Respuestas:</p>
+                <ul>
+                    <li>Yes, there is. / No, there isn't.</li>
+                    <li>Yes, there are. / No, there aren't.</li>
+                </ul>
+                <p>👇 Otro ejemplo:</p>
             `
         },
         "imperativo": {

@@ -107,10 +107,10 @@ function renderizarInicio() {
         <p>Do / Does / Don't</p>
       </button>
 
-      <button class="contenido-card especial" onclick="iniciarContenido('all_mixed')">
-        <div class="emoji">📚</div>
-        <h3>Clasificación / mezcla</h3>
-        <p>¡Todas las oraciones!</p>
+      <button class="contenido-card especial" onclick="iniciarContenido('there_is_are')">
+        <div class="emoji">🏠</div>
+        <h3>There is / There are</h3>
+        <p>Hablar de lo que hay en un lugar</p>
       </button>
     </div>
   `;
@@ -163,7 +163,7 @@ function mostrarSelectorTipoExplicacion() {
     contenedor.innerHTML = "";
 
     const titulo = document.createElement("h3");
-    titulo.textContent = "¿Qué tipo de oraciones quieres aprender?";
+    titulo.textContent = "¿Qué tipo de oraciones quieres estudiar?";
     titulo.className = "titulo-selector";
     contenedor.appendChild(titulo);
 
@@ -260,7 +260,7 @@ function renderizarContenidoLeccion() {
 
     contenedor.innerHTML = "";
 
-    // Barra de navegación (Home + título + Volver) SUSTITUIR POR LLAMADA A FUNCIÓN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    // Barra de navegación (Home + título + Volver) SUSTITUIR POR LLAMADA A FUNCIÓN!!!!!!!!!!!!
     const barra = crearBarraNavegacion("Gramática Básica de Inglés");
     contenedor.appendChild(barra);
 
@@ -411,7 +411,7 @@ function obtenerNombreLeccion(leccionId) {
         "negations_simple": "Negaciones",
         "yes_no_questions": "Preguntas Sí/No",
         "verb_to_do": "Verbo \"to do\" (presente simple)",
-        "all_mixed": "Clasificación / mezcla"
+        "there_is_are": "There is / There are"
     };
     return nombres[leccionId] || "Lección";
 }
