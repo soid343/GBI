@@ -6104,7 +6104,10 @@
       },
       {
         "palabra": "is",
-        "significado": "(auxiliar singular)"
+        "significado": "(auxiliar singular)",
+        "esHueco": true,
+        "opciones": [ "is", "are" ],
+        "correcta": "is"
       },
       {
         "palabra": "a",
@@ -6131,10 +6134,27 @@
       { "tipo": "ordenar" },
       {
         "tipo": "hueco",
-        "campoHueco": "there_is_are"
+        "campoHueco": "verbo"
       },
       {
-        "tipo": "opcion"
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "There is a cinema in my town.",
+            "der": "Hay un cine en mi pueblo."
+          },
+          {
+            "id": 2,
+            "izq": "There is a cat in the garden.",
+            "der": "Hay un gato en el jardín."
+          },
+          {
+            "id": 3,
+            "izq": "There is a park near the hospital.",
+            "der": "Hay un parque cerca del hospital."
+          }
+        ]
       }
     ]
   },
@@ -6143,7 +6163,7 @@
     "tipo": "negacion_simple",
     "subtipo": "there_is_are",
     "leccion": "there_is_are",
-    "frase": "There isn't a hospital in my village.",
+    "frase": "There is not a hospital in my village.",
     "traduccion": "No hay un hospital en mi pueblo.",
     "mostrarModelo": true,
     "partes": [
@@ -6152,8 +6172,15 @@
         "significado": "No hay"
       },
       {
-        "palabra": "isn't",
-        "significado": "contracción 'is not'"
+        "palabra": "is",
+        "significado": "(auxiliar singular)'",
+        "esHueco": true,
+        "opciones": [ "isn't", "aren't" ],
+        "correcta": "isn't'"
+      },
+      {
+        "palabra": "not",
+        "significado": "negación"
       },
       {
         "palabra": "a",
@@ -6182,7 +6209,26 @@
         "tipo": "hueco",
         "campoHueco": "negacion"
       },
-      { "tipo": "opcion" }
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "There isn't a hospital in my village.",
+            "der": "No hay un hospital en mi pueblo."
+          },
+          {
+            "id": 2,
+            "izq": "There is not a TV in my room.",
+            "der": "No hay una tele en mi habitación."
+          },
+          {
+            "id": 3,
+            "izq": "There aren't any parks in my town.",
+            "der": "No hay parques en mi pueblo."
+          }
+        ]
+      }
     ]
   },
   {
@@ -6200,7 +6246,10 @@
       },
       {
         "palabra": "are",
-        "significado": "(auxiliar plural)"
+        "significado": "(auxiliar plural)",
+        "esHueco": true,
+        "opciones": [ "is", "are" ],
+        "correcta": "are"
       },
       {
         "palabra": "three",
@@ -6227,9 +6276,28 @@
       { "tipo": "ordenar" },
       {
         "tipo": "hueco",
-        "campoHueco": "there_is_are"
+        "campoHueco": "verbo"
       },
-      { "tipo": "opcion" }
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "There are three shops in my street.",
+            "der": "Hay tres tiendas en mi calle."
+          },
+          {
+            "id": 2,
+            "izq": "There are five parked cars on my street.",
+            "der": "Hay cinco coches aparcados en mi calle."
+          },
+          {
+            "id": 3,
+            "izq": "There is a hospital in my city.",
+            "der": "Hay un hospital en mi ciudad."
+          }
+        ]
+      }
     ]
   },
   {
@@ -6237,7 +6305,7 @@
     "tipo": "negacion_simple",
     "subtipo": "there_is_are",
     "leccion": "there_is_are",
-    "frase": "There aren't any parks in my town.",
+    "frase": "There are not any parks in my town.",
     "traduccion": "No hay parques en mi pueblo.",
     "mostrarModelo": false,
     "partes": [
@@ -6246,8 +6314,15 @@
         "significado": "No hay"
       },
       {
-        "palabra": "aren't",
-        "significado": "contracción 'are not'"
+        "palabra": "are",
+        "significado": "(auxiliar plural)",
+        "esHueco": true,
+        "opciones": [ "isn't", "aren't" ],
+        "correcta": "aren't"
+      },
+      {
+        "palabra": "not",
+        "significado": "negación"
       },
       {
         "palabra": "any",
@@ -6276,7 +6351,26 @@
         "tipo": "hueco",
         "campoHueco": "negacion"
       },
-      { "tipo": "opcion" }
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "There aren't any parks in my town.",
+            "der": "No hay parques en mi pueblo."
+          },
+          {
+            "id": 2,
+            "izq": "There aren't any gas station in your street.",
+            "der": "No hay gasolinerass en tu calle."
+          },
+          {
+            "id": 3,
+            "izq": "There isn't a swimming pool near the park.",
+            "der": "No hay una piscina cerca del parque."
+          }
+        ]
+      }
     ]
   },
   {
@@ -6290,11 +6384,14 @@
     "partes": [
       {
         "palabra": "Is",
-        "significado": "¿Hay"
+        "significado": "(auxiliar singular)",
+        "esHueco": true,
+        "opciones": [ "Is", "Are" ],
+        "correcta": "Is"
       },
       {
         "palabra": "there",
-        "significado": "(indica existencia)"
+        "significado": ""
       },
       {
         "palabra": "a",
@@ -6321,8 +6418,7 @@
       { "tipo": "ordenar" },
       {
         "tipo": "hueco",
-        "campoHueco": "hay_hay"
-
+        "campoHueco": "verbo"
       },
       {
         "tipo": "emparejar",
@@ -6330,7 +6426,17 @@
           {
             "id": 1,
             "izq": "Is there a museum in your town?",
-            "der": "Yes, there is."
+            "der": "¿Hay un museo en tu pueblo?"
+          },
+          {
+            "id": 2,
+            "izq": "Is there a cinema in your village?",
+            "der": "¿Hay un cine en tu pueblo?"
+          },
+          {
+            "id": 3,
+            "izq": "Are there any hospitals in your town?",
+            "der": "¿Hay hospitales en tu pueblo?"
           }
         ]
       },
@@ -6356,11 +6462,14 @@
     "partes": [
       {
         "palabra": "Is",
-        "significado": "¿Hay"
+        "significado": "(auxiliar singular)",
+        "esHueco": true,
+        "opciones": [ "Is", "Are" ],
+        "correcta": "Is"
       },
       {
         "palabra": "there",
-        "significado": "(indica existencia)"
+        "significado": "hay"
       },
       {
         "palabra": "a",
@@ -6387,16 +6496,25 @@
       { "tipo": "ordenar" },
       {
         "tipo": "hueco",
-        "campoHueco": "hay_hay"
-
+        "campoHueco": "verbo"
       },
       {
         "tipo": "emparejar",
         "pares": [
           {
             "id": 1,
-            "izq": "Is there a cinema in your village?",
-            "der": "No, there isn't."
+            "izq": "Is there a shop in your street?",
+            "der": "¿Hay una tienda en tu calle?"
+          },
+          {
+            "id": 2,
+            "izq": "Is there a zoo in your town?",
+            "der": "¿Hay un zoo en tu pueblo?"
+          },
+          {
+            "id": 3,
+            "izq": "Are there any parks in your street?",
+            "der": "¿Hay parques en tu calle?"
           }
         ]
       },
@@ -6422,11 +6540,14 @@
     "partes": [
       {
         "palabra": "Are",
-        "significado": "¿Hay"
+        "significado": "(auxiliar plural)",
+        "esHueco": true,
+        "opciones": [ "Is", "Are" ],
+        "correcta": "Are"
       },
       {
         "palabra": "there",
-        "significado": "(indica existencia)"
+        "significado": "hay"
       },
       {
         "palabra": "any",
@@ -6453,16 +6574,25 @@
       { "tipo": "ordenar" },
       {
         "tipo": "hueco",
-        "campoHueco": "hay_hay"
-
+        "campoHueco": "verbo"
       },
       {
         "tipo": "emparejar",
         "pares": [
           {
             "id": 1,
-            "izq": "Are there any parks in your town?",
-            "der": "Yes, there are."
+            "izq": "Are there any libraries in your town?",
+            "der": "¿Hay bibliotecas en tu pueblo?"
+          },
+          {
+            "id": 2,
+            "izq": "Are there any cars in your street?",
+            "der": "¿Hay coches en tu calle?"
+          },
+          {
+            "id": 3,
+            "izq": "Is there a bookshop near the swimming pool?",
+            "der": "¿Hay una librería cerca de la piscina?."
           }
         ]
       },
@@ -6488,11 +6618,14 @@
     "partes": [
       {
         "palabra": "Are",
-        "significado": "¿Hay"
+        "significado": "(auxiliar plural)",
+        "esHueco": true,
+        "opciones": [ "Is", "Are" ],
+        "correcta": "Are"
       },
       {
         "palabra": "there",
-        "significado": "(indica existencia)"
+        "significado": "hay"
       },
       {
         "palabra": "any",
@@ -6519,16 +6652,25 @@
       { "tipo": "ordenar" },
       {
         "tipo": "hueco",
-        "campoHueco": "hay_hay"
-
+        "campoHueco": "verbo"
       },
       {
         "tipo": "emparejar",
         "pares": [
           {
             "id": 1,
-            "izq": "Are there any buses in your street?",
-            "der": "No, there aren't."
+            "izq": "Are there any supermarkets in your street?",
+            "der": "¿Hay supermercados en tu calle?"
+          },
+          {
+            "id": 2,
+            "izq": "Is there a café in your neighborhood?",
+            "der": "¿Hay cafetería en tu barrio?"
+          },
+          {
+            "id": 3,
+            "izq": "Is there a fire station in your city?",
+            "der": "¿Hay parque de bomberos en tu ciudad?"
           }
         ]
       },
@@ -6558,7 +6700,10 @@
       },
       {
         "palabra": "are",
-        "significado": "(auxiliar plural)"
+        "significado": "(auxiliar plural)",
+        "esHueco": true,
+        "opciones": [ "is", "are" ],
+        "correcta": "are"
       },
       {
         "palabra": "five",
@@ -6589,9 +6734,28 @@
       { "tipo": "ordenar" },
       {
         "tipo": "hueco",
-        "campoHueco": "there_is_are"
+        "campoHueco": "verbo"
       },
-      { "tipo": "opcion" }
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "There are twenty parked cars on my street.",
+            "der": "Hay veinte coches aparcados en mi calle."
+          },
+          {
+            "id": 2,
+            "izq": "There are three shops in my street.",
+            "der": "Hay tres tiendas en mi calle."
+          },
+          {
+            "id": 3,
+            "izq": "There is a pencil in the table.",
+            "der": "Hay un lápiz en la mesa."
+          }
+        ]
+      }
     ]
   },
   {
@@ -6641,7 +6805,26 @@
         "tipo": "hueco",
         "campoHueco": "verbo"
       },
-      { "tipo": "opcion" }
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "There are two cinemas in my town.",
+            "der": "Hay dos cines en mi pueblo."
+          },
+          {
+            "id": 2,
+            "izq": "There is a cat in the garden.",
+            "der": "Hay un gato en el jardín."
+          },
+          {
+            "id": 3,
+            "izq": "There isn't a park near the hospital.",
+            "der": "No hay un parque cerca del hospital."
+          }
+        ]
+      }
     ]
   },
   {
@@ -6691,7 +6874,26 @@
         "tipo": "hueco",
         "campoHueco": "verbo"
       },
-      { "tipo": "opcion" }
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "There is a cat on the roof.",
+            "der": "Hay un gato en el tejado."
+          },
+          {
+            "id": 2,
+            "izq": "There are seven days in a week.",
+            "der": "Hay siete días en una semana."
+          },
+          {
+            "id": 3,
+            "izq": "There are many shops in my town.",
+            "der": "Hay muchas tiendas en mi pueblo."
+          }
+        ]
+      }
     ]
   },
   {
@@ -6745,7 +6947,26 @@
         "tipo": "hueco",
         "campoHueco": "verbo"
       },
-      { "tipo": "opcion" }
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "There is not a TV in my room.",
+            "der": "No hay una tele en mi habitación."
+          },
+          {
+            "id": 2,
+            "izq": "There isn't' a book on the table.",
+            "der": "No hay un libro en la mesa."
+          },
+          {
+            "id": 3,
+            "izq": "There aren't any parks in my town.",
+            "der": "No hay parques en mi pueblo."
+          }
+        ]
+      }
     ]
   },
   {
@@ -6795,7 +7016,26 @@
         "tipo": "hueco",
         "campoHueco": "verbo"
       },
-      { "tipo": "opcion" }
+      {
+        "tipo": "emparejar",
+        "pares": [
+          {
+            "id": 1,
+            "izq": "Is there a park near the hospital?",
+            "der": "¿Hay un parque cerca del hospital?"
+          },
+          {
+            "id": 2,
+            "izq": "Are there any students in the classroom?",
+            "der": "¿Hay algún alumno en la clase?"
+          },
+          {
+            "id": 3,
+            "izq": "Is there a cinema in your village?",
+            "der": "¿Hay un cine en tu pueblo?"
+          }
+        ]
+      }
     ]
   }
 ]
