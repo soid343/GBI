@@ -6092,8 +6092,8 @@
   {
     "id": 102,
     "tipo": "afirmacion_simple",
-    "subtipo": "there_is",
-    "leccion": "there_is_there_are",
+    "subtipo": "there_is_are",
+    "leccion": "there_is_are",
     "frase": "There is a cinema in my town.",
     "traduccion": "Hay un cine en mi pueblo.",
     "mostrarModelo": true,
@@ -6141,8 +6141,8 @@
   {
     "id": 103,
     "tipo": "negacion_simple",
-    "subtipo": "there_is",
-    "leccion": "there_is_there_are",
+    "subtipo": "there_is_are",
+    "leccion": "there_is_are",
     "frase": "There isn't a hospital in my village.",
     "traduccion": "No hay un hospital en mi pueblo.",
     "mostrarModelo": true,
@@ -6188,8 +6188,8 @@
   {
     "id": 104,
     "tipo": "afirmacion_simple",
-    "subtipo": "there_are",
-    "leccion": "there_is_there_are",
+    "subtipo": "there_is_are",
+    "leccion": "there_is_are",
     "frase": "There are three shops in my street.",
     "traduccion": "Hay tres tiendas en mi calle.",
     "mostrarModelo": false,
@@ -6235,8 +6235,8 @@
   {
     "id": 105,
     "tipo": "negacion_simple",
-    "subtipo": "there_are",
-    "leccion": "there_is_there_are",
+    "subtipo": "there_is_are",
+    "leccion": "there_is_are",
     "frase": "There aren't any parks in my town.",
     "traduccion": "No hay parques en mi pueblo.",
     "mostrarModelo": false,
@@ -6282,8 +6282,8 @@
   {
     "id": 106,
     "tipo": "pregunta_yes_no",
-    "subtipo": "there_is",
-    "leccion": "there_is_there_are",
+    "subtipo": "there_is_are",
+    "leccion": "there_is_are",
     "frase": "Is there a museum in your town?",
     "traduccion": "¿Hay un museo en tu pueblo?",
     "mostrarModelo": true,
@@ -6318,7 +6318,7 @@
       }
     ],
     "ejercicios": [
-      {"tipo": "ordenar"},
+      { "tipo": "ordenar" },
       {
         "tipo": "hueco",
         "campoHueco": "hay_hay"
@@ -6348,8 +6348,8 @@
   {
     "id": 107,
     "tipo": "pregunta_yes_no",
-    "subtipo": "there_is",
-    "leccion": "there_is_there_are",
+    "subtipo": "there_is_are",
+    "leccion": "there_is_are",
     "frase": "Is there a cinema in your village?",
     "traduccion": "¿Hay un cine en tu pueblo?",
     "mostrarModelo": false,
@@ -6384,7 +6384,7 @@
       }
     ],
     "ejercicios": [
-      {"tipo": "ordenar"},
+      { "tipo": "ordenar" },
       {
         "tipo": "hueco",
         "campoHueco": "hay_hay"
@@ -6414,8 +6414,8 @@
   {
     "id": 108,
     "tipo": "pregunta_yes_no",
-    "subtipo": "there_are",
-    "leccion": "there_is_there_are",
+    "subtipo": "there_is_are",
+    "leccion": "there_is_are",
     "frase": "Are there any parks in your town?",
     "traduccion": "¿Hay parques en tu pueblo?",
     "mostrarModelo": true,
@@ -6480,8 +6480,8 @@
   {
     "id": 109,
     "tipo": "pregunta_yes_no",
-    "subtipo": "there_are",
-    "leccion": "there_is_there_are",
+    "subtipo": "there_is_are",
+    "leccion": "there_is_are",
     "frase": "Are there any buses in your street?",
     "traduccion": "¿Hay autobuses en tu calle?",
     "mostrarModelo": false,
@@ -6546,8 +6546,8 @@
   {
     "id": 110,
     "tipo": "afirmacion_simple",
-    "subtipo": "there_are",
-    "leccion": "there_is_there_are",
+    "subtipo": "there_is_are",
+    "leccion": "there_is_are",
     "frase": "There are five parked cars on my street.",
     "traduccion": "Hay cinco coches aparcados en mi calle.",
     "mostrarModelo": false,
@@ -6590,6 +6590,210 @@
       {
         "tipo": "hueco",
         "campoHueco": "there_is_are"
+      },
+      { "tipo": "opcion" }
+    ]
+  },
+  {
+    "id": 111,
+    "tipo": "afirmacion_simple",
+    "subtipo": "there_is_are",
+    "leccion": "there_is_are",
+    "frase": "There is a cat in the garden.",
+    "traduccion": "Hay un gato en el jardín.",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "There",
+        "significado": "(hay)"
+      },
+      {
+        "palabra": "is",
+        "significado": "(auxiliar singular)",
+        "esHueco": true,
+        "opciones": [ "is", "are" ],
+        "correcta": "is"
+      },
+      {
+        "palabra": "a",
+        "significado": "un/una"
+      },
+      {
+        "palabra": "cat",
+        "significado": "gato"
+      },
+      {
+        "palabra": "in",
+        "significado": "en"
+      },
+      {
+        "palabra": "the",
+        "significado": "el"
+      },
+      {
+        "palabra": "garden.",
+        "significado": "jardín"
+      }
+    ],
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      { "tipo": "opcion" }
+    ]
+  },
+  {
+    "id": 112,
+    "tipo": "afirmacion_simple",
+    "subtipo": "there_is_are",
+    "leccion": "there_is_are",
+    "frase": "There are two chairs in the room.",
+    "traduccion": "Hay dos sillas en la habitación.",
+    "mostrarModelo": false,
+    "partes": [
+      {
+        "palabra": "There",
+        "significado": "hay"
+      },
+      {
+        "palabra": "are",
+        "significado": "(auxiliar plural)",
+        "esHueco": true,
+        "opciones": [ "is", "are" ],
+        "correcta": "are"
+      },
+      {
+        "palabra": "two",
+        "significado": "dos"
+      },
+      {
+        "palabra": "chairs",
+        "significado": "sillas"
+      },
+      {
+        "palabra": "in",
+        "significado": "en"
+      },
+      {
+        "palabra": "the",
+        "significado": "la"
+      },
+      {
+        "palabra": "room.",
+        "significado": "habitación"
+      }
+    ],
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      { "tipo": "opcion" }
+    ]
+  },
+  {
+    "id": 113,
+    "tipo": "negacion_simple",
+    "subtipo": "there_is_are",
+    "leccion": "there_is_are",
+    "frase": "There is not a TV in my room.",
+    "traduccion": "No hay una tele en mi habitación.",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "There",
+        "significado": "hay"
+      },
+      {
+        "palabra": "is",
+        "significado": "(auxiliar singular)",
+        "esHueco": true,
+        "opciones": [ "is", "are" ],
+        "correcta": "is"
+      },
+      {
+        "palabra": "not",
+        "significado": "no"
+      },
+      {
+        "palabra": "a",
+        "significado": "una"
+      },
+      {
+        "palabra": "TV",
+        "significado": "tele"
+      },
+      {
+        "palabra": "in",
+        "significado": "en"
+      },
+      {
+        "palabra": "my",
+        "significado": "mi"
+      },
+      {
+        "palabra": "room.",
+        "significado": "habitación"
+      }
+    ],
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
+      },
+      { "tipo": "opcion" }
+    ]
+  },
+  {
+    "id": 114,
+    "tipo": "pregunta_yes_no",
+    "subtipo": "there_is_are",
+    "leccion": "there_is_are",
+    "frase": "Is there a park near the hospital?",
+    "traduccion": "¿Hay un parque cerca del hospital?",
+    "mostrarModelo": true,
+    "partes": [
+      {
+        "palabra": "Is",
+        "significado": "(auxiliar singular)",
+        "esHueco": true,
+        "opciones": [ "Is", "Are" ],
+        "correcta": "Is"
+      },
+      {
+        "palabra": "there",
+        "significado": "hay"
+      },
+      {
+        "palabra": "a",
+        "significado": "un"
+      },
+      {
+        "palabra": "park",
+        "significado": "parque"
+      },
+      {
+        "palabra": "near",
+        "significado": "cerca de"
+      },
+      {
+        "palabra": "the",
+        "significado": "el"
+      },
+      {
+        "palabra": "hospital?",
+        "significado": "hospital"
+      }
+    ],
+    "ejercicios": [
+      { "tipo": "ordenar" },
+      {
+        "tipo": "hueco",
+        "campoHueco": "verbo"
       },
       { "tipo": "opcion" }
     ]
