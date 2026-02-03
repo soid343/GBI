@@ -6820,7 +6820,7 @@
           },
           {
             "id": 3,
-            "izq": "There isn't a park near the hospital.",
+            "izq": "There is a police station in your street.",
             "der": "No hay un parque cerca del hospital."
           }
         ]
@@ -6957,7 +6957,7 @@
           },
           {
             "id": 2,
-            "izq": "There isn't' a book on the table.",
+            "izq": "There isn't a book on the table.",
             "der": "No hay un libro en la mesa."
           },
           {
