@@ -353,9 +353,8 @@ function obtenerExplicacionGramatical(ejercicio) {
             "have_got": `
                  <p class="explicacion-titulo-linea">
                     <span class="explicacion-icono">📦</span>
-                    <strong>Usar "have got" para decir que tenemos algo</strong>
+                    <strong>Usamos "have got" para decir que tenemos algo</strong>
                 </p>
-                <p>Usamos <strong>have got</strong> para decir que tenemos algo.</p>
                 <ul>
                     <li>🙋 <strong>I have got</strong> = Yo tengo</li>
                     <li>👦👧 <strong>You have got</strong> = Tú tienes / Vosotros tenéis</li>
