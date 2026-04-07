@@ -1124,7 +1124,7 @@
     "tipo": "negacion_simple",
     "subtipo": "verbo_to_be",
     "leccion": "pronouns_to_be",
-    "frase": "I am not cansado.",
+    "frase": "I am not tired.",
     "traduccion": "Yo no estoy cansado.",
     "mostrarModelo": true,
     "partes": [
@@ -1144,7 +1144,7 @@
         "significado": "no"
       },
       {
-        "palabra": "cansado",
+        "palabra": "tired",
         "significado": "cansado"
       }
     ],
@@ -1159,17 +1159,17 @@
         "pares": [
           {
             "id": 1,
-            "izq": "Yo am not cansado.",
+            "izq": "I am not tired.",
             "der": "Yo no estoy cansado."
           },
           {
             "id": 2,
-            "izq": "Ella no está triste.",
+            "izq": "She isn't' sad.",
             "der": "Ella no está triste."
           },
           {
             "id": 3,
-            "izq": "No están cansados.",
+            "izq": "They aren't tired.",
             "der": "Ellos no están cansados."
           }
         ]
